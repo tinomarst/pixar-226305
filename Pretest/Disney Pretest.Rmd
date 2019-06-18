@@ -45,13 +45,33 @@ V(disnet)$art # Art des jeweiligen Knotens aus der Nodelist
 
 
 E(disnet)$color <- as.factor(edges$Type) #Je nach Wert wird die Farbe der Kanten verändert
-V(disnet)$shape <- ifelse(nodes$art == 1, "square", "circle") #Die Form der Vertices wird festgelegt Film=square Figur=circle
+V(disnet)$shape <- ifelse(nodes$art == 1, "crectangle", ifelse(nodes$art == 2, "circle", "sphere")) #Die Form der Vertices wird festgelegt Film=square Figur=circle
 V(disnet)$color <- as.factor(nodes$art) #Die Farbe der Knoten wird mit unterschiedlichem Wert angepasst
 
 durchmesser <- layout.fruchterman.reingold(disnet, niter = 500) #zuweisen des Layouts für einfache Skalierbarkeit
 durchmesser <- norm_coords(l, ymin=-1, ymax=1, xmin=-1, xmax=1) #zuweisen der Grundkoordinaten
 
 plot(disnet, 
+     vertex.size=10,
+     rescale=F,
+     layout=durchmesser*1.2) # erste Darstellung des Gesamtnetzwerks
+    
+```
+
+
+// Grafische Ausgabe des Gesamtnetzwerks mit Figuren die mehr als 1 mal vorkommen
+```{r}
+
+disnetsm=delete.vertices(disnet,which(degree(disnet)<2))
+
+E(disnet)$color <- as.factor(edges$Type) #Je nach Wert wird die Farbe der Kanten verändert
+V(disnet)$shape <- ifelse(nodes$art == 1, "square", "circle") #Die Form der Vertices wird festgelegt Film=square Figur=circle
+V(disnet)$color <- as.factor(nodes$art) #Die Farbe der Knoten wird mit unterschiedlichem Wert angepasst
+
+durchmesser <- layout.fruchterman.reingold(disnet, niter = 500) #zuweisen des Layouts für einfache Skalierbarkeit
+durchmesser <- norm_coords(l, ymin=-1, ymax=1, xmin=-1, xmax=1) #zuweisen der Grundkoordinaten
+
+plot(disnetsm, 
      vertex.size=10,
      rescale=F,
      layout=durchmesser*1.2) # erste Darstellung des Gesamtnetzwerks
@@ -66,12 +86,6 @@ class(disneycluster)
 plot(disneycluster, disnet, vertex.size=10,
      rescale=F,
      layout=durchmesser*1.2) # erste Darstellung des Gesamtnetzwerks mit Clustern
-
-
-
-  
-
-
 
 ```
 
