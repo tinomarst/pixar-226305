@@ -40,6 +40,7 @@ V(disnet)$art # Art des jeweiligen Knotens aus der Nodelist
 
 ```
 
+
 // Grafische Ausgabe des Gesamtnetzwerks
 ```{r}
 
@@ -48,16 +49,23 @@ E(disnet)$color <- as.factor(edges$Type) #Je nach Wert wird die Farbe der Kanten
 V(disnet)$shape <- ifelse(nodes$art == 1, "crectangle", ifelse(nodes$art == 2, "circle", "sphere")) #Die Form der Vertices wird festgelegt Film=square Figur=circle
 V(disnet)$color <- as.factor(nodes$art) #Die Farbe der Knoten wird mit unterschiedlichem Wert angepasst
 
+# 1 Convert to numeric
+# 2 Add 1 for offset between proxy links index and nodes index
+# 3 Select subset of nodes with above as row index. Return name column
+
+
 durchmesser <- layout.fruchterman.reingold(disnet, niter = 500) #zuweisen des Layouts für einfache Skalierbarkeit
-durchmesser <- norm_coords(l, ymin=-1, ymax=1, xmin=-1, xmax=1) #zuweisen der Grundkoordinaten
+durchmesser <- norm_coords(durchmesser, ymin=-1, ymax=1, xmin=-1, xmax=1) #zuweisen der Grundkoordinaten
 
 plot(disnet, 
      vertex.size=10,
      rescale=F,
-     layout=durchmesser*1.2) # erste Darstellung des Gesamtnetzwerks
+     layout=durchmesser*1.4) # erste Darstellung des Gesamtnetzwerks
     
 ```
 
+// Tkplot ist eine Ausgabemöglichkeit für eine flexiblere Darstellung
+tkplot(disnet)
 
 // Grafische Ausgabe des Gesamtnetzwerks mit Figuren die mehr als 1 mal vorkommen
 ```{r}
@@ -89,7 +97,6 @@ plot(disneycluster, disnet, vertex.size=10,
 
 ```
 
-// Tkplot ist eine Ausgabemöglichkeit für eine flexiblere Darstellung
 
 
 
