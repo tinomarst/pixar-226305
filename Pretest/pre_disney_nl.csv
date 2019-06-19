@@ -1,161 +1,161 @@
-id,name,art
-di_bb,Director Brad Bird,6
-fig_a113,A113,2
-fig_acall,Abigail Callaghan,2
-fig_akrei,Alistair Krei,2
-fig_alad,Aladdin,2
-fig_ariel,Ariel,2
-fig_aurora,Aurora,2
-fig_bammo,Bambi's mother,2
-fig_bamx,Baymax,2
-fig_beast,Beast,2
-fig_belle,Belle,2
-fig_bolt,Bolt,2
-fig_carpet,The Magic Carpet,2
-fig_cbrbobo,Cobra Bobo,2
-fig_chamada,keine Ahnung,99
-fig_chcat,Cheshire Cat,2
-fig_chip,Chip,2
-fig_cincastle,Cinderella's Castle,2
-fig_colscn,Circle of Life Scene,2
-fig_councilw,Councilwoman,2
-fig_cptgantu,Captain Gantu,2
-fig_cruella,Cruella De Vil,2
-fig_cthamada,Cass Hamada,2
-fig_cybug,Cy-Bug,2
-fig_daisy,Daisy Duck,2
-fig_dkawena,Dawid Kawena,2
-fig_donald,Donald Duck,2
-fig_dukecind,The Grand Duke,2
-fig_dumbo,Dumbo,2
-fig_ester,Ester,2
-fig_fabius,Flounder,2
-fig_facilier,Dr. Facilier,2
-fig_fifj,Fix-It Felix Jr.,2
-fig_flyn,Flynn Rider,2
-fig_fredbh6,Fred,2
-fig_genie,Genie,2
-fig_ggto,GoGo Tomago,2
-fig_glamp,Genie's Lamp ,2
-fig_goofy,Goofy,2
-fig_hans,Hans,2
-fig_hasagawa,Mrs. Hasagawa,2
-fig_hdty,Hero's Duty,2
-fig_headhoho,The Headless Horseman's horse,2
-fig_hiroham,Hiro Hamada,2
-fig_honlem,Honey Lemon,2
-fig_hook,Captain Hook,2
-fig_huteach,Hula Lehrer,2
-fig_ifpram,Infant Pram,2
-fig_jafar,Jafar,2
-fig_jmusker,John Musker,2
-fig_jock,Jock,2
-fig_jookiba,Dr. Jamba Jookiba,2
-fig_jskellington,Jack Skellington,2
-fig_kermit,Kermit the Frog ,2
-fig_kingcind,The King ,2
-fig_ktrit,King Triton,2
-fig_lbdoll,Little Brother Doll,2
-fig_lcatcaf,Lucky Cat Cafe,2
-fig_lilo,Lilo,2
-fig_lon,Lon,2
-fig_lottie,Charlotte (Lottie) La Bouff,2
-fig_louis,Louis,2
-fig_luxball,Ball from Luxo,2
-fig_madhat,Mad Hatter,2
-fig_marsh,Marshmallow,2
-fig_maximus,Maximus,2
-fig_medmonds,Myrtle Edmonds,2
-fig_melody,Melody,2
-fig_mfhook,Maui's fish hook ,2
-fig_mickey,Mickey Mouse,2
-fig_modie,Mama Odie,2
-fig_mspotts,Mrs. Potts,2
-fig_mulan,Mulan,2
-fig_muwok,Mulan Wok,2
-fig_nani,Nani,2
-fig_nemo,Nemo,2
-fig_nwilde,Nick Wilde,2
-fig_olaf,Olaf,2
-fig_otlr,Oswald the Lucky Rabbit,2
-fig_patch,Patch,2
-fig_pigeons,The Pigeons,2
-fig_piglet,Piglet,2
-fig_pinocchio,Pinocchio,2
-fig_plikli,Agent Pliiklii,2
-fig_poca,Pocahontas,2
-fig_preric,Prince Eric,2
-fig_prjas,Princess Jasmine,2
-fig_prnaveen,Prince Naveen,2
-fig_pshown,pet shop owner,2
-fig_pumbaa,Pumbaa,2
-fig_rapunzel,Rapunzel,2
-fig_rat,Rat,2
-fig_ray,Ray,2
-fig_rcall,Robert Callaghan,2
-fig_rclements,Ron Clements,2
-fig_rescsw,Rescue Swimmer,2
-fig_scuttle,Scuttle,2
-fig_sdflower,Sun-Drop Flower,2
-fig_sebariell,Sebastian,2
-fig_sfran,San Fransokyo,2
-fig_sgtcal,Sergeant Calhoun,2
-fig_sharend,Ship from Arendelle,2
-fig_snwhite,Snow White,2
-fig_spinwheel,Spinning Wheel,2
-fig_splody,Splodyhead,2
-fig_stitch,Stitch,2
-fig_sultan,Sultan,2
-fig_surush,Sugar rush,2
-fig_sven,Sven,2
-fig_thamada,Tadashi Hamada,2
-fig_themb,Magic Broom,2
-fig_tiana,Tiana,2
-fig_tigger,Tigger,2
-fig_tinkbell,Tinker Bell,2
-fig_totoco,Totoro cookies,2
-fig_ttrex,Tiny the T-Rex,2
-fig_tugduck,Ugly Duckling,2
-fig_turbo,Turbo,2
-fig_ursula,Ursula,2
-fig_vladimir,Vladimir,2
-fig_vsch,Vanellope von Schweetz,2
-fig_wardrobe,Wardrobe,2
-fig_wasabi,Wasabi,2
-fig_winst,Winston,2
-fig_wir,Wreck-It Ralph ,2
-mv_101dal,One Hundred And One Dalmatians,1
-mv_alad,Aladdin (Film),1
-mv_alice,Alice in Wonderland,1
-mv_batb,Beauty and the Beast,1
-mv_bh6,Big Hero 6,1
-mv_bolt,Bolt,1
-mv_brbear,Brother Bear,1
-mv_chlit,Chicken Little,1
-mv_cind,Cinderella,1
-mv_dumbo,Dumbo,1
-mv_elhol,Electric Holiday,1
-mv_fant,Fantasia,1
-mv_frozen,Frozen,1
-mv_frozen2,Frozen2,1
-mv_gigantic,Gigantic,1
-mv_goofy,A Goofy Movie,1
-mv_hbnd,The Hunchback of Notre Dame,1
-mv_inc,Die Unglaublichen,1
-mv_lands,Lilo & Stitch,1
-mv_liki,The Lion King,1
-mv_moana,Moana,1
-mv_mtr,Meet the Robinsons,1
-mv_nbchr,Nightmare before Christmas,1
-mv_nemo,Finding Nemo,1
-mv_pinocchio,Pinocchio (Film),1
-mv_poca,Pocahontas,1
-mv_ppan,Peter Pan,1
-mv_tang,Tangled,1
-mv_tarzan,Tarzan,1
-mv_tlmm,The Little Mermaid,1
-mv_tpatf,The Princess and the Frog,1
-mv_tsby,The Sleeping Beauty,1
-mv_tugduck,The Ugly Duckling,1
-mv_wir,Wreck it Ralph ,1
-mv_zoo,Zootopia,1
+id,name,art,Produktionsfirma,Erscheinungsjahr,Einspielergebnis
+di_bb,Director Brad Bird,6,,,
+fig_a113,A113,2,,,
+fig_acall,Abigail Callaghan,2,,,
+fig_akrei,Alistair Krei,2,,,
+fig_alad,Aladdin,2,,,
+fig_ariel,Ariel,2,,,
+fig_aurora,Aurora,2,,,
+fig_bammo,Bambi's mother,2,,,
+fig_bamx,Baymax,2,,,
+fig_beast,Beast,2,,,
+fig_belle,Belle,2,,,
+fig_bolt,Bolt,2,,,
+fig_carpet,The Magic Carpet,2,,,
+fig_cbrbobo,Cobra Bobo,2,,,
+fig_chamada,keine Ahnung,99,,,
+fig_chcat,Cheshire Cat,2,,,
+fig_chip,Chip,2,,,
+fig_cincastle,Cinderella's Castle,2,,,
+fig_colscn,Circle of Life Scene,2,,,
+fig_councilw,Councilwoman,2,,,
+fig_cptgantu,Captain Gantu,2,,,
+fig_cruella,Cruella De Vil,2,,,
+fig_cthamada,Cass Hamada,2,,,
+fig_cybug,Cy-Bug,2,,,
+fig_daisy,Daisy Duck,2,,,
+fig_dkawena,Dawid Kawena,2,,,
+fig_donald,Donald Duck,2,,,
+fig_dukecind,The Grand Duke,2,,,
+fig_dumbo,Dumbo,2,,,
+fig_ester,Ester,2,,,
+fig_fabius,Flounder,2,,,
+fig_facilier,Dr. Facilier,2,,,
+fig_fifj,Fix-It Felix Jr.,2,,,
+fig_flyn,Flynn Rider,2,,,
+fig_fredbh6,Fred,2,,,
+fig_genie,Genie,2,,,
+fig_ggto,GoGo Tomago,2,,,
+fig_glamp,Genie's Lamp ,2,,,
+fig_goofy,Goofy,2,,,
+fig_hans,Hans,2,,,
+fig_hasagawa,Mrs. Hasagawa,2,,,
+fig_hdty,Hero's Duty,2,,,
+fig_headhoho,The Headless Horseman's horse,2,,,
+fig_hiroham,Hiro Hamada,2,,,
+fig_honlem,Honey Lemon,2,,,
+fig_hook,Captain Hook,2,,,
+fig_huteach,Hula Lehrer,2,,,
+fig_ifpram,Infant Pram,2,,,
+fig_jafar,Jafar,2,,,
+fig_jmusker,John Musker,2,,,
+fig_jock,Jock,2,,,
+fig_jookiba,Dr. Jamba Jookiba,2,,,
+fig_jskellington,Jack Skellington,2,,,
+fig_kermit,Kermit the Frog ,2,,,
+fig_kingcind,The King ,2,,,
+fig_ktrit,King Triton,2,,,
+fig_lbdoll,Little Brother Doll,2,,,
+fig_lcatcaf,Lucky Cat Cafe,2,,,
+fig_lilo,Lilo,2,,,
+fig_lon,Lon,2,,,
+fig_lottie,Charlotte (Lottie) La Bouff,2,,,
+fig_louis,Louis,2,,,
+fig_luxball,Ball from Luxo,2,,,
+fig_madhat,Mad Hatter,2,,,
+fig_marsh,Marshmallow,2,,,
+fig_maximus,Maximus,2,,,
+fig_medmonds,Myrtle Edmonds,2,,,
+fig_melody,Melody,2,,,
+fig_mfhook,Maui's fish hook ,2,,,
+fig_mickey,Mickey Mouse,2,,,
+fig_modie,Mama Odie,2,,,
+fig_mspotts,Mrs. Potts,2,,,
+fig_mulan,Mulan,2,,,
+fig_muwok,Mulan Wok,2,,,
+fig_nani,Nani,2,,,
+fig_nemo,Nemo,2,,,
+fig_nwilde,Nick Wilde,2,,,
+fig_olaf,Olaf,2,,,
+fig_otlr,Oswald the Lucky Rabbit,2,,,
+fig_patch,Patch,2,,,
+fig_pigeons,The Pigeons,2,,,
+fig_piglet,Piglet,2,,,
+fig_pinocchio,Pinocchio,2,,,
+fig_plikli,Agent Pliiklii,2,,,
+fig_poca,Pocahontas,2,,,
+fig_preric,Prince Eric,2,,,
+fig_prjas,Princess Jasmine,2,,,
+fig_prnaveen,Prince Naveen,2,,,
+fig_pshown,pet shop owner,2,,,
+fig_pumbaa,Pumbaa,2,,,
+fig_rapunzel,Rapunzel,2,,,
+fig_rat,Rat,2,,,
+fig_ray,Ray,2,,,
+fig_rcall,Robert Callaghan,2,,,
+fig_rclements,Ron Clements,2,,,
+fig_rescsw,Rescue Swimmer,2,,,
+fig_scuttle,Scuttle,2,,,
+fig_sdflower,Sun-Drop Flower,2,,,
+fig_sebariell,Sebastian,2,,,
+fig_sfran,San Fransokyo,2,,,
+fig_sgtcal,Sergeant Calhoun,2,,,
+fig_sharend,Ship from Arendelle,2,,,
+fig_snwhite,Snow White,2,,,
+fig_spinwheel,Spinning Wheel,2,,,
+fig_splody,Splodyhead,2,,,
+fig_stitch,Stitch,2,,,
+fig_sultan,Sultan,2,,,
+fig_surush,Sugar rush,2,,,
+fig_sven,Sven,2,,,
+fig_thamada,Tadashi Hamada,2,,,
+fig_themb,Magic Broom,2,,,
+fig_tiana,Tiana,2,,,
+fig_tigger,Tigger,2,,,
+fig_tinkbell,Tinker Bell,2,,,
+fig_totoco,Totoro cookies,2,,,
+fig_ttrex,Tiny the T-Rex,2,,,
+fig_tugduck,Ugly Duckling,2,,,
+fig_turbo,Turbo,2,,,
+fig_ursula,Ursula,2,,,
+fig_vladimir,Vladimir,2,,,
+fig_vsch,Vanellope von Schweetz,2,,,
+fig_wardrobe,Wardrobe,2,,,
+fig_wasabi,Wasabi,2,,,
+fig_winst,Winston,2,,,
+fig_wir,Wreck-It Ralph ,2,,,
+mv_101dal,One Hundred And One Dalmatians,1,2,1961,717405900
+mv_alad,Aladdin (Film),1,2,1992,504100000
+mv_alice,Alice in Wonderland,1,2,1951,560000000
+mv_batb,Beauty and the Beast,1,2,1991,425000000
+mv_bh6,Big Hero 6,1,2,2014,657800000
+mv_bolt,Bolt,1,2,2008,310000000
+mv_brbear,Brother Bear,1,2,2003,250400000
+mv_chlit,Chicken Little (2005),1,2,2005,314400000
+mv_cind,Cinderella (1950),1,2,1950,263000000
+mv_dumbo,Dumbo,1,2,1941,1600000
+mv_elhol,Electric Holiday,1,2,2012,0
+mv_fant,Fantasia,1,2,1952,76480000
+mv_frozen,Frozen,1,2,2013,1276000000
+mv_frozen2,Frozen2,1,2,2019,na
+mv_gigantic,Gigantic,1,2,2020,na
+mv_goofy,A Goofy Movie,1,99,1995,35000000
+mv_hbnd,The Hunchback of Notre Dame,1,2,1996,325300000
+mv_inc,Die Unglaublichen,1,3,2004,633000000
+mv_lands,Lilo & Stitch,1,2,2002,273100000
+mv_liki,The Lion King,1,2,1994,968500000
+mv_moana,Moana,1,2,2016,643300000
+mv_mtr,Meet the Robinsons,1,2,2007,169300000
+mv_nbchr,Nightmare before Christmas,1,6,1993,76200000
+mv_nemo,Finding Nemo,1,3,2003,940300000
+mv_pinocchio,Pinocchio (Film),1,2,1940,84200000
+mv_poca,Pocahontas,1,2,1995,346100000
+mv_ppan,Peter Pan,1,2,1953,87400000
+mv_tang,Tangled,1,2,2010,591800000
+mv_tarzan,Tarzan,1,2,1999,448200000
+mv_tlmm,The Little Mermaid,1,2,1989,211300000
+mv_tpatf,The Princess and the Frog,1,2,2009,271000000
+mv_tsby,The Sleeping Beauty,1,2,1959,51600000
+mv_tugduck,The Ugly Duckling,1,2,1939,na
+mv_wir,Wreck it Ralph ,1,2,2012,471200000
+mv_zoo,Zootopia,1,2,2016,1024000000
