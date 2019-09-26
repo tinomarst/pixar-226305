@@ -1,0 +1,2128 @@
+from,to,type,ftitle,ttitle
+mv_abuli,wr_anst,7,A Bug's Life,Andrew Stanton
+mv_abuli,wr_bosh,7,A Bug's Life,Bob Shaw
+mv_abuli,pr_daka,8,A Bug's Life,Darla K. Anderson
+mv_abuli,wr_domc,7,A Bug's Life,Donald McEnery
+mv_abuli,wr_jora,7,A Bug's Life,Joe Ranft
+mv_abuli,di_jola,6,A Bug's Life,John Lasseter
+mv_abuli,wr_jola,7,A Bug's Life,John Lasseter
+mv_abuli,pr_kere,8,A Bug's Life,Kevin Reher
+mv_goofy,wr_brpi,7,A Goofy Movie,Brian Pimental
+mv_goofy,wr_chma,7,A Goofy Movie,Chris Matheson
+mv_goofy,pr_daro,8,A Goofy Movie,Dan Rounds
+mv_goofy,wr_jyma,7,A Goofy Movie,Jymn Magon
+mv_goofy,di_keli,6,A Goofy Movie,Kevin Lima
+mv_alad19,pr_dali,8,Aladdin (2019),Dan Lin
+mv_alad19,di_guri,6,Aladdin (2019),Guy Ritchie
+mv_alad19,wr_guri,7,Aladdin (2019),Guy Ritchie
+mv_alad19,wr_joau,7,Aladdin (2019),John August
+mv_alad19,pr_joei,8,Aladdin (2019),Jonathan Eirich
+mv_alad,wr_brpi,7,Aladdin (Film),Brian Pimental
+mv_alad,wr_buma,7,Aladdin (Film),Burny Mattinson
+mv_alad,wr_chsa,7,Aladdin (Film),Chris Sanders
+mv_alad,wr_daji,7,Aladdin (Film),Daan Jippes
+mv_alad,wr_daro,7,Aladdin (Film),Darrell Rooney
+mv_alad,wr_dass,7,Aladdin (Film),David S. Smith
+mv_alad,wr_frgl,7,Aladdin (Film),Francis Glebas
+mv_alad,wr_jafu,7,Aladdin (Film),James Fujii
+mv_alad,di_jomu,6,Aladdin (Film),John Musker
+mv_alad,pr_jomu,8,Aladdin (Film),John Musker
+mv_alad,wr_jomu,7,Aladdin (Film),John Musker
+mv_alad,wr_keha,7,Aladdin (Film),Kevin Harkey
+mv_alad,wr_keli,7,Aladdin (Film),Kevin Lima
+mv_alad,wr_kiha,7,Aladdin (Film),Kirk Hanson
+mv_alad,wr_lale,7,Aladdin (Film),Larry Leker
+mv_alad,wr_pave,7,Aladdin (Film),Patrick A. Ventura
+mv_alad,wr_rere,7,Aladdin (Film),Rebecca Rees
+mv_alad,wr_roal,7,Aladdin (Film),Roger Allers
+mv_alad,di_rocl,6,Aladdin (Film),Ron Clements
+mv_alad,pr_rocl,8,Aladdin (Film),Ron Clements
+mv_alad,wr_rocl,7,Aladdin (Film),Ron Clements
+mv_alad,wr_suni,7,Aladdin (Film),Sue Nicholas
+mv_alad,wr_teel,7,Aladdin (Film),Ted Elliott
+mv_alad,wr_tero,7,Aladdin (Film),Terry Rossio
+mv_alad2,pr_jero,8,Aladdin and the King of Thieves,Jeannine Roussel
+mv_alad2,wr_maco,7,Aladdin and the King of Thieves,Mark McCorkle
+mv_alad2,wr_rosch,7,Aladdin and the King of Thieves,Robert Schooley
+mv_alad2,di_tast,6,Aladdin and the King of Thieves,Tad Stones
+mv_alad2,pr_tast,8,Aladdin and the King of Thieves,Tad Stones
+mv_alice,wr_bipe,7,Alice in Wonderland,Bill Peet
+mv_alice,di_clge,6,Alice in Wonderland,Clyde Geronimi 
+mv_alice,wr_deco,7,Alice in Wonderland,Del Connell
+mv_alice,wr_dihu,7,Alice in Wonderland,Dick Huemer
+mv_alice,wr_dike,7,Alice in Wonderland,Dick Kelsey
+mv_alice,wr_erpe,7,Alice in Wonderland,Erdman Penner
+mv_alice,di_halu,6,Alice in Wonderland,Hamilton Luske
+mv_alice,wr_jogr,7,Alice in Wonderland,Joe Grant
+mv_alice,wr_jori,7,Alice in Wonderland,Joe Rinaldi
+mv_alice,wr_jowa,7,Alice in Wonderland,John Walbridge
+mv_alice,wr_miba,7,Alice in Wonderland,Milt Banta
+mv_alice,wr_tese,7,Alice in Wonderland,Ted Sears
+mv_alice,wr_toor,7,Alice in Wonderland,Tom Oreb
+mv_alice,pr_wadi,8,Alice in Wonderland,Walt Disney
+mv_alice,di_wija,6,Alice in Wonderland,Wilfred Jackson
+mv_alice,wr_wico,7,Alice in Wonderland,William Cottrell
+mv_alice,wr_wihi,7,Alice in Wonderland,Winston Hibler
+mv_emojii,di_gigu,6,As Told by Emojii,Gino Guzzardo
+mv_emojii,pr_gigu,8,As Told by Emojii,Gino Guzzardo
+mv_emojii,wr_jamo,7,As Told by Emojii,Jake Monaco
+mv_emojii,wr_maja,7,As Told by Emojii,Matthew Janszen
+mv_emojii,pr_phba,8,As Told by Emojii,Phil Balisciano
+mv_emojii,di_raja,6,As Told by Emojii,Randy Jamison
+mv_emojii,pr_rybu,8,As Told by Emojii,Ryan Burns
+mv_emojii,wr_webe,7,As Told by Emojii,Wesley Bender
+mv_bambi,di_biro,6,Bambi,Bill Roberts
+mv_bambi,wr_cafa,7,Bambi,Carl Fallberg
+mv_bambi,wr_chco,7,Bambi,Chuck Couch
+mv_bambi,di_daha,6,Bambi,David Hand
+mv_bambi,di_grhe,6,Bambi,Graham Heid
+mv_bambi,di_jaal,6,Bambi,James Algar
+mv_bambi,wr_lamo,7,Bambi,Larry Morey
+mv_bambi,wr_mesh,7,Bambi,Melvin Shaw
+mv_bambi,di_nowr,6,Bambi,Norman Wright
+mv_bambi,di_pasa,6,Bambi,Paul Satterfield
+mv_bambi,wr_pepe,7,Bambi,Perce Pearce
+mv_bambi,wr_rawr,7,Bambi,Ralph Wright
+mv_bambi,di_saar,6,Bambi,Samuel Armstrong
+mv_bambi,wr_vest,7,Bambi,Vernon Stallings
+mv_bambi,pr_wadi,8,Bambi,Walt Disney
+mv_bambi6,wr_alki,7,Bambi II,Alicia Kirk
+mv_bambi2,di_brpi,6,Bambi II,Brian Pimental
+mv_bambi5,pr_daok,8,Bambi II,Dave Okey
+mv_bambi4,pr_jemo,8,Bambi II,Jeffrey Moznett
+mv_bambi3,pr_jiba,8,Bambi II,Jim Ballantine
+mv_batb,wr_brch,7,Beauty and the Beast,Brenda Chapman
+mv_batb,wr_brpi,7,Beauty and the Beast,Brian Pimental
+mv_batb,wr_brwo,7,Beauty and the Beast,Bruce Woodside
+mv_batb,wr_buma,7,Beauty and the Beast,Burny Mattinson
+mv_batb,wr_chsa,7,Beauty and the Beast,Chris Sanders
+mv_batb,pr_doha,8,Beauty and the Beast,Don Hahn
+mv_batb,di_gatr,6,Beauty and the Beast,Gary Trousdale
+mv_batb,wr_jora,7,Beauty and the Beast,Joe Ranft
+mv_batb,wr_keas,7,Beauty and the Beast,Kelly Asbury
+mv_batb,wr_keha,7,Beauty and the Beast,Kevin Harkey
+mv_batb,di_kiwi,6,Beauty and the Beast,Kirk Wise
+mv_batb,wr_liwo,7,Beauty and the Beast,Linda Woolverton
+mv_batb,wr_role,7,Beauty and the Beast,Robert Lence
+mv_batb,wr_roal,7,Beauty and the Beast,Roger Allers
+mv_batb,wr_toel,7,Beauty and the Beast,Tom Ellery
+mv_bedtime,pr_adsa,8,Bedtime Stories,Adam Sandler
+mv_bedtime,di_adsh,6,Bedtime Stories,Adam Shankman
+mv_bedtime,pr_angu,8,Bedtime Stories,Andrew Gunn
+mv_bedtime,pr_jagi,8,Bedtime Stories,Jack Giarraputo
+mv_bedtime,wr_malo,7,Bedtime Stories,Matt Lopez
+mv_bedtime,wr_tihe,7,Bedtime Stories,Tim Herlihy
+mv_bh6,di_chwi,6,Big Hero 6,Chris Williams
+mv_bh6,wr_dage,7,Big Hero 6,Dan Gerson
+mv_bh6,di_doha,6,Big Hero 6,Don Hall
+mv_bh6,wr_joro,7,Big Hero 6,Jordan Roberts
+mv_bh6,wr_roba,7,Big Hero 6,Robert L. Baird
+mv_bh6,pr_roco,8,Big Hero 6,Roy Conli
+mv_bolt,di_byho,6,Bolt,Byron Howard
+mv_bolt,di_chwi,6,Bolt,Chris Williams
+mv_bolt,wr_chwi,7,Bolt,Chris Williams
+mv_bolt,pr_clsp,8,Bolt,Clark Spencer
+mv_bolt,wr_dafo,7,Bolt,Dan Fogelman
+mv_brave,di_brch,6,Brave,Brenda Chapman
+mv_brave,wr_brch,7,Brave,Brenda Chapman
+mv_brave,wr_irme,7,Brave,Irene Mecchi
+mv_brave,pr_kasa,8,Brave,Katherine Sarafian
+mv_brave,di_maan,6,Brave,Mark Andrews
+mv_brave,wr_maand,7,Brave,Mark Andrews
+mv_brave,wr_stpu,7,Brave,Steve Purcell
+mv_brbear,di_aabl,6,Brother Bear,Aaron Blaise
+mv_brbear,wr_brjo,7,Brother Bear,Broose Johnson
+mv_brbear,pr_chwi,8,Brother Bear,Chuck Williams
+mv_brbear,wr_daho,7,Brother Bear,David Hoselton
+mv_brbear,wr_jono,7,Brother Bear,John Norton
+mv_brbear,wr_jopu,7,Brother Bear,John Puglisi
+mv_brbear,wr_kede,7,Brother Bear,Kevin Deters
+mv_brbear,wr_keha,7,Brother Bear,Kevin Harkey
+mv_brbear,wr_loca,7,Brother Bear,Lorne Cameron
+mv_brbear,di_rowa,6,Brother Bear,Robert Walker
+mv_brbear,wr_rofr,7,Brother Bear,Ron J. Friedman
+mv_brbear,wr_stbe,7,Brother Bear,Steve Bencich
+mv_brbear,wr_stwe,7,Brother Bear,Stevie Wermers-Skelton
+mv_brbear,wr_tamu,7,Brother Bear,Tab Murphy
+mv_brbear,wr_then,7,Brother Bear,Thom Enriquez
+mv_brbear,wr_wowo,7,Brother Bear,Woody Woodman
+mv_cars,wr_dafo,7,Cars,Dan Fogelman
+mv_cars,pr_daka,8,Cars,Darla K. Anderson
+mv_cars,di_jora,6,Cars,Joe Ranft
+mv_cars,wr_jora,7,Cars,Joe Ranft
+mv_cars,di_jola,6,Cars,John Lasseter
+mv_cars,wr_jola,7,Cars,John Lasseter
+mv_cars,wr_jokl,7,Cars,Jorgen Klubien
+mv_cars,wr_kimu,7,Cars,Kiel Murray
+mv_cars,wr_phlo,7,Cars,Phil Lorin
+mv_cars2,wr_bequ,7,Cars2,Ben Queen
+mv_cars2,di_brle,6,Cars2,Brad Lewis
+mv_cars2,wr_brle,7,Cars2,Brad Lewis
+mv_cars2,wr_dafo,7,Cars2,Dan Fogelman
+mv_cars2,pr_dere,8,Cars2,Denise Ream
+mv_cars2,di_jola,6,Cars2,John Lasseter
+mv_cars2,wr_jola,7,Cars2,John Lasseter
+mv_cars2,pr_mani,8,Cars2,Mark Nielsen
+mv_cars3,wr_bequ,7,Cars3,Ben Queen
+mv_cars3,wr_bope,7,Cars3,Bob Peterson
+mv_cars3,di_brfe,6,Cars3,Brian Fee
+mv_cars3,wr_brfe,7,Cars3,Brian Fee
+mv_cars3,wr_eypo,7,Cars3,Eyal Podell
+mv_cars3,wr_jost,7,Cars3,Jonathon E. Stewart
+mv_cars3,pr_kere,8,Cars3,Kevin Reher
+mv_cars3,wr_kimu,7,Cars3,Kiel Murray
+mv_cars3,wr_miri,7,Cars3,Mike Rich
+mv_chlit,di_madi,6,Chicken Little,Mark Dindal
+mv_chlit,wr_madi,7,Chicken Little,Mark Dindal
+mv_chlit,wr_make,7,Chicken Little,Mark Kennedy
+mv_chlit,pr_rafu,8,Chicken Little,Randy Fullmer
+mv_chlit,wr_roan,7,Chicken Little,Ron Anderson
+mv_chlit,wr_rofr,7,Chicken Little,Ron J. Friedman
+mv_chlit,wr_stbe,7,Chicken Little,Steve Bencich
+mv_chrrob,wr_alrope,7,Christopher Robin,Alex Ross Perry
+mv_chrrob,wr_alsch,7,Christopher Robin,Allison Schroeder
+mv_chrrob,pr_brta,8,Christopher Robin,Brigham Taylor
+mv_chrrob,wr_grbr,7,Christopher Robin,Greg Brooker
+mv_chrrob,pr_krbu,8,Christopher Robin,Kristin Burr
+mv_chrrob,di_mafo,6,Christopher Robin,Marc Forster
+mv_chrrob,wr_mastjo,7,Christopher Robin,Mark Steven Johnson
+mv_chrrob,wr_toca,7,Christopher Robin,Tom McCarthy
+mv_cind,wr_bipe,7,Cinderella (1950),Bill Peet
+mv_cind,di_clge,6,Cinderella (1950),Clyde Geronimi
+mv_cind,wr_erpe,7,Cinderella (1950),Erdman Penner
+mv_cind,di_halu,6,Cinderella (1950),Hamilton Luske
+mv_cind,wr_hare,7,Cinderella (1950),Harry Reeves
+mv_cind,wr_hobr,7,Cinderella (1950),Homer Brightman
+mv_cind,wr_jori,7,Cinderella (1950),Joe Rinaldi
+mv_cind,wr_kean,7,Cinderella (1950),Ken Anderson
+mv_cind,wr_mara,7,Cinderella (1950),Maurice Rapf
+mv_cind,wr_pepe,7,Cinderella (1950),Perce Pearce
+mv_cind,wr_tese,7,Cinderella (1950),Ted Sears
+mv_cind,pr_wadi,8,Cinderella (1950),Walt Disney
+mv_cind,di_wija,6,Cinderella (1950),Wilfred Jackson
+mv_cind,wr_wihi,7,Cinderella (1950),Winston Hibler
+mv_coco,wr_admo,7,Coco,Adrian Molina
+mv_coco,pr_daka,8,Coco,Darla K. Anderson
+mv_coco,wr_jaka,7,Coco,Jason Katz
+mv_coco,di_leun,6,Coco,Lee Unkrich
+mv_coco,wr_leun,7,Coco,Lee Unkrich
+mv_coco,wr_maal,7,Coco,Matthew Aldrich
+mv_donlamp,di_mimo,6,Donald's Lamp Trade,Mike Moon
+mv_donlamp,di_rischca,6,Donald's Lamp Trade,Rick Schneider-Calabash
+mv_donlamp,di_roga,6,Donald's Lamp Trade,Roberts Gannaway
+mv_donlamp,pr_roga,8,Donald's Lamp Trade,Roberts Gannaway
+mv_donlamp,wr_roga,7,Donald's Lamp Trade,Roberts Gannaway
+mv_donlamp,di_tocr,6,Donald's Lamp Trade,Tony Craig
+mv_donlamp,wr_tocr,7,Donald's Lamp Trade,Tony Craig
+mv_doug,pr_brkna,8,Doug's 1st Movie,Bruce Knapp
+mv_doug,pr_daca,8,Doug's 1st Movie,David Campbell
+mv_doug,pr_jasp,8,Doug's 1st Movie,Jack Spillum
+mv_doug,pr_jiji,8,Doug's 1st Movie,Jim Jinkins
+mv_doug,wr_jiji,7,Doug's 1st Movie,Jim Jinkins
+mv_doug,wr_kesc,7,Doug's 1st Movie,Ken Scarborough
+mv_doug,di_majo,6,Doug's 1st Movie,Maurice Joyce
+mv_doug,pr_megr,8,Doug's 1st Movie,Melanie Grisanti
+mv_ducktls,wr_albu,7,DuckTales: The Movie – Treasure of the Lost Lamp,Alan Burnett
+mv_ducktls,di_boha,6,DuckTales: The Movie – Treasure of the Lost Lamp,Bob Hathcock
+mv_ducktls,pr_boha,8,DuckTales: The Movie – Treasure of the Lost Lamp,Bob Hathcock
+mv_ducktls,pr_hpqu,8,DuckTales: The Movie – Treasure of the Lost Lamp,Jean-Pierre Quenet
+mv_ducktls,wr_jyma,7,DuckTales: The Movie – Treasure of the Lost Lamp,Jymn Magon
+mv_dumbo,di_besh,6,Dumbo,Ben Sharpsteen
+mv_dumbo,di_biro,6,Dumbo,Bill Roberts
+mv_dumbo,wr_dihu,7,Dumbo,Dick Huemer
+mv_dumbo,di_jaki,6,Dumbo,Jack Kinney
+mv_dumbo,wr_jogr,7,Dumbo,Joe Grant
+mv_dumbo,di_nofe,6,Dumbo,Norman Ferguson
+mv_dumbo,wr_oten,7,Dumbo,Otto Englander
+mv_dumbo,di_saar,6,Dumbo,Samuel Armstrong
+mv_dumbo,pr_wadi,8,Dumbo,Walt Disney
+mv_dumbo,di_wija,6,Dumbo,Wilfred Jackson
+mv_elhol,pr_mate,8,Electric Holiday,Matthew Teevan
+mv_elhol,wr_migi,7,Electric Holiday,Michael Giacchino
+mv_fant,di_besh,6,Fantasia,Ben Sharpsteen
+mv_fant,pr_besha,8,Fantasia,Ben Sharpsteen
+mv_fant,di_biro,6,Fantasia,Bill Roberts
+mv_fant,di_daha,6,Fantasia,David D. Hand
+mv_fant,wr_dihu,7,Fantasia,Dick Huemer
+mv_fant,di_fobe,6,Fantasia,Ford Beebe
+mv_fant,di_halu,6,Fantasia,Hamilton Luske
+mv_fant,di_jaal,6,Fantasia,James Algar
+mv_fant,di_jiha,6,Fantasia,Jim Handley
+mv_fant,wr_jogr,7,Fantasia,Joe Grant
+mv_fant,di_nofe,6,Fantasia,Norman Ferguson
+mv_fant,di_pasa,6,Fantasia,Paul Satterfield
+mv_fant,di_saar,6,Fantasia,Samuel Armstrong
+mv_fant,di_thee,6,Fantasia,T. Hee
+mv_fant,pr_wadi,8,Fantasia,Walt Disney
+mv_fant,di_wija,6,Fantasia,Wilfred Jackson
+mv_fant2,di_dohahn,6,Fantasia 2000,Don Hahn
+mv_fant2,pr_dower,8,Fantasia 2000,Donald W. Ernst
+mv_fant2,di_ergo,6,Fantasia 2000,Eric Goldberg
+mv_fant2,di_frcl,6,Fantasia 2000,Francis Glebas
+mv_fant2,di_gabri,6,Fantasia 2000,Gaetan Brizzi
+mv_fant2,di_hebu,6,Fantasia 2000,Hendel Butoy
+mv_fant2,di_jaal,6,Fantasia 2000,James Algar
+mv_fant2,di_pabr,6,Fantasia 2000,Paul Brizzi
+mv_fant2,di_pihu,6,Fantasia 2000,Pixote Hunt
+mv_fant2,pr_roedi,8,Fantasia 2000,Roy E. Disney
+mv_dory,di_anst,6,Finding Dory,Andrew Stanton
+mv_dory,wr_anst,7,Finding Dory,Andrew Stanton
+mv_dory,pr_lico,8,Finding Dory,Lindsey Collins
+mv_dory,wr_vist,7,Finding Dory,Victoria Strouse
+mv_nemo,di_anst,6,Finding Nemo,Andrew Stanton
+mv_nemo,wr_anst,7,Finding Nemo,Andrew Stanton
+mv_nemo,wr_bope,7,Finding Nemo,Bob Peterson
+mv_nemo,wr_dare,7,Finding Nemo,David Reynolds
+mv_nemo,pr_grwa,8,Finding Nemo,Graham Walters
+mv_flubber,pr_dani,8,Flubber,David Nicksay
+mv_flubber,pr_johu,8,Flubber,John Hughes
+mv_flubber,wr_johu,7,Flubber,John Hughes
+mv_flubber,di_lema,6,Flubber,Les Mayfield
+mv_flubber,pr_rime,8,Flubber,Ricardo Mestres
+mv_frween,pr_alab,8,Frankenweenie,Allison Abbate
+mv_frween,wr_joau,7,Frankenweenie,John August
+mv_frween,di_tibu,6,Frankenweenie,Tim Burton
+mv_frween,pr_tibu,8,Frankenweenie,Tim Burton
+mv_frozen,di_chbu,6,Frozen,Chris Buck
+mv_frozen,wr_chbu,7,Frozen,Chris Buck
+mv_frozen,di_jele,6,Frozen,Jennifer Lee
+mv_frozen,wr_jele,7,Frozen,Jennifer Lee
+mv_frozen,pr_pedv,8,Frozen,Peter Del Vecho
+mv_frozen,wr_shmo,7,Frozen,Shane Morris
+mv_frozen2,wr_alsch,7,Frozen2,Allison Schroeder
+mv_frozen2,di_chbu,6,Frozen2,Chris Buck
+mv_frozen2,di_jele,6,Frozen2,Jennifer Lee
+mv_frozen2,wr_jele,7,Frozen2,Jennifer Lee
+mv_frozen2,pr_pedv,8,Frozen2,Peter Del Vecho
+mv_funff,di_biro,6,Fun and Fancy Free,Bill Roberts
+mv_funff,wr_elde,7,Fun and Fancy Free,Eldon Dedini
+mv_funff,di_halu,6,Fun and Fancy Free,Hamilton Luske
+mv_funff,wr_hare,7,Fun and Fancy Free,Harry Reeves
+mv_funff,wr_hobr,7,Fun and Fancy Free,Homer Brightman
+mv_funff,di_jaki,6,Fun and Fancy Free,Jack Kinney
+mv_funff,wr_lano,7,Fun and Fancy Free,Lance Nolley
+mv_funff,wr_sile,7,Fun and Fancy Free,Sinclair Lewis
+mv_funff,wr_tese,7,Fun and Fancy Free,Ted Sears
+mv_funff,wr_toor,7,Fun and Fancy Free,Tom Oreb
+mv_funff,pr_wadi,8,Fun and Fancy Free,Walt Disney
+mv_funff,di_wimo,6,Fun and Fancy Free,William Morgan
+mv_gepetto,wr_caco,7,Gepetto,Carlo Collodi
+mv_gepetto,wr_dast,7,Gepetto,David I. Stern
+mv_gepetto,pr_teza,8,Gepetto,Ted Zachary
+mv_gepetto,di_tomo,6,Gepetto,Tom Moore
+mv_gigantic,wr_adna,7,Gigantic,Adam Nagata
+mv_gigantic,pr_chva,8,Gigantic,Christine Vachon
+mv_gigantic,di_maas,6,Gigantic,Matt Aselton
+mv_gigantic,wr_maas,7,Gigantic,Matt Aselton
+mv_gigantic,pr_migp,8,Gigantic,Mindy Goldberg
+mv_guards,di_jagu,6,Guardians of the Galaxy,James Gunn
+mv_guards,wr_jagu,7,Guardians of the Galaxy,James Gunn
+mv_guards,pr_kefe,8,Guardians of the Galaxy,Kevin Feige
+mv_guards,wr_nipe,7,Guardians of the Galaxy,Nicole Perlman
+mv_hercules,pr_alde,8,Hercules,Alice Dewey
+mv_hercules,wr_bosh,7,Hercules,Bob Shaw
+mv_hercules,wr_brmo,7,Hercules,Bruce M. Morris
+mv_hercules,wr_dodo,7,Hercules,Don Dougherty
+mv_hercules,wr_domc,7,Hercules,Donald McEnery
+mv_hercules,wr_frgl,7,Hercules,Francis Glebas
+mv_hercules,wr_irme,7,Hercules,Irene Mecchi
+mv_hercules,wr_jesn,7,Hercules,Jeff Snow
+mv_hercules,di_jomu,6,Hercules,John Musker
+mv_hercules,pr_jomu,8,Hercules,John Musker
+mv_hercules,wr_jomu,7,Hercules,John Musker
+mv_hercules,wr_jora,7,Hercules,John Ramirez
+mv_hercules,wr_kaka,7,Hercules,Kaan Kalyon
+mv_hercules,wr_kewi,7,Hercules,Kelly Wightman
+mv_hercules,wr_kiha,7,Hercules,Kirk Hanson
+mv_hercules,wr_make,7,Hercules,Mark Kennedy
+mv_hercules,wr_raca,7,Hercules,Randy Cartwright
+mv_hercules,di_rocl,6,Hercules,Ron Clements
+mv_hercules,pr_rocl,8,Hercules,Ron Clements
+mv_hercules,wr_rocl,7,Hercules,Ron Clements
+mv_hercules,wr_then,7,Hercules,Thom Enriquez
+mv_hercules,wr_vage,7,Hercules,Vance Gerry
+mv_hidalgo,pr_casi,8,Hidalgo,Casey Silver
+mv_hidalgo,di_jojo,6,Hidalgo,Joe Johnston
+mv_hidalgo,wr_jofu,7,Hidalgo,John Fusco
+mv_hotr,pr_aldego,8,Home on the Range,Alice Dewey Goldstone
+mv_hotr,di_josa,6,Home on the Range,John Sanford
+mv_hotr,wr_josa,7,Home on the Range,John Sanford
+mv_hotr,wr_make,7,Home on the Range,Mark Kennedy
+mv_hotr,wr_mila,7,Home on the Range,Micheal LaBash
+mv_hotr,wr_role,7,Home on the Range,Robert Lence
+mv_hotr,wr_sale,7,Home on the Range,Sam Levine
+mv_hotr,di_wifi,6,Home on the Range,Will Finn
+mv_hotr,wr_wifi,7,Home on the Range,Will Finn
+mv_inout,pr_jori,8,Inside Out,Jonas Rivera
+mv_inout,di_pedo,6,Inside Out,Pete Docter
+mv_inout,wr_pedo,7,Inside Out,Pete Docter
+mv_inout,wr_roca,7,Inside Out,Ronnie del Carmen
+mv_ironman,pr_arar,8,Iron Man,Ari Arad
+mv_ironman,wr_arma,7,Iron Man,Art Marcum
+mv_ironman,pr_abar,8,Iron Man,Avi Arad
+mv_ironman,pr_dama,8,Iron Man,David Maisel
+mv_ironman,pr_ernhe,8,Iron Man,Eric N. Heffron
+mv_ironman,wr_haos,7,Iron Man,Hawk Ostby
+mv_ironman,wr_jjab,7,Iron Man,J.J. Abrams
+mv_ironman,pr_jela,8,Iron Man,Jeremy Latcham
+mv_ironman,wr_joau,7,Iron Man,John August
+mv_ironman,di_jofa,6,Iron Man,Jon Favreau
+mv_ironman,pr_jofa,8,Iron Man,Jon Favreau
+mv_ironman,pr_kefe,8,Iron Man,Kevin Feige
+mv_ironman,pr_lodes,8,Iron Man,Louis D'Esposito
+mv_ironman,wr_mafe,7,Iron Man,Mark Fergus
+mv_ironman,wr_maho,7,Iron Man,Matt Holloway
+mv_ironman,pr_pebi,8,Iron Man,Peter Billingsley
+mv_ironman,pr_rofa,8,Iron Man,Ross Fanger
+mv_ironman,pr_stle,8,Iron Man,Stan Lee
+mv_ironman,wr_tehu,7,Iron Man,Ted Hughes
+mv_ironman,pr_vial,8,Iron Man,Victoria Alonso
+mv_jjatt,wr_bong,7,Jack-Jack-Attack,Bosco Ng
+mv_jjatt,di_brabi,6,Jack-Jack-Attack,Brad Bird
+mv_jjatt,wr_brbi,7,Jack-Jack-Attack,Brad Bird
+mv_jjatt,pr_kamc,8,Jack-Jack-Attack,Kari McKeen
+mv_jjatt,wr_maand,7,Jack-Jack-Attack,Mark Andrews
+mv_jjatt,wr_rogi,7,Jack-Jack-Attack,Rob Gibbs
+mv_jjatt,wr_tene,7,Jack-Jack-Attack,Teddy Newton
+mv_jampch,pr_dedn,8,James and the giant Peach,Denise Di Novi
+mv_jampch,di_hese,6,James and the giant Peach,Henry Selick
+mv_jampch,wr_joro,7,James and the giant Peach,Jonathan Roberts
+mv_jampch,wr_kaki,7,James and the giant Peach,Karey Kirkpatrick
+mv_jampch,wr_roda,7,James and the giant Peach,Roald Dahl
+mv_jampch,wr_stbl,7,James and the giant Peach,Steven Bloom
+mv_jampch,pr_tibu,8,James and the giant Peach,Tim Burton
+mv_lattr,di_clge,6,Lady and the Tramp,Clyde Geronimi
+mv_lattr,wr_doda,7,Lady and the Tramp,Don DaGradi
+mv_lattr,wr_erpe,7,Lady and the Tramp,Erdman Penner
+mv_lattr,di_halu,6,Lady and the Tramp,Hamilton Luske
+mv_lattr,wr_jogr,7,Lady and the Tramp,Joe Grant
+mv_lattr,wr_jori,7,Lady and the Tramp,Joe Rinaldi
+mv_lattr,wr_rawr,7,Lady and the Tramp,Ralph Wright
+mv_lattr,pr_wadi,8,Lady and the Tramp,Walt Disney
+mv_lattr,di_wija,6,Lady and the Tramp,Wilfred Jackson
+mv_lands,di_chsa,6,Lilo & Stitch,Chris Sanders
+mv_lands,wr_chsa,7,Lilo & Stitch,Chris Sanders
+mv_lands,pr_clsp,8,Lilo & Stitch,Clark Spencer
+mv_lands,di_dedebl,6,Lilo & Stitch,Dean DeBlois
+mv_lands2,wr_alju,7,Lilo & Stitch 2,Alexa Junge
+mv_lands2,pr_andy,8,Lilo & Stitch 2,Angi Dyste
+mv_lands2,di_anle,6,Lilo & Stitch 2,Anthony Leondis
+mv_lands2,wr_anle,7,Lilo & Stitch 2,Anthony Leondis
+mv_lands2,pr_chro,8,Lilo & Stitch 2,Chrisie Rosenthal
+mv_lands2,pr_chch,8,Lilo & Stitch 2,Christopher Chase
+mv_lands2,wr_edgu,7,Lilo & Stitch 2,Eddie Guzelian
+mv_lands2,pr_kalo,8,Lilo & Stitch 2,Kara Lord
+mv_lands2,di_milaba,6,Lilo & Stitch 2,Michael LaBash
+mv_lands2,wr_mila,7,Lilo & Stitch 2,Michael LaBash
+mv_looney,di_chma,6,Looney Tunes,"Charles Martin ""Chuck"" Jones"
+mv_looney,pr_chmachjo,8,Looney Tunes,"Charles Martin ""Chuck"" Jones"
+mv_looney,wr_chmachjo,7,Looney Tunes,"Charles Martin ""Chuck"" Jones"
+mv_looney,di_fbta,6,Looney Tunes,"Frederick Bean ""Tex"" Avery"
+mv_looney,pr_frbeteav,8,Looney Tunes,"Frederick Bean ""Tex"" Avery"
+mv_looney,wr_frbeteav,7,Looney Tunes,"Frederick Bean ""Tex"" Avery"
+mv_looney,di_isffre,6,Looney Tunes,"Isadore ""Friz"" Freleng"
+mv_looney,di_roembicl,6,Looney Tunes,"Robert Emerson ""Bob"" Clampett"
+mv_looney,di_ropobomc,6,Looney Tunes,"Robert Porter ""Bob"" McKimson"
+mv_luxo,di_jola,6,Luxo Jr.,John Lasseter
+mv_luxo,pr_jola,8,Luxo Jr.,John Lasseter
+mv_luxo,wr_jola,7,Luxo Jr.,John Lasseter
+mv_luxo,pr_wire,8,Luxo Jr.,William Reeves
+mv_mmmus,wr_capa,7,Make mine Music,Cap Palmer
+mv_mmmus,di_clge,6,Make mine Music,Clyde Geronimi
+mv_mmmus,wr_dihu,7,Make mine Music,Dick Huemer
+mv_mmmus,wr_dike,7,Make mine Music,Dick Kelsey
+mv_mmmus,wr_diki,7,Make mine Music,Dick Kinney
+mv_mmmus,wr_dish,7,Make mine Music,Dick Shaw
+mv_mmmus,wr_erpe,7,Make mine Music,Erdman Penner
+mv_mmmus,wr_ergu,7,Make mine Music,Eric Gurney
+mv_mmmus,wr_ergr,7,Make mine Music,Erwin Graham
+mv_mmmus,di_halu,6,Make mine Music,Hamilton Luske
+mv_mmmus,wr_hare,7,Make mine Music,Harry Reeves
+mv_mmmus,wr_hobr,7,Make mine Music,Homer Brightman
+mv_mmmus,di_jaki,6,Make mine Music,Jack Kinney
+mv_mmmus,wr_jabo,7,Make mine Music,James Bordrero
+mv_mmmus,wr_jema,7,Make mine Music,Jesse Marsh
+mv_mmmus,wr_jowa,7,Make mine Music,John Walbridge
+mv_mmmus,di_jome,6,Make mine Music,Joshua Meador
+mv_mmmus,di_roco,6,Make mine Music,Robert Cormack
+mv_mmmus,wr_rowi,7,Make mine Music,Roy Williams
+mv_mmmus,wr_syho,7,Make mine Music,Sylvia Holland
+mv_mmmus,wr_thee,7,Make mine Music,T. Hee
+mv_mmmus,wr_toor,7,Make mine Music,Tom Oreb
+mv_mmmus,pr_wadi,8,Make mine Music,Walt Disney
+mv_avengers,di_jowh,6,Marvel - The Avengers,Joss Whedon
+mv_avengers,wr_jowh,7,Marvel - The Avengers,Joss Whedon
+mv_avengers,pr_kefe,8,Marvel - The Avengers,Kevin Feige
+mv_avengers,wr_zape,7,Marvel - The Avengers,Zak Penn
+mv_mtr,wr_aure,7,Meet the Robinsons,Aurion Redson
+mv_mtr,wr_doha,7,Meet the Robinsons,Don Hall
+mv_mtr,pr_domc,8,Meet the Robinsons,Dorothy McKim
+mv_mtr,wr_joma,7,Meet the Robinsons,Joe Mateo
+mv_mtr,wr_jobe,7,Meet the Robinsons,Jon A. Bernstein
+mv_mtr,wr_misp,7,Meet the Robinsons,Michelle Spritz
+mv_mtr,wr_nagr,7,Meet the Robinsons,Nathan Greno
+mv_mtr,di_stan,6,Meet the Robinsons,Stephen Anderson
+mv_mtr,wr_stan,7,Meet the Robinsons,Stephen Anderson
+mv_mtr,wr_wijo,7,Meet the Robinsons,William Joyce
+mv_merpop,pr_biwa,8,Merry Poppins,Bill Walsh
+mv_merpop,wr_biwa,7,Merry Poppins,Bill Walsh
+mv_merpop,wr_doda,7,Merry Poppins,Don DaGradi
+mv_merpop,di_rost,6,Merry Poppins,Robert Stevenson
+mv_merpop,pr_wadi,8,Merry Poppins,Walt Disney
+mv_housemouse,di_mimo,6,Mickey's Magical Christmas / House of Mouse,Mike Moon
+mv_housemouse,di_rischca,6,Mickey's Magical Christmas / House of Mouse,Rick Schneider-Calabash
+mv_housemouse,di_rore,6,Mickey's Magical Christmas / House of Mouse,Rob Renzetti
+mv_housemouse,di_roga,6,Mickey's Magical Christmas / House of Mouse,Roberts Gannaway
+mv_housemouse,pr_roga,8,Mickey's Magical Christmas / House of Mouse,Roberts Gannaway
+mv_housemouse,di_tocr,6,Mickey's Magical Christmas / House of Mouse,Tony Craig
+mv_housemouse,pr_tocr,8,Mickey's Magical Christmas / House of Mouse,Tony Craig
+mv_ouach,di_alma,6,Mickey's Once upon a Christmas,Alex Mann
+mv_ouach,wr_alma,7,Mickey's Once upon a Christmas,Alex Mann
+mv_ouach,di_bisp,6,Mickey's Once upon a Christmas,Bill Speers
+mv_ouach,di_brra,6,Mickey's Once upon a Christmas,Bradley Raymond
+mv_ouach,wr_cacr,7,Mickey's Once upon a Christmas,Carter Crocker
+mv_ouach,wr_chco,7,Mickey's Once upon a Christmas,Charlie Cohen
+mv_ouach,wr_edgu,7,Mickey's Once upon a Christmas,Eddie Guzelian
+mv_ouach,di_jufa,6,Mickey's Once upon a Christmas,Jun Falkenstein
+mv_ouach,wr_ricr,7,Mickey's Once upon a Christmas,Richard Cray
+mv_ouach,wr_scgo,7,Mickey's Once upon a Christmas,Scott Gorden
+mv_ouach,pr_shst,8,Mickey's Once upon a Christmas,Sherri Stringfellow
+mv_ouach,wr_tema,7,Mickey's Once upon a Christmas,Temple Mathews
+mv_ouach,wr_thha,7,Mickey's Once upon a Christmas,Thomas Hart
+mv_ouach,di_tosh,6,Mickey's Once upon a Christmas,Toby Shelton
+mv_ouach,wr_tona,7,Mickey's Once upon a Christmas,Tom Nance
+mv_tuach,wr_bimo,7,Mickey's Twice upon a Christmas,Bill Motz
+mv_tuach,wr_caho,7,Mickey's Twice upon a Christmas,Carole Holliday
+mv_tuach,wr_chcr,7,Mickey's Twice upon a Christmas,Chad Fiveash
+mv_tuach,wr_japast,7,Mickey's Twice upon a Christmas,James Patrick Stoteraux
+mv_tuach,wr_jipe,7,Mickey's Twice upon a Christmas,Jim Peronto
+mv_tuach,di_maoca,6,Mickey's Twice upon a Christmas,Matthew O'Callaghan
+mv_tuach,pr_maoca,8,Mickey's Twice upon a Christmas,Matthew O'Callaghan
+mv_tuach,wr_maoca,7,Mickey's Twice upon a Christmas,Matthew O'Callaghan
+mv_tuach,wr_peho,7,Mickey's Twice upon a Christmas,Peggy Holmes
+mv_moana,wr_aaka,7,Moana,Aaron Kandell
+mv_moana,wr_chwi,7,Moana,Chris Williams
+mv_moana,wr_doha,7,Moana,Don Hall
+mv_moana,wr_jabu,7,Moana,Jared Bush
+mv_moana,di_jomu,6,Moana,John Musker
+mv_moana,wr_jokan,7,Moana,Jordan Kandell
+mv_moana,pr_ossh,8,Moana,Osnat Shurer
+mv_moana,wr_pari,7,Moana,Pamela Ribon
+mv_moana,di_rocl,6,Moana,Ron Clements
+mv_monstersuni,wr_dage,7,Monsters University,Dan Gerson
+mv_monstersuni,di_dasc,6,Monsters University,Dan Scanlon
+mv_monstersuni,wr_dasc,7,Monsters University,Dan Scanlon
+mv_monstersuni,pr_kora,8,Monsters University,Kori Rae
+mv_monstersuni,wr_roba,7,Monsters University,Robert L. Baird
+mv_monsters,wr_anst,7,"Monsters, Inc.",Andrew Stanton
+mv_monsters,wr_dage,7,"Monsters, Inc.",Dan Gerson
+mv_monsters,pr_daka,8,"Monsters, Inc.",Darla K. Anderson
+mv_monsters,wr_jepi,7,"Monsters, Inc.",Jeff Pidgeon
+mv_monsters,wr_jicu,7,"Monsters, Inc.",Jill Culton
+mv_monsters,di_pedo,6,"Monsters, Inc.",Pete Docter
+mv_monsters,wr_pedo,7,"Monsters, Inc.",Pete Docter
+mv_monsters,wr_raeg,7,"Monsters, Inc.",Ralph Eggleston
+mv_mulan,di_baco,6,Mulan,Barry Cook
+mv_mulan,wr_chsa,7,Mulan,Chris Sanders
+mv_mulan,wr_eubosi,7,Mulan,Eugenia Bostwick-Singer
+mv_mulan,pr_paco,8,Mulan,Pam Coats
+mv_mulan,wr_phla,7,Mulan,Philip LaZebnik
+mv_mulan,wr_rasi,7,Mulan,Raymond Singer
+mv_mulan,wr_rihs,7,Mulan,Rita Hsiao
+mv_mulan,wr_rodsaso,7,Mulan,Robert D. San Souci
+mv_mulan,di_toba,6,Mulan,Tony Bancroft
+mv_nbchr,wr_cath,7,Nightmare before Christmas,Caroline Thompson
+mv_nbchr,pr_dedn,8,Nightmare before Christmas,Denise Di Novi
+mv_nbchr,di_hese,6,Nightmare before Christmas,Henry Selick
+mv_nbchr,wr_mido,7,Nightmare before Christmas,Michael McDowell
+mv_nbchr,pr_tibu,8,Nightmare before Christmas,Tim Burton
+mv_nbchr,wr_tibu,7,Nightmare before Christmas,Tim Burton
+mv_olicomp,wr_chba,7,Oliver and Company,Chris Bailey
+mv_olicomp,wr_dami,7,Oliver and Company,Dave Michener
+mv_olicomp,wr_gatr,7,Oliver and Company,Gary Trousdale
+mv_olicomp,di_gesc,6,Oliver and Company,George Scribner
+mv_olicomp,wr_jama,7,Oliver and Company,James Mangold
+mv_olicomp,wr_jico,7,Oliver and Company,Jim Cox
+mv_olicomp,wr_jimi,7,Oliver and Company,Jim Mitchell
+mv_olicomp,wr_jora,7,Oliver and Company,Joe Ranft
+mv_olicomp,pr_kaga,8,Oliver and Company,Kathleen Gavin
+mv_olicomp,wr_keli,7,Oliver and Company,Kevin Lima
+mv_olicomp,wr_kiwi,7,Oliver and Company,Kirk Wise
+mv_olicomp,wr_lejo,7,Oliver and Company,Leon Joosen
+mv_olicomp,wr_mice,7,Oliver and Company,Michael Cedeno
+mv_olicomp,wr_miga,7,Oliver and Company,Mike Gabriel
+mv_olicomp,wr_peyo,7,Oliver and Company,Pete Young
+mv_olicomp,wr_roal,7,Oliver and Company,Roger Allers
+mv_olicomp,wr_tidi,7,Oliver and Company,Tim Disney
+mv_olicomp,wr_vage,7,Oliver and Company,Vance Gerry
+mv_101dal65,wr_bipe,7,One Hundred and One Dalmatians (61),Bill Peet
+mv_101dal63,di_clge,6,One Hundred and One Dalmatians (61),Clyde Geronimi
+mv_101dal62,di_halu,6,One Hundred and One Dalmatians (61),Hamilton Luske
+mv_101dal64,pr_wadi,8,One Hundred and One Dalmatians (61),Walt Disney
+mv_101dal61,pr_wore,6,One Hundred and One Dalmatians (61),Wolfgang Reitherman
+mv_101dal97,pr_johu,8,One Hundred And One Dalmatians (96),John Hughes
+mv_101dal98,pr_rime,8,One Hundred And One Dalmatians (96),Ricardo Mestres
+mv_101dal96,di_sthe,6,One Hundred And One Dalmatians (96),Stephen Herek
+mv_101dal99,wr_trsh,7,One Hundred And One Dalmatians (96),Trudy Ship
+mv_oswald,di_chmi,6,Oswald the Lucky Rabbit,Charles Mintz
+mv_oswald,pr_chmi,8,Oswald the Lucky Rabbit,Charles Mintz
+mv_oswald,pr_gewi,8,Oswald the Lucky Rabbit,George Winkler
+mv_oswald,wr_ubiw,7,Oswald the Lucky Rabbit,Ub Iwerks
+mv_oswald,wr_wadi,7,Oswald the Lucky Rabbit,Walt Disney
+mv_paperman,di_joka,6,Paperman,John Kahrs
+mv_paperman,wr_joka,7,Paperman,John Kahrs
+mv_paperman,pr_jola,8,Paperman,John Lasseter
+mv_paperman,pr_krre,8,Paperman,Kristina Reed
+mv_ppan,wr_bipe,7,Peter Pan,Bill Peet
+mv_ppan,di_clge,6,Peter Pan,Clyde Geronimi
+mv_ppan,wr_erpe,7,Peter Pan,Erdman Penner
+mv_ppan,di_halu,6,Peter Pan,Hamilton Luske
+mv_ppan,wr_jori,7,Peter Pan,Joe Rinaldi
+mv_ppan,wr_miba,7,Peter Pan,Milt Banta
+mv_ppan,wr_rawr,7,Peter Pan,Ralph Wright
+mv_ppan,wr_tese,7,Peter Pan,Ted Sears
+mv_ppan,pr_wadi,8,Peter Pan,Walt Disney
+mv_ppan,di_wija,6,Peter Pan,Wilfred Jackson
+mv_ppan,wr_wico,7,Peter Pan,William Cottrell
+mv_ppan,wr_wihi,7,Peter Pan,Winston Hibler
+mv_pigbm,wr_aami,7,Piglet's Big Movie,A.A. Milne
+mv_pigbm,wr_brho,7,Piglet's Big Movie,Brian Hohlfeld
+mv_pigbm,di_frcl,6,Piglet's Big Movie,Francis Glebas
+mv_pigbm,pr_mipr,8,Piglet's Big Movie,Michelle Pappalardo-Robinson
+mv_pinocchio,wr_auba,7,Pinocchio,Aurelius Battaglia
+mv_pinocchio,di_besh,6,Pinocchio,Ben Sharpsteen
+mv_pinocchio,di_biro,6,Pinocchio,Bill Roberts
+mv_pinocchio,wr_erpe,7,Pinocchio,Erdman Penner
+mv_pinocchio,di_halu,6,Pinocchio,Hamilton Luske
+mv_pinocchio,di_jaki,6,Pinocchio,Jack Kinney
+mv_pinocchio,wr_josa,7,Pinocchio,Joseph Sabo
+mv_pinocchio,di_nofe,6,Pinocchio,Norman Ferguson
+mv_pinocchio,wr_oten,7,Pinocchio,Otto Englander
+mv_pinocchio,di_thee,6,Pinocchio,T. Hee
+mv_pinocchio,wr_tese,7,Pinocchio,Ted Sears
+mv_pinocchio,pr_wadi,8,Pinocchio,Walt Disney
+mv_pinocchio,wr_wesm,7,Pinocchio,Webb Smith
+mv_pinocchio,di_wija,6,Pinocchio,Wilfred Jackson
+mv_pinocchio,wr_wico,7,Pinocchio,William Cottrell
+mv_planes,wr_jeho,7,Planes,Jeffrey M. Howard
+mv_planes,wr_jola,7,Planes,John Lasseter
+mv_planes,di_klha,6,Planes,Klay Hall
+mv_planes,pr_klha,8,Planes,Klay Hall
+mv_planes,wr_klha,7,Planes,Klay Hall
+mv_planefr,di_boga,6,Planes: Fire & Rescue,Bobs Gannaway
+mv_planefr,pr_boga,8,Planes: Fire & Rescue,Bobs Gannaway
+mv_planefr,wr_boga,7,Planes: Fire & Rescue,Bobs Gannaway
+mv_planefr,wr_jeho,7,Planes: Fire & Rescue,Jeffrey M. Howard
+mv_poca,wr_brmo,7,Pocahontas,Bruce Morris
+mv_poca,wr_buma,7,Pocahontas,Burny Mattinson
+mv_poca,wr_cabi,7,Pocahontas,Carl Binder
+mv_poca,wr_chbu,7,Pocahontas,Chris Buck
+mv_poca,wr_duma,7,Pocahontas,Duncan Marjoribanks
+mv_poca,wr_edgo,7,Pocahontas,Ed Gombert
+mv_poca,di_ergo,6,Pocahontas,Eric Goldberg
+mv_poca,wr_frgl,7,Pocahontas,Francis Glebas
+mv_poca,wr_glke,7,Pocahontas,Glen Keane
+mv_poca,pr_jipe,8,Pocahontas,Jim Pentecost
+mv_poca,wr_jogr,7,Pocahontas,Joe Grant
+mv_poca,wr_kaka,7,Pocahontas,Kaan Kalyon
+mv_poca,di_miga,6,Pocahontas,Mike Gabriel
+mv_poca,wr_phla,7,Pocahontas,Philip LaZebnik
+mv_poca,wr_razo,7,Pocahontas,Ralph Zondag
+mv_poca,wr_rogi,7,Pocahontas,Robert Gibbs
+mv_poca,wr_sugr,7,Pocahontas,Susannah Grant
+mv_poca,wr_toku,7,Pocahontas,Todd Kurosawa
+mv_heffalump,wr_aami,7,Pooh’s Heffalump Movie,A. A. Milne
+mv_heffalump,wr_brho,7,Pooh’s Heffalump Movie,Brian Hohlfeld
+mv_heffalump,wr_evsp,7,Pooh’s Heffalump Movie,Evan Spiliotopoulos
+mv_heffalump,di_frni,6,Pooh’s Heffalump Movie,Frank Nissen
+mv_heffalump,pr_jekm,8,Pooh’s Heffalump Movie,Jessica Koplos-Miller
+mv_presto,di_dosw,6,Presto,Doug Sweetland
+mv_indy,pr_frma,8,Raider of the Lost Ark,Frank Marshall
+mv_indy,pr_gelu,8,Raider of the Lost Ark,George Lucas
+mv_indy,wr_gelu,7,Raider of the Lost Ark,George Lucas
+mv_indy,pr_hoka,8,Raider of the Lost Ark,Howard Kazanjian
+mv_indy,wr_laka,7,Raider of the Lost Ark,Lawrence Kasdan
+mv_indy,wr_phka,7,Raider of the Lost Ark,Philip Kaufman
+mv_indy,di_stsp,6,Raider of the Lost Ark,Steven Spielberg
+mv_ralphbrk,pr_clsp,8,Ralph Breaks the Internet,Clark Spencer
+mv_ralphbrk,wr_jire,7,Ralph Breaks the Internet,Jim Reardon
+mv_ralphbrk,wr_jotr,7,Ralph Breaks the Internet,Josie Trinidad
+mv_ralphbrk,wr_pari,7,Ralph Breaks the Internet,Pamela Ribon
+mv_ralphbrk,di_phjo,6,Ralph Breaks the Internet,Phil Johnston
+mv_ralphbrk,wr_phjo,7,Ralph Breaks the Internet,Phil Johnston
+mv_ralphbrk,di_rimo,6,Ralph Breaks the Internet,Rich Moore
+mv_ralphbrk,wr_rimo,7,Ralph Breaks the Internet,Rich Moore
+mv_ratatou,di_brabi,6,Ratatouille,Brad Bird
+mv_ratatou,wr_brbi,7,Ratatouille,Brad Bird
+mv_ratatou,pr_brle,8,Ratatouille,Brad Lewis
+mv_ratatou,wr_japi,7,Ratatouille,Jan Pinkava
+mv_ratatou,wr_jica,7,Ratatouille,Jim Capobianco
+mv_recess,di_chsh,6,Recess: School's Out,Chuck Sheetz
+mv_recess,pr_joan,8,Recess: School's Out,Joe Ansolabehere
+mv_recess,wr_joan,7,Recess: School's Out,Joe Ansolabehere
+mv_recess,wr_jogr,7,Recess: School's Out,Jonathan Greenberg
+mv_recess,pr_page,8,Recess: School's Out,Paul Germain
+mv_recess,wr_page,7,Recess: School's Out,Paul Germain
+mv_recess,pr_stsw,8,Recess: School's Out,Stephen Swofford
+mv_recess,pr_tosu,8,Recess: School's Out,Toshio Suzuki
+mv_redsdr,di_jola,6,Red's Dream,John Lasseter
+mv_redsdr,pr_jola,8,Red's Dream,John Lasseter
+mv_redsdr,wr_jola,7,Red's Dream,John Lasseter
+mv_redsdr,pr_kaduro,8,Red's Dream,Karen Dufilho-Rosen
+mv_rtneverl,pr_chch,8,Return to Never Land,Christopher Chase
+mv_rtneverl,pr_daro,8,Return to Never Land,Dan Rounds
+mv_rtneverl,wr_jmba,7,Return to Never Land,J. M. Barrie
+mv_rtneverl,pr_mipr,8,Return to Never Land,Michelle Pappalardo-Robinson
+mv_rtneverl,di_robu,6,Return to Never Land,Robin Budd
+mv_rtneverl,wr_tema,7,Return to Never Land,Temple Mathews
+mv_rhood,wr_kean,7,Robin Hood,Ken Anderson
+mv_rhood,wr_lacl,7,Robin Hood,Larry Clemmons
+mv_rhood,pr_wore,6,Robin Hood,Wolfgang Reitherman
+mv_rhood,pr_wore,8,Robin Hood,Wolfgang Reitherman
+mv_salam,di_biro,6,Saludos Amigos,Bill Roberts
+mv_salam,di_halu,6,Saludos Amigos,Hamilton Luske
+mv_salam,wr_hare,7,Saludos Amigos,Harold Reeves
+mv_salam,wr_hobr,7,Saludos Amigos,Homer Brightman
+mv_salam,di_jaki,6,Saludos Amigos,Jack Kinney
+mv_salam,wr_jogr,7,Saludos Amigos,Joe Grant
+mv_salam,di_nofe,6,Saludos Amigos,Norman Ferguson
+mv_salam,wr_rawr,7,Saludos Amigos,Ralph Wright
+mv_salam,wr_rihu,7,Saludos Amigos,Richard Huemer
+mv_salam,wr_rowi,7,Saludos Amigos,Roy Williams
+mv_salam,wr_tese,7,Saludos Amigos,Ted Sears
+mv_salam,pr_wadi,8,Saludos Amigos,Walt Disney
+mv_salam,wr_wesm,7,Saludos Amigos,Webb Smith
+mv_salam,di_wija,6,Saludos Amigos,Wilfred Jackson
+mv_salam,wr_wico,7,Saludos Amigos,William Cottrell
+mv_secotw,wr_boga,7,Secret of the Wings,Bobs Gannaway
+mv_secotw,di_peho,6,Secret of the Wings,Peggy Holmes
+mv_secotw,pr_peho,8,Secret of the Wings,Peggy Holmes
+mv_secotw,wr_peho,7,Secret of the Wings,Peggy Holmes
+mv_secotw,wr_ryro,7,Secret of the Wings,Ryan Rowe
+mv_secotw,wr_toro,7,Secret of the Wings,Tom Rogers
+mv_simpsons,wr_magr,7,Simpsons,Matt Groening
+mv_simpsons,pr_mime,8,Simpsons,Michael Mendel
+mv_tsby,wr_bipe,7,Sleeping Beauty,Bill Peet
+mv_tsby,di_clge,6,Sleeping Beauty,Clyde Geronimi
+mv_tsby,wr_erpe,7,Sleeping Beauty,Erdman Penner
+mv_tsby,di_erla,6,Sleeping Beauty,Eric Larson
+mv_tsby,wr_jori,7,Sleeping Beauty,Joe Rinaldi
+mv_tsby,di_lecl,6,Sleeping Beauty,Les Clark
+mv_tsby,wr_miba,7,Sleeping Beauty,Milt Banta
+mv_tsby,wr_rawr,7,Sleeping Beauty,Ralph Wright
+mv_tsby,wr_tese,7,Sleeping Beauty,Ted Sears
+mv_tsby,pr_wadi,8,Sleeping Beauty,Walt Disney
+mv_tsby,wr_wihi,7,Sleeping Beauty,Winston Hibler
+mv_tsby,pr_wore,6,Sleeping Beauty,Wolfgang Reitherman
+mv_snow,di_besh,6,Snow White and the Seven Dwarfs,Ben Sharpsteen
+mv_snow,di_daha,6,Snow White and the Seven Dwarfs,David Hand
+mv_snow,wr_diri,7,Snow White and the Seven Dwarfs,Dick Rickard
+mv_snow,wr_dobl,7,Snow White and the Seven Dwarfs,Dorothy Ann Blank
+mv_snow,wr_eahu,7,Snow White and the Seven Dwarfs,Earl Hurd
+mv_snow,di_lamo,6,Snow White and the Seven Dwarfs,Larry Morey
+mv_snow,wr_mema,7,Snow White and the Seven Dwarfs,Merrill De Maris
+mv_snow,wr_oten,7,Snow White and the Seven Dwarfs,Otto Englander
+mv_snow,di_pepe,6,Snow White and the Seven Dwarfs,Perce Pearce
+mv_snow,wr_ricr,7,Snow White and the Seven Dwarfs,Richard Creedon
+mv_snow,wr_tese,7,Snow White and the Seven Dwarfs,Ted Sears
+mv_snow,pr_wadi,8,Snow White and the Seven Dwarfs,Walt Disney
+mv_snow,wr_wesm,7,Snow White and the Seven Dwarfs,Webb Smith
+mv_snow,di_wija,6,Snow White and the Seven Dwarfs,Wilfred Jackson
+mv_snow,di_wico,6,Snow White and the Seven Dwarfs,William Cottrell
+mv_sofia,wr_crge,7,Sofia the First,Craig Gerber
+mv_sofia,di_jami,6,Sofia the First,Jamie Mitchell
+mv_sofia,pr_jami,8,Sofia the First,Jamie Mitchell
+mv_starwars,di_gelu,6,Star Wars,George Lucas
+mv_starwars,pr_gelu,8,Star Wars,George Lucas
+mv_starwars,wr_gelu,7,Star Wars,George Lucas
+mv_stbtwl,di_ubiw,6,Steamboat Willie,Ub Iwerks
+mv_stbtwl,wr_ubiw,7,Steamboat Willie,Ub Iwerks
+mv_stbtwl,pr_wadi,8,Steamboat Willie,Walt Disney
+mv_stbtwl,wr_wadi,7,Steamboat Willie,Walt Disney
+mv_stitch,di_boga,6,Stitch! The Movie,Bobs Gannaway
+mv_stitch,pr_boga,8,Stitch! The Movie,Bobs Gannaway
+mv_stitch,wr_boga,7,Stitch! The Movie,Bobs Gannaway
+mv_stitch,pr_jewi,8,Stitch! The Movie,Jess Winfield
+mv_stitch,wr_jewi,7,Stitch! The Movie,Jess Winfield
+mv_stitch,di_tocr,6,Stitch! The Movie,Tony Craig
+mv_stitch,pr_tocr,8,Stitch! The Movie,Tony Craig
+mv_tang,di_byho,6,Tangled,Byron Howard
+mv_tang,wr_dafo,7,Tangled,Dan Fogelman
+mv_tang,di_nagr,6,Tangled,Nathan Greno
+mv_tang,pr_roco,8,Tangled,Roy Conli
+mv_tarzan,wr_botzu,7,Tarzan,Bob Tzudiker
+mv_tarzan,pr_boar,8,Tarzan,Bonnie Arnold
+mv_tarzan,di_chbu,6,Tarzan,Chris Buck
+mv_tarzan,di_keli,6,Tarzan,Kevin Lima
+mv_tarzan,wr_nowh,7,Tarzan,Noni White
+mv_tarzan,wr_tamu,7,Tarzan,Tab Murphy
+mv_teapet,wr_bist,7,Teacher’s Pet,Bill Steinkellner
+mv_teapet,wr_chst,7,Teacher’s Pet,Cheri Steinkellner
+mv_teapet,pr_gese,8,Teacher’s Pet,George Seaton
+mv_teapet,di_tibj,6,Teacher’s Pet,Timothy Björklund
+mv_ichtoad,di_clge,6,The Adventures of Ichabod and Mr. Toad,Clyde Geronimi
+mv_ichtoad,wr_erpe,7,The Adventures of Ichabod and Mr. Toad,Erdman Penner
+mv_ichtoad,wr_hare,7,The Adventures of Ichabod and Mr. Toad,Harry Reeves
+mv_ichtoad,wr_hobr,7,The Adventures of Ichabod and Mr. Toad,Homer Brightman
+mv_ichtoad,di_jaki,6,The Adventures of Ichabod and Mr. Toad,Jack Kinney
+mv_ichtoad,di_jaal,6,The Adventures of Ichabod and Mr. Toad,James Algar
+mv_ichtoad,wr_jori,7,The Adventures of Ichabod and Mr. Toad,Joe Rinaldi
+mv_ichtoad,wr_tese,7,The Adventures of Ichabod and Mr. Toad,Ted Sears
+mv_ichtoad,pr_wadi,8,The Adventures of Ichabod and Mr. Toad,Walt Disney
+mv_ichtoad,wr_wihi,7,The Adventures of Ichabod and Mr. Toad,Winston Hibler
+mv_aristo,wr_ercl,7,The Aristocats,Eric Cleworth
+mv_aristo,wr_frth,7,The Aristocats,Frank Thomas
+mv_aristo,wr_jusv,7,The Aristocats,Julius Svendsen
+mv_aristo,wr_kean,7,The Aristocats,Ken Anderson
+mv_aristo,wr_lacl,7,The Aristocats,Larry Clemmons
+mv_aristo,wr_rawr,7,The Aristocats,Ralph Wright
+mv_aristo,wr_togo,7,The Aristocats,Tom McGowan
+mv_aristo,wr_torow,7,The Aristocats,Tom Rowe
+mv_aristo,wr_vage,7,The Aristocats,Vance Gerry
+mv_aristo,pr_wihi,8,The Aristocats,Winston Hibler
+mv_aristo,pr_wore,6,The Aristocats,Wolfgang Reitherman
+mv_aristo,pr_wore,8,The Aristocats,Wolfgang Reitherman
+mv_blcaul,wr_alwi,7,The Black Cauldron,Al Wilson
+mv_blcaul,wr_arst,7,The Black Cauldron,Art Stevens
+mv_blcaul,wr_dajo,7,The Black Cauldron,David Jonas
+mv_blcaul,pr_joha,8,The Black Cauldron,Joe Hale
+mv_blcaul,wr_joha,7,The Black Cauldron,Joe Hale
+mv_blcaul,wr_peyo,7,The Black Cauldron,Peter Young
+mv_blcaul,di_riri,6,The Black Cauldron,Richard Rich
+mv_blcaul,wr_riri,7,The Black Cauldron,Richard Rich
+mv_blcaul,pr_romi,8,The Black Cauldron,Ron Miller
+mv_blcaul,wr_romo,7,The Black Cauldron,Roy Morita
+mv_blcaul,di_tebe,6,The Black Cauldron,Ted Berman
+mv_blcaul,wr_tebe,7,The Black Cauldron,Ted Berman
+mv_blcaul,wr_vage,7,The Black Cauldron,Vance Gerry
+mv_toaster,pr_doku,8,The Breave little Toaster,Donald Kushner
+mv_toaster,di_jere,6,The Breave little Toaster,Jerry Rees
+mv_toaster,pr_thlwi,8,The Breave little Toaster,Thomas L. Wilhite
+mv_toaster,wr_thmdi,7,The Breave little Toaster,Thomas M. Disch
+mv_cbears,pr_angu,8,The Country Bears,Andrew Gunn
+mv_cbears,pr_jech,8,The Country Bears,Jeffrey Chernov
+mv_cbears,wr_mape,7,The Country Bears,Mark Perez
+mv_cbears,di_peha,6,The Country Bears,Peter Hastings
+mv_foxho,di_arst,6,The Fox and the Hound,Art Stevens
+mv_foxho,pr_arst,8,The Fox and the Hound,Art Stevens
+mv_foxho,wr_buma,7,The Fox and the Hound,Burny Mattinson
+mv_foxho,wr_dami,7,The Fox and the Hound,David Michener
+mv_foxho,wr_eakr,7,The Fox and the Hound,Earl Kress
+mv_foxho,wr_lacl,7,The Fox and the Hound,Larry Clemmons
+mv_foxho,wr_peyo,7,The Fox and the Hound,Peter Young
+mv_foxho,di_riri,6,The Fox and the Hound,Richard Rich
+mv_foxho,pr_romi,8,The Fox and the Hound,Ron Miller
+mv_foxho,wr_sthu,7,The Fox and the Hound,Steve Hulett
+mv_foxho,di_tebe,6,The Fox and the Hound,Ted Berman
+mv_foxho,wr_tebe,7,The Fox and the Hound,Ted Berman
+mv_foxho,wr_vage,7,The Fox and the Hound,Vance Gerry
+mv_foxho,pr_wore,8,The Fox and the Hound,Wolfgang Reitherman
+mv_tgoodi,wr_bope,7,The Good Dinosaur,Bob Peterson
+mv_tgoodi,pr_dere,8,The Good Dinosaur,Denise Ream
+mv_tgoodi,wr_erbe,7,The Good Dinosaur,Erik Benson
+mv_tgoodi,wr_kema,7,The Good Dinosaur,Kelsey Mann
+mv_tgoodi,wr_mefa,7,The Good Dinosaur,Meg LeFauve
+mv_tgoodi,wr_mefa,7,The Good Dinosaur,Meg LeFauve
+mv_tgoodi,di_peso,6,The Good Dinosaur,Peter Sohn
+mv_tgoodi,wr_peso,7,The Good Dinosaur,Peter Sohn
+mv_tgmouse,wr_brmo,7,The Great Mouse Detective,Bruce Morris
+mv_tgmouse,di_buma,6,The Great Mouse Detective,Burny Mattinson
+mv_tgmouse,pr_buma,8,The Great Mouse Detective,Burny Mattinson
+mv_tgmouse,wr_buma,7,The Great Mouse Detective,Burny Mattinson
+mv_tgmouse,di_dami,6,The Great Mouse Detective,Dave Michener
+mv_tgmouse,wr_dami,7,The Great Mouse Detective,Dave Michener
+mv_tgmouse,di_jomu,6,The Great Mouse Detective,John Musker
+mv_tgmouse,wr_jomu,7,The Great Mouse Detective,John Musker
+mv_tgmouse,wr_maoca,7,The Great Mouse Detective,Matthew O'Callaghan
+mv_tgmouse,wr_mesh,7,The Great Mouse Detective,Mel Shaw
+mv_tgmouse,wr_peyo,7,The Great Mouse Detective,Pete Young
+mv_tgmouse,di_rocl,6,The Great Mouse Detective,Ron Clements
+mv_tgmouse,wr_rocl,7,The Great Mouse Detective,Ron Clements
+mv_tgmouse,wr_sthu,7,The Great Mouse Detective,Steve Hulett
+mv_tgmouse,wr_vage,7,The Great Mouse Detective,Vance Gerry
+mv_hbnd,pr_doha,8,The Hunchback of Notre Dame,Don Hahn
+mv_hbnd,di_gatr,6,The Hunchback of Notre Dame,Gary Trousdale
+mv_hbnd,di_kiwi,6,The Hunchback of Notre Dame,Kirk Wise
+mv_hbnd,wr_tamu,7,The Hunchback of Notre Dame,Tab Murphy
+mv_inc,di_brabi,6,The Incredibles,Brad Bird
+mv_inc,wr_brbi,7,The Incredibles,Brad Bird
+mv_inc,pr_jowa,8,The Incredibles,John Walker
+mv_inc2,di_brabi,6,The Incredibles 2,Brad Bird
+mv_inc2,wr_brbi,7,The Incredibles 2,Brad Bird
+mv_inc2,pr_jowa,8,The Incredibles 2,John Walker
+mv_inc2,pr_nipg,8,The Incredibles 2,Nicole Paradis Grindle
+mv_irongiant,pr_alab,8,The Iron Giant,Allison Abbate
+mv_irongiant,di_brabi,6,The Iron Giant,Brad Bird
+mv_irongiant,wr_brbi,7,The Iron Giant,Brad Bird
+mv_irongiant,pr_demc,8,The Iron Giant,Des McAnuff
+mv_irongiant,pr_jowa,8,The Iron Giant,John Walker
+mv_irongiant,pr_peto,8,The Iron Giant,Pete Townshend
+mv_irongiant,wr_tehu,7,The Iron Giant,Ted Hughes
+mv_jungle,wr_bipe,7,The Jungle Book,Bill Peet
+mv_jungle,wr_flno,7,The Jungle Book,Floyd Norman
+mv_jungle,wr_kean,7,The Jungle Book,Ken Anderson
+mv_jungle,wr_lacl,7,The Jungle Book,Larry Clemmons
+mv_jungle,wr_rawr,7,The Jungle Book,Ralph Wright
+mv_jungle,wr_vage,7,The Jungle Book,Vance Gerry
+mv_jungle,pr_wadi,8,The Jungle Book,Walt Disney
+mv_jungle,pr_wore,6,The Jungle Book,Wolfgang Reitherman
+mv_jungle2,pr_chch,8,The Jungle Book 2,Christopher Chase
+mv_jungle2,wr_evsp,7,The Jungle Book 2,Evan Spiliotopoulos
+mv_jungle2,wr_kage,7,The Jungle Book 2,Karl Geurs
+mv_jungle2,pr_math,8,The Jungle Book 2,Mary Thorne
+mv_jungle2,di_sttr,6,The Jungle Book 2,Steve Trenbirth
+mv_liki,wr_anga,7,The Lion King,Andy Gaskill
+mv_liki,wr_bajo,7,The Lion King,Barry Johnson
+mv_liki,wr_buma,7,The Lion King,Burny Mattinson
+mv_liki,wr_chsa,7,The Lion King,Chris Sanders
+mv_liki,pr_doha,8,The Lion King,Don Hahn
+mv_liki,wr_edgo,7,The Lion King,Ed Gombert
+mv_liki,wr_frgl,7,The Lion King,Francis Glebas
+mv_liki,wr_gatr,7,The Lion King,Gary Trousdale
+mv_liki,wr_jica,7,The Lion King,Jim Capobianco
+mv_liki,wr_jora,7,The Lion King,Joe Ranft
+mv_liki,wr_jokl,7,The Lion King,Jorgen Klubien
+mv_liki,wr_keha,7,The Lion King,Kevin Harkey
+mv_liki,wr_lale,7,The Lion King,Larry Leker
+mv_liki,wr_loco,7,The Lion King,Lorna Cook
+mv_liki,wr_maka,7,The Lion King,Mark Kausler
+mv_liki,wr_rima,7,The Lion King,Rick Maki
+mv_liki,di_romi,6,The Lion King,Rob Minkoff
+mv_liki,di_roal,6,The Lion King,Roger Allers
+mv_liki,wr_then,7,The Lion King,Thom Enriquez
+mv_liki,wr_tosi,7,The Lion King,Tom Sito
+mv_liki2,di_brra,6,The Lion King 1/1/2,Bradley Raymond
+mv_liki2,pr_geame,8,The Lion King 1/1/2,George A. Mendoza
+mv_liki2,wr_toro,7,The Lion King 1/1/2,Tom Rogers
+mv_tlmm,pr_hoas,8,The Little Mermaid,Howard Ashman
+mv_tlmm,di_jomu,6,The Little Mermaid,John Musker
+mv_tlmm,pr_jomu,8,The Little Mermaid,John Musker
+mv_tlmm,wr_jomu,7,The Little Mermaid,John Musker
+mv_tlmm,di_rocl,6,The Little Mermaid,Ron Clements
+mv_tlmm,wr_rocl,7,The Little Mermaid,Ron Clements
+mv_tlmm2,di_brsm,6,The little Mermaid II,Brian Smith
+mv_tlmm2,pr_daklo,8,The little Mermaid II,David K. Lovegren
+mv_tlmm2,wr_edgu,7,The little Mermaid II,Eddie Guzelian
+mv_tlmm2,wr_eldha,7,The little Mermaid II,Elise D'Haene
+mv_tlmm2,wr_elan,7,The little Mermaid II,Elizabeth Anderson
+mv_tlmm2,di_jika,6,The little Mermaid II,Jim Kammerud
+mv_tlmm2,pr_leho,8,The little Mermaid II,Leslie Hough
+mv_tlmm2,wr_tema,7,The little Mermaid II,Temple Mathews
+mv_mapooh,wr_ercl,7,The many Adventures of Winnie the Pooh,Eric Cleworth
+mv_mapooh,di_jolo,6,The many Adventures of Winnie the Pooh,John Lounsbery
+mv_mapooh,wr_jusv,7,The many Adventures of Winnie the Pooh,Julius Svendsen
+mv_mapooh,wr_kean,7,The many Adventures of Winnie the Pooh,Ken Anderson
+mv_mapooh,wr_lacl,7,The many Adventures of Winnie the Pooh,Larry Clemmons
+mv_mapooh,wr_rawr,7,The many Adventures of Winnie the Pooh,Ralph Wright
+mv_mapooh,wr_tebe,7,The many Adventures of Winnie the Pooh,Ted Berman
+mv_mapooh,wr_vage,7,The many Adventures of Winnie the Pooh,Vance Gerry
+mv_mapooh,pr_wore,6,The many Adventures of Winnie the Pooh,Wolfgang Reitherman
+mv_mapooh,pr_wore,8,The many Adventures of Winnie the Pooh,Wolfgang Reitherman
+mv_mapooh,wr_xaat,7,The many Adventures of Winnie the Pooh,Xavier Atencio
+mv_monster,wr_jocoba,7,The Monster of Phineas-n-Ferbenstein,Jon Colton Barry
+mv_monster,wr_maol,7,The Monster of Phineas-n-Ferbenstein,Martin Olson
+mv_monster,wr_midi,7,The Monster of Phineas-n-Ferbenstein,Michael Diederich
+mv_monster,di_zamo,6,The Monster of Phineas-n-Ferbenstein,Zac Moncrief
+mv_monster,pr_zamo,8,The Monster of Phineas-n-Ferbenstein,Zac Moncrief
+mv_muppets,wr_jabu,7,The Muppets,Jack Burns
+mv_muppets,di_jafr,6,The Muppets,James Frawley
+mv_muppets,wr_jeju,7,The Muppets,Jerry Juhl
+mv_muppets,pr_jihe,8,The Muppets,Jim Henson
+mv_muppets,pr_legr,8,The Muppets,Lew Grade
+mv_muppets,pr_mast,8,The Muppets,Martin Starger
+mv_piratefair,wr_boga,7,The Pirate Fairy,Bobs Gannaway
+mv_piratefair,wr_crge,7,The Pirate Fairy,Craig Gerber
+mv_piratefair,wr_jmba,7,The Pirate Fairy,J. M. Barrie
+mv_piratefair,wr_jeho,7,The Pirate Fairy,Jeffrey M. Howard
+mv_piratefair,wr_jola,7,The Pirate Fairy,John Lasseter
+mv_piratefair,wr_loco,7,The Pirate Fairy,Lorna Cook
+mv_piratefair,di_peho,6,The Pirate Fairy,Peggy Holmes
+mv_piratefair,pr_peho,8,The Pirate Fairy,Peggy Holmes
+mv_piratefair,wr_peho,7,The Pirate Fairy,Peggy Holmes
+mv_tpatf,wr_grer,7,The Princess and the Frog,Greg Erb
+mv_tpatf,wr_jaor,7,The Princess and the Frog,Jason Oremland
+mv_tpatf,di_jomu,6,The Princess and the Frog,John Musker
+mv_tpatf,wr_jomu,7,The Princess and the Frog,John Musker
+mv_tpatf,pr_pedv,8,The Princess and the Frog,Peter Del Vecho
+mv_tpatf,wr_roed,7,The Princess and the Frog,Rob Edwards
+mv_tpatf,di_rocl,6,The Princess and the Frog,Ron Clements
+mv_tpatf,wr_rocl,7,The Princess and the Frog,Ron Clements
+mv_resc,di_arst,6,The Rescuers,Art Stevens
+mv_resc,wr_buma,7,The Rescuers,Burny Mattinson
+mv_resc,wr_dami,7,The Rescuers,David Michener
+mv_resc,wr_dise,7,The Rescuers,Dick Sebast
+mv_resc,wr_frth,7,The Rescuers,Frank Thomas
+mv_resc,wr_frlu,7,The Rescuers,Fred Lucky
+mv_resc,di_jolo,6,The Rescuers,John Lounsbery
+mv_resc,wr_kean,7,The Rescuers,Ken Anderson
+mv_resc,wr_lacl,7,The Rescuers,Larry Clemmons
+mv_resc,pr_romi,8,The Rescuers,Ron W. Miller
+mv_resc,wr_tebe,7,The Rescuers,Ted Berman
+mv_resc,wr_vage,7,The Rescuers,Vance Gerry
+mv_resc,pr_wore,6,The Rescuers,Wolfgang Reitherman
+mv_resc,pr_wore,8,The Rescuers,Wolfgang Reitherman
+mv_resc2,wr_bysi,7,The Rescuers Down Under,Byron Simpson
+mv_resc2,di_hebu,6,The Rescuers Down Under,Hendel Butoy
+mv_resc2,wr_jico,7,The Rescuers Down Under,Jim Cox
+mv_resc2,wr_jora,7,The Rescuers Down Under,Joe Ranft
+mv_resc2,wr_kaki,7,The Rescuers Down Under,Karey Kirkpatrick
+mv_resc2,di_miga,6,The Rescuers Down Under,Mike Gabriel
+mv_resc2,pr_thsch,8,The Rescuers Down Under,Thomas Schumacher
+mv_jafar,di_alza,6,The Return of Jafar,Alan Zaslove
+mv_jafar,pr_alza,8,The Return of Jafar,Alan Zaslove
+mv_jafar,pr_jekm,8,The Return of Jafar,Jessica Koplos-Miller
+mv_jafar,pr_mama,8,The Return of Jafar,Maia Mattise
+mv_jafar,wr_maco,7,The Return of Jafar,Mark McCorkle
+mv_jafar,wr_rosch,7,The Return of Jafar,Robert Schooley
+mv_jafar,di_tast,6,The Return of Jafar,Tad Stones
+mv_jafar,pr_tast,8,The Return of Jafar,Tad Stones
+mv_jafar,wr_tast,7,The Return of Jafar,Tad Stones
+mv_jafar,di_tosh,6,The Return of Jafar,Toby Shelton
+mv_swits,wr_bipe,7,The Sword in the Stone,Bill Peet
+mv_swits,pr_wadi,8,The Sword in the Stone,Walt Disney
+mv_swits,pr_wore,6,The Sword in the Stone,Wolfgang Reitherman
+mv_thrcab,wr_bipe,7,The Three Caballeros,Bill Peet
+mv_thrcab,di_biro,6,The Three Caballeros,Bill Roberts
+mv_thrcab,di_clge,6,The Three Caballeros,Clyde Geronimi
+mv_thrcab,wr_deco,7,The Three Caballeros,Del Connell
+mv_thrcab,wr_elpl,7,The Three Caballeros,Elmer Plummer
+mv_thrcab,wr_erte,7,The Three Caballeros,Ernest Terrazas
+mv_thrcab,di_hayo,6,The Three Caballeros,Harold Young
+mv_thrcab,wr_hobr,7,The Three Caballeros,Homer Brightmen
+mv_thrcab,di_jaki,6,The Three Caballeros,Jack Kinney
+mv_thrcab,wr_jabo,7,The Three Caballeros,James Bodrero
+mv_thrcab,di_nofe,6,The Three Caballeros,Norman Ferguson
+mv_thrcab,wr_rawr,7,The Three Caballeros,Ralph Wright
+mv_thrcab,wr_rowi,7,The Three Caballeros,Roy Williams
+mv_thrcab,wr_tese,7,The Three Caballeros,Ted Sears
+mv_thrcab,pr_wadi,8,The Three Caballeros,Walt Disney
+mv_thrcab,wr_wico,7,The Three Caballeros,William Cottrell
+mv_musketeers,wr_damev,7,The Three Musketeers,David M. Evans
+mv_musketeers,pr_decr,8,The Three Musketeers,Debbie Cramb
+mv_musketeers,di_doco,6,The Three Musketeers,Donovan Cook
+mv_musketeers,wr_evsp,7,The Three Musketeers,Evan Spiliotopoulos
+mv_musketeers,pr_mapi,8,The Three Musketeers,Margot Pipkin
+mv_musketeers,pr_male,8,The Three Musketeers,Maude Lewis
+mv_tiggermv,pr_chab,8,The Tigger Movie,Cheryl Abood
+mv_tiggermv,wr_edgu,7,The Tigger Movie,Eddie Guzelian
+mv_tiggermv,di_jufa,6,The Tigger Movie,Jun Falkenstein
+mv_tiggermv,wr_jufa,7,The Tigger Movie,Jun Falkenstein
+mv_tugduck,di_clge,6,The Ugly Duckling,Clyde Geronimi
+mv_tugduck,wr_haan,7,The Ugly Duckling,Hans Christian Andersen
+mv_tugduck,di_jacu,6,The Ugly Duckling,Jack Cutting
+mv_tugduck,pr_wadi,8,The Ugly Duckling,Walt Disney
+mv_wild,pr_befl,8,The Wild,Beau Flynn
+mv_wild,pr_clgo,8,The Wild,Clint Goldman
+mv_wild,wr_edde,7,The Wild,Ed Decter
+mv_wild,wr_jojst,7,The Wild,John J. Strauss
+mv_wild,pr_keli,8,The Wild,Kevin Lima
+mv_wild,wr_magi,7,The Wild,Mark Gibson
+mv_wild,wr_phha,7,The Wild,Philip Halprin
+mv_wild,di_stspwi,6,The Wild,"Steve ""Spaz"" Williams"
+mv_wild,pr_wivi,8,The Wild,Will Vinton
+mv_wisehen,pr_wadi,8,The Wise Little Hen,Walt Disney
+mv_wisehen,wr_wadi,7,The Wise Little Hen,Walt Disney
+mv_wisehen,di_wija,6,The Wise Little Hen,Wilfred Jackson
+mv_tinkerlnb,wr_kako,7,Tinker Bell and the Legend of the NeverBeast,Kate Kondell
+mv_tinkerlnb,pr_mawi,8,Tinker Bell and the Legend of the NeverBeast,Makul Wigert
+mv_tinkerlnb,wr_maco,7,Tinker Bell and the Legend of the NeverBeast,Mark McCorkle
+mv_tinkerlnb,wr_rosch,7,Tinker Bell and the Legend of the NeverBeast,Robert Schooley
+mv_tinkerlnb,di_stlo,6,Tinker Bell and the Legend of the NeverBeast,Steve Loter
+mv_tinkerlnb,wr_stlo,7,Tinker Bell and the Legend of the NeverBeast,Steve Loter
+mv_tinkerlnb,wr_toro,7,Tinker Bell and the Legend of the NeverBeast,Tom Rogers
+mv_toyst,wr_anst,7,Toy Story,Andrew Stanton
+mv_toyst,pr_boar,8,Toy Story,Bonnie Arnold
+mv_toyst,wr_jora,7,Toy Story,Joe Ranft
+mv_toyst,di_jola,6,Toy Story,John Lasseter
+mv_toyst,wr_jola,7,Toy Story,John Lasseter
+mv_toyst,wr_pedo,7,Toy Story,Pete Docter
+mv_toyst,pr_ragu,8,Toy Story,Ralph Guggenheim
+mv_toyst2,wr_anst,7,Toy Story 2,Andrew Stanton
+mv_toyst2,wr_asbr,7,Toy Story 2,Ash Brannon
+mv_toyst2,pr_hepl,8,Toy Story 2,Helene Plotkin
+mv_toyst2,di_jola,6,Toy Story 2,John Lasseter
+mv_toyst2,wr_jola,7,Toy Story 2,John Lasseter
+mv_toyst2,pr_karj,8,Toy Story 2,Karen Robert Jackson
+mv_toyst2,wr_pedo,7,Toy Story 2,Pete Docter﻿
+mv_toyst3,wr_anst,7,Toy Story 3,Andrew Stanton
+mv_toyst3,pr_daka,8,Toy Story 3,Darla K. Anderson
+mv_toyst3,wr_jola,7,Toy Story 3,John Lasseter
+mv_toyst3,di_leun,6,Toy Story 3,Lee Unkrich
+mv_toyst3,wr_leun,7,Toy Story 3,Lee Unkrich
+mv_toyst4,wr_anst,7,Toy Story 4,Andrew Stanton
+mv_toyst4,wr_jola,7,Toy Story 4,John Lasseter
+mv_toyst4,pr_jori,8,Toy Story 4,Jonas Rivera
+mv_toyst4,di_joco,6,Toy Story 4,Josh Cooley
+mv_toyst4,wr_joco,7,Toy Story 4,Josh Cooley
+mv_toyst4,pr_mani,8,Toy Story 4,Mark Nielsen
+mv_toyst4,wr_mahy,7,Toy Story 4,Martin Hynes
+mv_toyst4,wr_rajo,7,Toy Story 4,Rashida Jones
+mv_toyst4,wr_stfo,7,Toy Story 4,Stephany Folsom
+mv_toyst4,wr_vapo,7,Toy Story 4,Valerie LaPointe
+mv_toyst4,wr_wico,7,Toy Story 4,Will McCormack
+mv_toystterr,di_anml,6,Toy Story of Terror,Angus MacLane
+mv_toystterr,wr_anma,7,Toy Story of Terror,Angus MacLane
+mv_toystterr,pr_gasu,8,Toy Story of Terror,Galyn Susman
+mv_toysttf,pr_gasu,8,Toy Story That Time Forgot,Galyn Susman
+mv_toysttf,di_stpu,6,Toy Story That Time Forgot,Steve Purcell
+mv_toysttf,wr_stpu,7,Toy Story That Time Forgot,Steve Purcell
+mv_treasurepl,di_jomu,6,Treasure Planet,John Musker
+mv_treasurepl,pr_jomu,8,Treasure Planet,John Musker
+mv_treasurepl,wr_jomu,7,Treasure Planet,John Musker
+mv_treasurepl,pr_pedv,8,Treasure Planet,Peter Del Vecho
+mv_treasurepl,wr_roed,7,Treasure Planet,Rob Edwards
+mv_treasurepl,di_rocl,6,Treasure Planet,Ron Clements
+mv_treasurepl,pr_rocl,8,Treasure Planet,Ron Clements
+mv_treasurepl,wr_rocl,7,Treasure Planet,Ron Clements
+mv_treasurepl,pr_roco,8,Treasure Planet,Roy Conli
+mv_treasurepl,wr_teel,7,Treasure Planet,Ted Elliott
+mv_treasurepl,wr_tero,7,Treasure Planet,Terry Rossio
+mv_turbo,wr_dale,7,Turbo,Darren Lemke
+mv_turbo,di_daso,6,Turbo,David Soren
+mv_turbo,wr_daso,7,Turbo,David Soren
+mv_turbo,pr_list,8,Turbo,Lisa Stewart
+mv_turbo,wr_rosi,7,Turbo,Robert Siegel
+mv_up,wr_bope,7,Up,Bob Peterson
+mv_up,pr_jori,8,Up,Jonas Rivera
+mv_up,di_pedo,6,Up,Pete Docter
+mv_up,wr_pedo,7,Up,Pete Docter
+mv_up,wr_toca,7,Up,Tom McCarthy
+mv_whofrrr,pr_doha,8,Who Framed Roger Rabbit,Don Hahn
+mv_whofrrr,pr_frma,8,Who Framed Roger Rabbit,Frank Marshall
+mv_whofrrr,wr_jepr,7,Who Framed Roger Rabbit,Jeffrey Price
+mv_whofrrr,pr_kake,8,Who Framed Roger Rabbit,Kathleen Kennedy
+mv_whofrrr,wr_pess,7,Who Framed Roger Rabbit,Peter S. Seaman
+mv_whofrrr,di_riwi,6,Who Framed Roger Rabbit,Richard Williams
+mv_whofrrr,pr_rowa,8,Who Framed Roger Rabbit,Robert Watts
+mv_whofrrr,di_roze,6,Who Framed Roger Rabbit,Robert Zemeckis
+mv_whofrrr,pr_stst,8,Who Framed Roger Rabbit,Steve Starkey
+mv_whofrrr,pr_stsp,8,Who Framed Roger Rabbit,Steven Spielberg
+mv_wondersdeep,di_alrr,6,Wonders of the Deep,Alonso Ramirez Ramos
+mv_wondersdeep,wr_alrr,7,Wonders of the Deep,Alonso Ramirez Ramos
+mv_wondersdeep,wr_daba,7,Wonders of the Deep,Darrick Bachman
+mv_wondersdeep,wr_dawa,7,Wonders of the Deep,Dave Wasson
+mv_wondersdeep,wr_paru,7,Wonders of the Deep,Paul Rudish
+mv_wir,pr_clsp,8,Wreck it Ralph,Clark Spencer
+mv_wir,wr_jele,7,Wreck it Ralph,Jennifer Lee
+mv_wir,wr_jire,7,Wreck it Ralph,Jim Reardon
+mv_wir,wr_phjo,7,Wreck it Ralph,Phil Johnston
+mv_wir,wr_phjo,7,Wreck it Ralph,Phil Johnston
+mv_wir,di_rimo,6,Wreck it Ralph,Rich Moore
+mv_wir,wr_rimo,7,Wreck it Ralph,Rich Moore
+mv_friendrat,wr_jepi,7,Your friend the Rat,Jeff Pidgeon
+mv_friendrat,di_jica,6,Your friend the Rat,Jim Capobianco
+mv_friendrat,pr_jica,8,Your friend the Rat,Jim Capobianco
+mv_friendrat,wr_jica,7,Your friend the Rat,Jim Capobianco
+mv_zoo,di_byho,6,Zootopia,Byron Howard
+mv_zoo,wr_brho,7,Zootopia,Byron Howard
+mv_zoo,pr_clsp,8,Zootopia,Clark Spencer
+mv_zoo,wr_jabu,7,Zootopia,Jared Bush
+mv_zoo,wr_jele,7,Zootopia,Jennifer Lee
+mv_zoo,wr_jire,7,Zootopia,Jim Reardon
+mv_zoo,wr_jotr,7,Zootopia,Josie Trinidad
+mv_zoo,wr_phjo,7,Zootopia,Phil Johnston
+mv_zoo,di_rimo,6,Zootopia,Rich Moore
+mv_zoo,wr_rimo,7,Zootopia,Rich Moore
+fig_a113,mv_abuli,4,A113,A Bug's Life
+fig_atta,mv_abuli,2,Princess Atta,A Bug's Life
+fig_ariel,mv_goofy,4,Ariel,A Goofy Movie
+fig_ariel,mv_goofy,4,Ariel,A Goofy Movie
+fig_bambi,mv_goofy,4,Bambi,A Goofy Movie
+fig_bigfoot,mv_goofy,2,Bigfoot,A Goofy Movie
+fig_chad,mv_goofy,2,Chad,A Goofy Movie
+fig_alad,mv_alad,2,Aladdin,Aladdin
+fig_beast,mv_alad,4,Beast,Aladdin
+fig_alice,mv_alice,2,Alice,Alice in Wonderland
+fig_alisis,mv_alice,2,Alice's sister,Alice in Wonderland
+fig_billiz,mv_alice,2,Bill the Lizard,Alice in Wonderland
+fig_binatree,mv_alice,3,Bird in a Tree,Alice in Wonderland
+fig_cardpaint,mv_alice,3,Card Painters,Alice in Wonderland
+fig_caterpillar,mv_alice,2,Caterpillar,Alice in Wonderland
+fig_checat,mv_alice,2,Cheshire Cat,Alice in Wonderland
+fig_auntena,mv_bambi,2,Aunt Ena,Bambi
+fig_bambi,mv_bambi,2,Bambi,Bambi
+fig_bammo,mv_bambi,2,Bambi's Mother,Bambi
+fig_binanest,mv_bambi,2,Bird in a nest,Bambi
+fig_bammo,mv_bambi2,2,Bambi's Mother,Bambi 2
+fig_bambi,mv_bambi2,2,Bambi,Bambi II
+fig_beast,mv_batb,2,Beast,Beauty and the Beast
+fig_belle,mv_batb,2,Belle,Beauty and the Beast
+fig_chip,mv_batb,2,Chip,Beauty and the Beast
+fig_ariel,mv_bedtime,2,Ariel,Bedtime Stories
+fig_buzzlight,mv_bedtime,3,Buzz Lightyear,Bedtime Stories
+fig_a113,mv_bh6,4,A113,Big Hero 6
+fig_acall,mv_bh7,2,Abigail Callaghan,Big Hero 6
+fig_akrei,mv_bh8,2,Alistair Krei,Big Hero 6
+fig_arendelle,mv_bh9,4,Arendelle,Big Hero 6
+fig_bamx,mv_bh10,2,Baymax,Big Hero 6
+fig_bigh6mov,mv_bh11,1,Big Hero 6,Big Hero 6
+fig_bolt,mv_bh12,4,Bolt,Big Hero 6
+fig_bolt,mv_bolt,2,Bolt,Bolt
+fig_a113,mv_brave,4,A113,Brave
+fig_a113,mv_cars,4,A113,Cars
+fig_a113,mv_cars,4,A113,Cars
+fig_bcutlass,mv_cars,2,Bob Cutlass,Cars
+fig_bobswift,mv_cars,2,Bobby Swift,Cars
+fig_briyard,mv_cars,2,Brick Yardley,Cars
+fig_bully,mv_cars,2,Bully,Cars
+fig_buzzlight,mv_cars,4,Buzz Lightyear,Cars
+fig_chhicks,mv_cars,2,Chick Hicks,Cars
+fig_cruz,mv_cars,2,Cruz Ramirez,Cars
+fig_dcartr,mv_cars,2,Darrell Cartrip,Cars
+fig_a113,mv_cars2,4,A113,Cars 2
+fig_a113,mv_cars2,4,A113,Cars 2
+fig_a113,mv_cars2,4,A113,Cars 2
+fig_dcartr,mv_cars2,2,Darrell Cartrip,Cars 2
+fig_dcartr,mv_cars3,2,Darrell Cartrip,Cars 3
+fig_chrisrobin,mv_chrrob,2,Christopher Robin,Christopher Robin
+fig_antres,mv_cind,2,Anastasia Tremaine,Cinderella
+fig_bruno,mv_cind,2,Bruno,Cinderella
+fig_cincastle,mv_cind,4,Cinderella's Castle,Cinderella
+fig_cind,mv_cind,2,Cinderella,Cinderella
+fig_cinddoor,mv_cind,2,Doorman,Cinderella
+fig_abu,mv_coco,2,Abuelita,Coco
+fig_berto,mv_coco,2,Tío Berto,Coco
+fig_buzzlight,mv_coco,3,Buzz Lightyear,Coco
+fig_chich,mv_coco,2,Chicharrón,Coco
+fig_correct,mv_coco,2,Corrections Officer,Coco
+fig_dante,mv_coco,2,Dante,Coco
+fig_depagent,mv_coco,2,Departure Agent,Coco
+fig_alsleech,mv_doug,2,Al Sleech,Doug's 1st Movie
+fig_beebe,mv_doug,2,Beebe Bluff,Doug's 1st Movie
+fig_bluffag,mv_doug,2,Bluff Agent,Doug's 1st Movie
+fig_boomer,mv_doug,2,Boomer,Doug's 1st Movie
+fig_chalk,mv_doug,2,Chalky,Doug's 1st Movie
+fig_conniedo,mv_doug,2,Connie,Doug's 1st Movie
+fig_bentbea,mv_ducktls,2,Bentina Beakley,DuckTales: The Movie – Treasure of the Lost Lamp
+fig_daisyduck,mv_ducktls,2,Daisy Duck,DuckTales: The Movie – Treasure of the Lost Lamp
+fig_deweyvan,mv_ducktls,2,Dewey Vanderquack,DuckTales: The Movie – Treasure of the Lost Lamp
+fig_casey,mv_dumbo,2,Casey Junior,Dumbo
+fig_clowndumb,mv_dumbo,2,Clown,Dumbo
+fig_benali,mv_fant,3,Ben Ali Gator,Fantasia
+fig_cherna,mv_fant,3,Chernabog,Fantasia
+fig_cherna,mv_fant2,3,Chernabog,Fantasia 2000
+fig_crocodiles,mv_fant2,3,Crocodiles,Fantasia 2000
+fig_daisyduck,mv_fant2,2,Daisy Duck,Fantasia 2000
+fig_dante,fig_mexhldog,3,Dante,FIGMexican Hairless Dog
+fig_bailey,mv_dory,2,Bailey,Finding Dory
+fig_blo,mv_dory,2,Bloat,Finding Dory
+fig_bub,mv_dory,2,Bubbles,Finding Dory
+fig_charliedory,mv_dory,2,Charlie,Finding Dory
+fig_chfish,mv_dory,2,Chickenfish,Finding Dory
+fig_crab,mv_dory,2,Crab,Finding Dory
+fig_crush,mv_dory,2,Crush,Finding Dory
+fig_darla,mv_dory,3,Darla,Finding Dory
+fig_debdory,mv_dory,2,Deb,Finding Dory
+fig_destiny,mv_dory,2,Destiny,Finding Dory
+fig_a113,mv_nemo,4,A113,Finding Nemo
+fig_anch,mv_nemo,2,Anchor,Finding Nemo
+fig_angler,mv_nemo,3,Anglerfish,Finding Nemo
+fig_bruce,mv_nemo,2,Bruce,Finding Nemo
+fig_buzzlight,mv_nemo,3,Buzz Lightyear,Finding Nemo
+fig_coral,mv_nemo,2,Coral,Finding Nemo
+fig_darla,mv_nemo,2,Darla,Finding Nemo
+fig_dent,mv_nemo,2,The Dentist,Finding Nemo
+fig_bambi,mv_frween,4,Bambi,Frankenweenie
+fig_annacloth,mv_frozen,4,Anna's clothes,Frozen
+fig_annadoll,mv_frozen,4,Anna' doll,Frozen
+fig_annafroz,mv_frozen,2,Anna,Frozen
+fig_annarhors,mv_frozen,4,Anna's rocking horse,Frozen
+fig_arendelle,mv_frozen,2,Arendelle,Frozen
+fig_candy,mv_frozen,4,Candy,Frozen
+fig_bongo,mv_funff,3,Bongo,Fun and Fancy Free
+fig_charlmc,mv_funff,3,Charlie McCarthy,Fun and Fancy Free
+fig_bernado,mv_gepetto,2,Bernado,Gepetto
+fig_buck,mv_hotr,2,Buck,Home on the Range
+fig_bagheera,mv_housemouse,3,Bagheera,House of Mouse
+fig_baloo,mv_housemouse,3,Baloo,House of Mouse
+fig_anger,mv_inout,2,Anger,Inside Out
+fig_arlo,mv_inout,4,Arlo,Inside Out
+fig_bibo,mv_inout,2,Bing Bong,Inside Out
+fig_cgirlem,mv_inout,2,Cool Girl's emotions,Inside Out
+fig_bagheera,mv_jungle2,2,Bagheera,Jungle Book 2
+fig_adavis,mv_kinhrts,4,Andy Davis,Kingdom Hearts
+fig_amladtr,mv_lattr,2,Am,Lady and the Tramp
+fig_auntsarah,mv_lattr,2,Aunt Sarah,Lady and the Tramp
+fig_beaver,mv_lattr,2,Beaver,Lady and the Tramp
+fig_boris,mv_lattr,2,Boris,Lady and the Tramp
+fig_bulltr,mv_lattr,2,Bull,Lady and the Tramp
+fig_dachsie,mv_lattr,2,Dachsie,Lady and the Tramp
+fig_darling,mv_lattr,2,Darling,Lady and the Tramp
+fig_a113,mv_lands,4,A113,Lilo & Stitch
+fig_cbrbobo,mv_lands,2,Cobra Bobo,Lilo & Stitch
+fig_cincastle,mv_lands,4,Cinderella's Castle,Lilo & Stitch
+fig_cptgantu,mv_lands,2,Captain Gantu,Lilo & Stitch
+fig_daffy,mv_looney,2,Daffy Duck,Looney Tunes
+fig_baloo,mv_mtr,4,Baloo,Meet the Robinsons
+fig_bulleye,mv_mtr,4,Bullseye,Meet the Robinsons
+fig_a113,mv_brave,4,A113,Brave
+fig_audwoo,mv_housemouse,2,J. Audubon Woodlore,Mickey's Magical Christmas: Snowed in at thr House of Mouse
+fig_daisyduck,mv_ouach,2,Daisy Duck,Mickeys - Once upon an Christmas
+fig_daisyduck,mv_ouach,2,Daisy Duck,Mickeys - Twice upon an Christmas
+fig_bamx,mv_moana,4,Baymax,Moana
+fig_artmonuni,mv_monstersuni,2,Art,Monster University
+fig_bigred,mv_monstersuni,2,Big Red,Monster University
+fig_bropea,mv_monstersuni,2,Brock Pearson,Monster University
+fig_busdriv,mv_monstersuni,2,Bus driver,Monster University
+fig_carrie,mv_monstersuni,2,Carrie Williams,Monster University
+fig_chetalex,mv_monstersuni,2,Chet Alexander,Monster University
+fig_clairewheeler,mv_monstersuni,2,Claire Wheeler,Monster University
+fig_deanabi,mv_monstersuni,2,Dean Abigail Hardscrabble,Monster University
+fig_boo,mv_monsters,2,"Mary ""Boo"" Gibbs",Monsters Inc.
+fig_celmae,mv_monsters,2,Celia Mae,Monsters Inc.
+fig_a113,mv_monstersuni,4,A113,Monsters University
+fig_arlo,mv_monstersuni,3,Arlo,Monsters University
+fig_aurora,mv_olicomp,3,Aurora,Oliver and Company
+fig_boris,mv_101dal61,3,Boris,One Hundred and One Dalmatians
+fig_bulltr,mv_101dal62,3,Bull,One Hundred and One Dalmatians
+fig_captain,mv_101dal63,2,Captain,One Hundred and One Dalmatians
+fig_coldalm,mv_101dal64,2,Colonel,One Hundred and One Dalmatians
+fig_collie,mv_101dal65,2,Collie,One Hundred and One Dalmatians
+fig_cruella,mv_101dal66,2,Cruella De Vil,One Hundred and One Dalmatians
+fig_dalmduch,mv_101dal67,2,Duchess,One Hundred and One Dalmatians
+fig_danny,mv_101dal68,2,Danny,One Hundred and One Dalmatians
+fig_chrisrobin,mv_pigbm,2,Christopher Robin,Piglet's Big Movie
+fig_blfair,mv_pinocchio,2,The Blue Fairy,Pinocchio
+fig_cvbark,mv_pinocchio,2,Carnival Barker,Pinocchio
+fig_bravopl,mv_planes,2,Bravo,Planes
+fig_bulldog,mv_planes,2,Bulldog,Planes
+fig_chug,mv_planes,2,Chug,Planes
+fig_colcow,mv_planes,2,Colin Cowling,Planes
+fig_andre,mv_planefr,2,André,Planes: Fire & Rescue
+fig_avalanche,mv_planefr,2,Avalanche,Planes: Fire & Rescue
+fig_blackout,mv_planefr,2,Blackout,Planes: Fire & Rescue
+fig_blarang,mv_planefr,2,Blade Ranger,Planes: Fire & Rescue
+fig_cabbie,mv_planefr,2,Cabbie,Planes: Fire & Rescue
+fig_cadspin,mv_planefr,2,Cad Spinner,Planes: Fire & Rescue
+fig_chug,mv_planefr,2,Chug,Planes: Fire & Rescue
+fig_annadoll,mv_ralphbrk,4,Anna' doll,Ralph Breaks the Internet
+fig_annafroz,mv_ralphbrk,3,Anna,Ralph Breaks the Internet
+fig_annarhors,mv_ralphbrk,4,Anna's rocking horse,Ralph Breaks the Internet
+fig_arendelle,mv_ralphbrk,4,Arendelle,Ralph Breaks the Internet
+fig_ariel,mv_ralphbrk,3,Ariel,Ralph Breaks the Internet
+fig_arlo,mv_ralphbrk,2,Arlo,Ralph Breaks the Internet
+fig_audwoo,mv_ralphbrk,3,J. Audubon Woodlore,Ralph Breaks the Internet
+fig_aurora,mv_ralphbrk,3,Aurora,Ralph Breaks the Internet
+fig_bambi,mv_ralphbrk,4,Bambi,Ralph Breaks the Internet
+fig_bamx,mv_ralphbrk,3,Baymax,Ralph breaks the Internet
+fig_bamx,mv_ralphbrk,3,Baymax,Ralph breaks the Internet
+fig_bellcom,mv_ralphbrk,4,Bellwether's coffee mug,Ralph Breaks the Internet
+fig_belle,mv_ralphbrk,3,Belle,Ralph Breaks the Internet
+fig_buzzlight,mv_ralphbrk,4,Buzz Lightyear,Ralph breaks the Internet
+fig_buzzlight,mv_ralphbrk,4,Buzz Lightyear,Ralph Breaks the Internet
+fig_carlshouse,mv_ralphbrk,4,Carl's house,Ralph breaks the Internet
+fig_chewy,mv_ralphbrk,4,Chewbacca,Ralph breaks the Internet
+fig_cind,mv_ralphbrk,3,Cinderella,Ralph breaks the Internet
+fig_a113,mv_ratatou,4,A113,Ratatouille
+fig_alflin,mv_ratatou,2,Alfredo Linguini,Ratatouille
+fig_ambmi,mv_ratatou,2,Ambrister Minion,Ratatouille
+fig_anteg,mv_ratatou,2,Anton Ego,Ratatouille
+fig_august,mv_ratatou,2,Auguste Gusteau,Ratatouille
+fig_chefskin,mv_ratatou,2,Chef Skinner,Ratatouille
+fig_ashspi,mv_recess,2,Ashley Spinelli,Recess: School's Out
+fig_becdet,mv_recess,2,Becky Detweiler,Recess: School's Out
+fig_cubby,mv_rtneverl,2,Cubby,Return to Never Land
+fig_danny,mv_rtneverl,2,Danny,Return to Never Land
+fig_alanad,mv_rhood,2,"Alan-A-Dale,",Robin Hood
+fig_cptcroco,mv_rhood,2,Captain Crocodile,Robin Hood
+fig_bobble,mv_secotw,2,Bobble,Secret of the Wings
+fig_clank,mv_secotw,2,Clank,Secret of the Wings
+fig_deweywing,mv_secotw,2,Dewey,Secret of the Wings
+fig_a113,mv_simpsons,4,A113,Simpsons
+fig_a113,mv_simpsons,4,A113,Simpsons
+fig_a113,mv_simpsons,4,A113,Simpsons
+fig_aurora,mv_tsby,2,Aurora,Sleeping Beauty
+fig_bashful,mv_snow,2,Bashful,Snow White and the Seven Dwarfs
+fig_chewy,mv_starwars,2,Chewbacca,Star Wars
+fig_chip,mv_tarzan,4,Chip,Tarzan
+fig_adele,mv_teapet,2,Adele,Teacher’s Pet
+fig_barryang,mv_teapet,2,Barry Anger,Teacher’s Pet
+fig_blfair,mv_teapet,3,The Blue Fairy,Teacher’s Pet
+fig_dennispet,mv_teapet,2,Dennis,Teacher’s Pet
+fig_anmcba,mv_ichtoad,2,Angus MacBadger,The Adventures of Ichabod and Mr. Toad
+fig_brombon,mv_ichtoad,3,Brom Bones,The Adventures of Ichabod and Mr. Toad
+fig_cyril,mv_ichtoad,2,Cyril Proudbottom,The Adventures of Ichabod and Mr. Toad
+fig_abgabb,mv_aristo,2,Abigail Gabble,The Aristocats
+fig_amgabb,mv_aristo,2,Amelia Gabble,The Aristocats
+fig_aristoduch,mv_aristo,3,Duchess,The Aristocats
+fig_berlioz,mv_aristo,2,Berlioz,The Aristocats
+fig_billyrussian,mv_aristo,2,Billy Boss the Russian Cat,The Aristocats
+fig_a113,mv_avengers,4,A113,The Avenvers
+fig_a113,mv_avengers,4,A113,The Avenvers
+fig_blackcaul,mv_blcaul,3,Eilonwy,The Black Cauldron
+fig_creeper,mv_blcaul,2,Creeper,The Black Cauldron
+fig_dallben,mv_blcaul,3,Dallben,The Black Cauldron
+fig_a113,mv_toaster,4,A113,the brave little Toaster
+fig_amoss,mv_foxho,3,Amos Slade,The Fox and the Hound
+fig_bigmam,mv_foxho,3,Big Mama,The Fox and the Hound
+fig_boomer,mv_foxho,2,Boomer,The Fox and the Hound
+fig_boysq,mv_foxho,3,A boy Squirrel,The Fox and the Hound
+fig_chiefhound,mv_foxho,2,Chief,The Fox and the Hound
+fig_copper,mv_foxho,2,Copper,The Fox and the Hound
+fig_arlo,mv_tgoodi,2,Arlo,The Good Dinosaur
+fig_but,mv_tgoodi,2,Butch,The Good Dinosaur
+fig_billiz,mv_tgmouse,3,Bill the Lizard,The Great Mouse Detective
+fig_belle,mv_hbnd,3,Belle,The Hunchback of Notre Dame
+fig_a113,mv_inc,4,A113,The Incredibles
+fig_ambassador,mv_inc,2,Ambassador,The Incredibles
+fig_bernkro,mv_inc,2,Bernie Kropp,The Incredibles
+fig_bobparr,mv_inc,2,Bob Parr,The Incredibles
+fig_bombvoy,mv_inc,2,Bomb Voyage,The Incredibles
+fig_bruce,mv_inc,4,Bruce,The Incredibles
+fig_dashiell,mv_inc,2,"Dashiell ""Dash"" Parr",The Incredibles
+fig_detective1,mv_inc,2,Detective No.1,The Incredibles
+fig_detective2,mv_inc,2,Detective No. 2,The Incredibles
+fig_a113,mv_irongiant,4,A113,The Iron Giant
+fig_akela,mv_jungle,2,Akela,The Jungle Book
+fig_bagheera,mv_jungle,2,Bagheera,The Jungle Book
+fig_baloo,mv_jungle,2,Baloo,The Jungle Book
+fig_bammo,mv_jungle,3,Bambi's Mother,The Jungle Book
+fig_colhath,mv_jungle,2,Colonel Hathi,The Jungle Book
+fig_baloo,mv_jungle2,2,Baloo,The Jungle Book 2
+fig_colhath,mv_jungle2,2,Colonel Hathi,The Jungle Book 2
+fig_colscn,mv_liki,2,Circle of Life Scene,The Lion King
+fig_baloo,mv_liki2,3,Baloo,The Lion King 1/1/2
+fig_ariel,mv_tlmm,2,Ariel,The Little Mermaid
+fig_chrisrobin,mv_mapooh,2,Christopher Robin,The many Adventures of Winnie the Pooh
+fig_bobble,mv_piratefair,3,Bobble,The Pirate Fairy
+fig_bonito,mv_piratefair,2,Bonito,The Pirate Fairy
+fig_clank,mv_piratefair,2,Clank,The Pirate Fairy
+fig_a113,mv_tpatf,4,A113,The Princess and the frog
+fig_bambi,mv_resc,3,Bambi,The Rescuers
+fig_bernard,mv_resc,2,Bernard,The Rescuers
+fig_binanest,mv_resc,3,Bird in a nest,The Rescuers
+fig_brutus,mv_resc,2,Brutus,The Rescuers
+fig_crocodiles,mv_resc,3,Crocodiles,The Rescuers
+fig_deacon,mv_resc,2,Deacon owl,The Rescuers
+fig_deadeye,mv_resc,2,Deadeye,The Rescuers
+fig_archimedes,mv_swits,2,Archimedes,The Sword in the Stone
+fig_artpe,mv_swits,2,Arthur Pendragon,The Sword in the Stone
+fig_bammo,mv_swits,3,Bambi's Mother,The Sword in the Stone
+fig_boysq,mv_swits,2,A boy Squirrel,The Sword in the Stone
+fig_almira,mv_thrcab,2,Almirante,The Three Caballeros
+fig_arabi,mv_thrcab,3,Aracuan Bird,The Three Caballeros
+fig_carmoli,mv_thrcab,3,Carmen Molina,The Three Caballeros
+fig_daisyduck,mv_musketeers,2,Daisy Duck,The three Musketeers
+fig_chrisrobin,mv_tiggermv,2,Christopher Robin,The Tigger Movie
+fig_buck,mv_tinkerlnb,2,Buck,Tinker Bell and the Legend of the NeverBeast
+fig_chase,mv_tinkerlnb,2,Chase,Tinker Bell and the Legend of the NeverBeast
+fig_a113,mv_toyst,2,A113,Toy Story
+fig_adavis,mv_toyst,2,Andy Davis,Toy Story
+fig_barbie,mv_toyst,2,Barbie,Toy Story
+fig_bopeep,mv_toyst,2,Bo Peep,Toy Story
+fig_bulleye,mv_toyst,2,Bullseye,Toy Story
+fig_buzzlight,mv_toyst,2,Buzz Lightyear,Toy Story
+fig_adavis,mv_toyst2,2,Andy Davis,Toy Story 2
+fig_bopeep,mv_toyst2,2,Bo Peep,Toy Story 2
+fig_buzzlight,mv_toyst2,2,Buzz Lightyear,Toy Story 2
+fig_adavis,mv_toyst3,2,Andy Davis,Toy Story 3
+fig_bigb,mv_toyst3,2,Big Baby,Toy Story 3
+fig_bodad,mv_toyst3,2,Bonnies' Dad,Toy Story 3
+fig_bomom,mv_toyst3,2,Bonnie's Mom,Toy Story 3
+fig_bonnie,mv_toyst3,2,Bonnie,Toy Story 3
+fig_bopeep,mv_toyst3,2,Bo Peep,Toy Story 3
+fig_buzzlight,mv_toyst3,2,Buzz Lightyear,Toy Story 3
+fig_darla,mv_toyst3,4,Darla,Toy Story 3
+fig_adavis,mv_toyst4,2,Andy Davis,Toy Story 4
+fig_alpha,mv_toyst4,3,Alpha,Toy Story 4
+fig_arlo,mv_toyst4,4,Arlo,Toy Story 4
+fig_beta,mv_toyst4,3,Beta,Toy Story 4
+fig_bodad,mv_toyst4,2,Bonnies' Dad,Toy Story 4
+fig_bomom,mv_toyst4,2,Bonnie's Mom,Toy Story 4
+fig_bonnie,mv_toyst4,2,Bonnie,Toy Story 4
+fig_bopeep,mv_toyst4,2,Bo Peep,Toy Story 4
+fig_bunny,mv_toyst4,2,Bunny,Toy Story 4
+fig_buzzlight,mv_toyst4,2,Buzz Lightyear,Toy Story 4
+fig_charl,mv_toyst4,3,Charles F. Muntz,Toy Story 4
+fig_dcaboom,mv_toyst4,2,Duke Caboom,Toy Story 4
+fig_almcwhi,mv_toyst2,2,Al McWhiggin,Toy Story 2
+fig_a113,mv_up,4,A113,Up
+fig_alpha,mv_up,2,Alpha,Up
+fig_angler,mv_up,3,Anglerfish,Up
+fig_beta,mv_up,2,Beta,Up
+fig_carlshouse,mv_up,4,Carl's house,Up
+fig_charl,mv_up,2,Charles F. Muntz,Up
+fig_a113,mv_walle,4,A113,Wall-E
+fig_a113,mv_walle,4,A113,Wall-E
+fig_angelo,mv_whofrrr,2,Angelo,Who Framed Roger Rabbit
+fig_babyherman,mv_whofrrr,2,Baby Herman,Who Framed Roger Rabbit
+fig_bbunny,mv_whofrrr,2,Bugs Bunny,Who Framed Roger Rabbit
+fig_bencab,mv_whofrrr,2,Benny the Cab,Who Framed Roger Rabbit
+fig_bettyboo,mv_whofrrr,2,Betty Boop,Who Framed Roger Rabbit
+fig_bibawo,mv_whofrrr,2,Big Bad Wolf,Who Framed Roger Rabbit
+fig_daffy,mv_whofrrr,2,Daffy Duck,Who Framed Roger Rabbit
+fig_daisyduck,mv_whofrrr,3,Daisy Duck,Who Framed Roger Rabbit
+fig_bolt,mv_wir,4,Bolt,Wreck-It Ralph
+fig_candy,mv_wir,2,Candy,Wreck-It Ralph
+fig_cybug,mv_wir,2,Cy-Bug,Wreck-It Ralph
+fig_annacloth,mv_zoo,4,Anna's clothes,Zootopia
+fig_bambi,mv_zoo,4,Bambi,Zootopia
+fig_bamx,mv_zoo,4,Baymax,Zootopia
+fig_bellcom,mv_zoo,4,Bellwether's coffee mug,Zootopia
+fig_bigh6mov,mv_zoo,1,Big Hero 7,Zootopia
+fig_plikli,mv_lands,2,Agent Pliiklii,Lilo & Stitch
+fig_pincoach,mv_pinocchio,2,Coachman,Pinocchio
+fig_scents,mv_101dal61,4,Despiting scents,101 Dalmatians
+fig_scents,mv_ratatou,2,Despiting scents,Ratatouille
+fig_msbianca,mv_resc2,2,Miss Bianca,The Rescuers
+fig_msbird,mv_101dal61,2,Miss Birdwell,One Hundred and One Dalmatians
+fig_msfritter,mv_cars,2,Miss Fritter,Cars
+fig_msmaps,mv_goofy,2,Miss Maples,A Goofy Movie
+fig_mtwhale,mv_pinocchio,2,Monstro the Whale,Pinocchio
+fig_mrsmee,mv_ppan,2,Mr. Smee,Peter Pan
+fig_mrsmee,mv_rtneverl,2,Mr. Smee,Return to Never Land
+fig_mrsmee,mv_piratefair,2,Mr. Smee,The Pirate Fairy
+fig_mrsnoops,mv_resc2,2,Mr. Snoops,The Rescuers
+fig_mrsoil,mv_abuli,2,Mr. Soil,A Bug's Life
+fig_mrstork,mv_dumbo,2,Mr. Stork,Dumbo
+fig_mrshas,mv_lands,2,Mrs. Hasagawa,Lilo & Stitch
+fig_mrshog,mv_inc,2,Mrs. Hogenson,The Incredibles
+fig_mrspossum,mv_bambi,2,Mrs. Possum,Bambi
+fig_mrspohead,mv_toyst,2,Mrs. Potato Head,Toy Story
+fig_mrspotts,mv_batb,2,Mrs. Potts,Beauty and the Beast
+fig_mrspotts,mv_tarzan,4,Mrs. Potts,Tarzan
+fig_mrsrabbit,mv_bambi,2,Mrs. Rabbit,Bambi
+fig_mrsgraves,mv_monstersuni,2,Ms. Karen Graves,Monster University
+fig_mulan,mv_mulan,2,Mulan,Mulan
+fig_mulan,mv_ralphbrk,3,Mulan,Ralph Breaks the Internet
+fig_mulanmov,mv_lands,4,Mulan poster,Lilo and Stich
+fig_mulanmov,mv_mulan,4,Mulan poster,Mulan
+fig_muwok,mv_lands,4,Mulan Wok Restaurant,Lilo and Stitch
+fig_muwok,mv_mulan,2,Mulan Wok Restaurant,Mulan
+fig_must,mv_ratatou,2,Mustafa,Ratatouille
+fig_nana,mv_rtneverl,2,Nana II,Return to Never Land
+fig_nani,mv_lands,2,Nani Pelekai,Lilo and Stich
+fig_nannydalm,mv_101dal61,2,Nanny,One Hundred and One Dalmatians
+fig_napoleon,mv_aristo,2,Napoleon the Bloodhound,The Aristocats
+fig_nash,mv_tgoodi,2,Nash,Arlo and Spot
+fig_natalie,mv_cars,2,Natalie Certain,Cars
+fig_neddoug,mv_doug,2,Ned,Doug's 1st Movie
+fig_nedzed,mv_planes,2,Ned and Zed,Planes
+fig_need,mv_monsters,2,Needleman,Monsters Inc. 
+fig_nemo,mv_brbear,3,Nemo,Brother Bear
+fig_nemo,mv_dory,2,Nemo,Finding Dory
+fig_nemo,mv_nemo,2,Nemo,Finding Nemo
+fig_nemo,mv_inout,4,Nemo,Inside Out
+fig_nemo,mv_monsters,4,Nemo,Monster Inc.
+fig_nemo,mv_toyst3,4,Nemo,Toy Story 3
+fig_nero,mv_thrcab,2,Nero,The Rescuers
+fig_nestor,mv_thrcab,2,Nestor Amarale,The Three Caballeros
+fig_nibs,mv_rtneverl,2,Nibs,Return to Never Land
+fig_nloopin,mv_planefr,2,Nick Loopin' Lopez,Planes: Fire & Rescue
+fig_nwilde,mv_bh6,4,Nick Wilde,Big Hero 6
+fig_nwilde,mv_ralphbrk,3,Nick Wilde,Ralph Breaks the Internet
+fig_nwilde,mv_zoo,2,Nick Wilde,Zootopia
+fig_nigel,mv_wild,2,Nigel,The Wild
+fig_normfer,mv_salam,2,Norman Ferguson,Saludos Amigos
+fig_nutsy,mv_rhood,2,Nutsy,Robin Hood
+fig_nyx,mv_tinkerlnb,2,Nyx,Tinker Bell and the Legend of the NeverBeast
+fig_octopus,mv_rtneverl,2,Octopus,Return to Never Land
+fig_oljammer,mv_planefr,2,Ol' Jammer,Planes: Fire & Rescue
+fig_olaf,mv_emojii,4,Olaf,As Told by Emoji
+fig_olaf,mv_bh6,4,Olaf,Big Hero 6
+fig_olaf,mv_frozen,2,Olaf,Frozen
+fig_olaf,mv_moana,4,Olaf,Moana
+fig_olaf,mv_ralphbrk,4,Olaf,Ralph Breaks the Internet
+fig_olaf,mv_zoo,4,Olaf,Zootopia
+fig_oppenh,mv_piratefair,2,Oppenheimer,The Pirate Fairy
+fig_orddu,mv_blcaul,2,Orddu,The Black Cauldron
+fig_orgoch,mv_blcaul,2,Orgoch,The Black Cauldron
+fig_orville,mv_resc,2,Orville,The Rescuers
+fig_orwen,mv_blcaul,2,Orwen,The Black Cauldron
+fig_otlr,mv_oswald,2,Oswald the Lucky Rabbit,Oswald the Lucky Rabbit
+fig_otlr,mv_zoo,4,Oswald the Lucky Rabbit,Zootopia
+fig_otto,mv_rhood,2,Otto,Robin Hood
+fig_pjgoof,mv_goofy,2,P.J.,A Goofy Movie
+fig_ptfl,mv_abuli,2,P.T. Flea,A Bug's Life
+fig_padua,mv_thrcab,2,Padua Hills Player,The Three Caballeros
+fig_panchito,mv_thrcab,2,Panchito Pistoles,The Three Caballeros
+fig_papa,mv_coco,2,Papá (Coco),Coco
+fig_passecarl,mv_dory,2,Passenger Carl,Finding Dory
+fig_patdodo,mv_alice,2,Pat the Dodo,Alice in Wonderland
+fig_patchdalm,mv_101dal61,2,Patch,One Hundred and One Dalmatians
+fig_patchplane,mv_planefr,2,Patch,Planes: Fire & Rescue
+fig_patti,mv_doug,2,Patti Mayonnaise,Doug's 1st Movie
+fig_peach,mv_nemo,2,Peach,Finding Nemo
+fig_pearl,mv_dory,3,Pearl,Finding Dory
+fig_pearl,mv_nemo,2,Pearl,Finding Nemo
+fig_pedro,mv_lattr,2,Pedro,Lady and the Tramp
+fig_peglad,mv_olicomp,2,Peg,Oliver and Company
+fig_peglad,mv_101dal61,3,Peg,One Hundred and One Dalmatians
+fig_peglad,mv_lattr,3,Peg,The Lady and the Tramp
+fig_penguin,mv_fant2,3,Penguin Waiters,Fantasia 2000
+fig_penguin,,3,Penguin Waiters,Mary Poppins
+fig_pennydal,mv_101dal61,2,Penny,One Hundred and One Dalmatians
+fig_pennyresc,mv_resc,2,Penny,The Rescuers
+fig_peppo,mv_aristo,2,Peppo the Italian Cat,The Aristocats
+fig_percival,mv_101dal61,2,Percival Faunswater,One Hundred and One Dalmatians
+fig_perdita,mv_101dal61,2,Perdita,One Hundred and One Dalmatians
+fig_periwi,mv_secotw,2,Periwinkle,Secret of the Wings
+fig_periwi,mv_piratefair,3,Periwinkle,The Pirate Fairy
+fig_perv,mv_tgoodi,2,Pervis,The Good Dinosaur
+fig_pshown,mv_lands,2,pet shop owner,Lilo and Stitch
+fig_petegoof,mv_goofy,2,Pete,A Goofy Movie
+fig_peterpan,mv_housemouse,3,Peter Pan,House of Mouse
+fig_peterpan,mv_ppan,2,Peter Pan,Peter Pan
+fig_peterpan,mv_ppanret,2,Peter Pan,Peter Pan returns
+fig_peterpan,mv_ralphbrk,4,Peter Pan,Ralph breaks the Internet
+fig_peterpan,mv_rtneverl,2,Peter Pan,Return to Never Land
+fig_peterpan,mv_liki2,3,Peter Pan,The Lion King 1/1/2
+fig_petegrand,mv_mmmus,2,Peter's grandfather,Make mine Music
+fig_pheas,mv_bambi,3,Pheasant,Bambi
+fig_pheas,mv_foxho,3,Pheasant,The Fox and the Hound
+fig_piglet,mv_lands,2,Piglet,Lilo and Stitch
+fig_piglet,mv_pigbm,2,Piglet,Piglet's Big Movie
+fig_piglet,mv_heffalump,2,Piglet,Pooh's Heffalump Movie
+fig_piglet,mv_ralphbrk,4,Piglet,Ralph Breaks the Internet
+fig_piglet,mv_mapooh,2,Piglet,The Many Adventures of Winnie the Pooh
+fig_piglet,mv_tiggermv,2,Piglet,The Tigger Movie
+fig_pinecone,mv_planefr,2,Pinecone,Planes: Fire & Rescue
+fig_pinocchio,mv_alad,3,Pinocchio,Aladdin
+fig_pinocchio,mv_gepetto,2,Pinocchio,Gepetto
+fig_pinocchio,mv_monster,4,Pinocchio,Phineas and Ferb
+fig_pinocchio,mv_pinocchio,2,Pinocchio,Pinocchio
+fig_pinocchio,mv_tang,4,Pinocchio,Tangled
+fig_pinocchio,mv_tang,3,Pinocchio,Tangled
+fig_pinocchio,mv_teapet,3,Pinocchio,Teacher’s Pet
+fig_pinocchio,mv_whofrrr,2,Pinocchio,Who Framed Roger Rabbit
+fig_pinocchio,mv_wondersdeep,3,Pinocchio,Wonders of the Deep
+fig_piratecrew,mv_rtneverl,2,Pirate Crew,Return to Never Land
+fig_plane,mv_monsters,2,Plane Toy,Monster Inc.
+fig_plaza,mv_coco,4,Plaza Mariachi,Coco
+fig_piring,mv_gepetto,2,Pleasure Island Ringleader,Gepetto
+fig_poca,mv_alad2,3,Pocahontas,Aladdin and the King of Thieves
+fig_poca,mv_housemouse,3,Pocahontas,House of Mouse
+fig_poca,mv_poca,2,Pocahontas,Pocahontas
+fig_poca,mv_poca2,2,Pocahontas,Pocahontas 2
+fig_poca,mv_ralphbrk,3,Pocahontas,Ralph Breaks the Internet
+fig_poca,mv_liki2,4,Pocahontas,The Lion King 1/1/2
+fig_policemanlady,mv_lattr,2,Policeman,Lady and the Tramp
+fig_policeman,mv_ichtoad,2,Policeman,The Adventures of Ichabod and Mr. Toad
+fig_pomp,mv_ratatou,2,Pompidou,Ratatouille
+fig_pongo,mv_olicomp,3,Pongo,Oliver and Company
+fig_pongo,mv_101dal61,2,Pongo,One Hundred and One Damatians
+fig_pophen,mv_tgoodi,2,Poppa Henry,The Good Dinosaur
+fig_porcupine,mv_bambi2,3,Porcupine,Bambi II
+fig_porcupine,mv_foxho,2,Porcupine,The Fox and the Hound
+fig_pochop,mv_doug,2,Porkchop,Doug's 1st Movie
+fig_popig,mv_whofrrr,2,Porky Pig,Who Framed Roger Rabbit
+fig_port,mv_piratefair,2,Port,The Pirate Fairy
+fig_porcorsa,mv_cars,4,Porto Corsa,Cars 2
+fig_porcorsa,mv_planes,4,Porto Corsa,Planes
+fig_popaemcee,mv_goofy,2,Possum Park Emcee,A Goofy Movie
+fig_preboy,mv_teapet,2,Pretty Boy,Teacher’s Pet
+fig_princharming,mv_cind,2,Prince Charming,Cinderella
+fig_preric,mv_tlmm,2,Prince Eric,The Little Mermaid
+fig_princejohn,mv_rhood,2,Prince John,Robin Hood
+fig_prnaveen,mv_tpatf,2,Prince Naveen,The Princess and the frog
+fig_princephilipp,mv_tsby,2,Prince Phillip,Sleeping Beauty
+fig_princess,mv_101dal61,2,Princess,One Hundred and One Dalmatians
+fig_prjas,mv_alad,2,Princess Jasmine,Aladdin
+fig_prjas,mv_alad19,2,Princess Jasmine,Aladdin 2019
+fig_prjas,mv_alad2,2,Princess Jasmine,Aladdin and the King of the Thieves
+fig_prjas,mv_emojii,4,Princess Jasmine,As Told By Emojii
+fig_prjas,mv_housemouse,3,Princess Jasmine,House of Mouse
+fig_prjas,mv_ladnight,3,Princess Jasmine,Ladies Night
+fig_prjas,mv_housemouse,3,Princess Jasmine,Mickey's Magical Christmas: Snowed in at the House of Mouse
+fig_prjas,mv_ralphbrk,2,Princess Jasmine,Ralph Breaks the Internet
+fig_prjas,mv_sofia,3,Princess Jasmine,Sofia the First
+fig_prjas,mv_liki2,4,Princess Jasmine,The Lion King 1 1/2
+fig_prjas,mv_jafar,2,Princess Jasmine,The Return of Jafar
+fig_princmazur,mv_goofy,2,Principal Mazur,A Goofy Movie
+fig_principalprly,mv_recess,2,Principal Prickly,Recess: School's Out
+fig_princstckler,mv_teapet,2,Principal Strickler,Teacher’s Pet
+fig_professor,mv_lattr,2,Professor,Lady and the Tramp
+fig_prfbuon,mv_gepetto,2,Professor Buonragazzo,Gepetto
+fig_profbuzzo,mv_monstersuni,2,Professor Derek Knight,Monster University
+fig_profragan,mv_olicomp,4,Professor Ratigan,Oliver and Company
+fig_profragan,mv_tgmouse,2,Professor Ratigan,The Great Mouse Detective
+fig_procutor,mv_ichtoad,2,Prosecutor,The Adventures of Ichabod and Mr. Toad
+fig_pscho,mv_whofrrr,2,Psycho,Who Framed Roger Rabbit
+fig_puki,mv_planefr,2,Pulaski,Planes: Fire & Rescue
+fig_pumbaa,mv_hbnd,4,Pumbaa,The Hunchback of Notre Dame
+fig_pumbaa,mv_jungle2,3,Pumbaa,The Jungle Book 2
+fig_pumbaa,mv_liki,2,Pumbaa,The Lion King
+fig_queenclarion,mv_secotw,2,Queen Clarion,Secret of the Wings
+fig_queenclarion,mv_piratefair,2,Queen Clarion,The Pirate Fairy
+fig_queenclarion,mv_tinkerlnb,2,Queen Clarion,Tinker Bell and the Legend of the NeverBeast
+fig_queengrimhilde,mv_snow,2,Queen Grimhilde,Snow White and the Seven Dwarfs
+fig_queenleah,mv_tsby,2,Queen Leah,Sleeping Beauty
+fig_queenofhearts,mv_alice,2,Queen of Hearts,Alice in Wonderland
+fig_queenie,mv_101dal61,2,Queenie,One Hundred and One Dalmatians
+fig_quizmaster,mv_101dal61,2,Quizmaster,One Hundred and One Dalmatians
+fig_rkmaroon,mv_whofrrr,2,R.K. Maroon,Who Framed Roger Rabbit
+fig_r2d2,mv_ralphbrk,3,R2-D2,Ralph Breaks the Internet
+fig_r2d2,mv_starwars,2,R2-D2,Star Wars
+fig_rabbit,mv_pigbm,2,Rabbit,Piglet's Big Movie
+fig_rabbit,mv_heffalump,2,Rabbit,Pooh’s Heffalump Movie
+fig_rabbit,mv_ralphbrk,4,Rabbit,Ralph Breaks the Internet
+fig_rabbit,mv_mapooh,2,Rabbit,The many Adventures of Winnie the Pooh
+fig_rabbit,mv_tiggermv,2,Rabbit,The Tigger Movie
+fig_rama,mv_jungle,2,Rama,The Jungle Book
+fig_ramone,mv_cars,2,Ramone,Cars
+fig_ram,mv_tgoodi,2,Ramsey,The Good Dinosaur
+fig_ranboggs,mv_monstersuni,2,Randall Boggs,Monster University
+fig_ranjan,mv_jungle2,2,Ranjan,The Jungle Book 2
+fig_ranjanfather,mv_jungle2,2,Ranjan's father,The Jungle Book 2
+fig_rapunzel,Frozen,3,Rapunzel,Frozen
+fig_rapunzel,mv_heffalump,3,Rapunzel,Ralpg Breaks the Internet
+fig_rapunzel,mv_rapunzel,2,Rapunzel,Rapunzel
+fig_rapfryingpan,mv_ralphbrk,4,Rapunzel's frying pan,Ralph Breaks the Internet
+fig_rapfryingpan,mv_tang,4,Rapunzel's frying pan,Tangled
+fig_rat_ladytrump,mv_alad,3,Rat,Aladdin
+fig_rat_ladytrump,mv_lattr,3,Rat,The Lady and the Tramp
+fig_ratty,mv_ichtoad,2,Ratty,The Adventures of Ichabod and Mr. Toad
+fig_ray,mv_nemo,2,Ray,Finding Nemo
+fig_rc,mv_toyst,3,RC,Toy Story
+fig_rc,mv_toyst2,3,RC,Toy Story 2
+fig_rc,mv_toyst3,3,RC,Toy Story 3
+fig_rc,mv_toyst4,3,RC,Toy Story 4
+fig_red,mv_cars,2,Red,Cars
+fig_reflux,mv_inc,2,Reflux,The Incredibles
+fig_remy,mv_inout,4,Remy,Inside Out
+fig_remy,mv_ratatou,2,Remy,Ratatouille
+fig_rex,mv_toyst,2,Rex,Toy Story
+fig_rex,mv_toyst2,2,Rex,Toy Story 2
+fig_rex,mv_toyst3,2,Rex,Toy Story 3
+fig_rex,mv_toyst4,2,Rex,Toy Story 4
+fig_rickdicker,mv_inc,2,Rick Dicker,The Incredibles
+fig_rigger,mv_rhood,2,Rigger,Robin Hood
+fig_ril,mv_dory,3,Riley Andersen,Finding Dory
+fig_ril,mv_inout,2,Riley Andersen,Inside Out
+fig_rildad,mv_inout,2,Riley's Father,Inside Out
+fig_rilmom,mv_inout,2,Riley's Mother,Inside Out
+fig_ripsliger,mv_planes,2,Ripslinger,Planes
+fig_riscott,mv_cars,2,River Scott,Cars
+fig_rcall,mv_bh6,2,Robert Callaghan,Big Hero 6
+fig_roflaParr,mv_inc,2,Robert Flash Parr,The Incredibles
+fig_robin,mv_tinkerlnb,2,Robin,Tinker Bell and the Legend of the NeverBeast
+fig_robinhood,mv_rhood,2,Robin Hood,Robin Hood
+fig_rocrsuher,mv_doug,2,Robocrusher,Doug's 1st Movie
+fig_rochelle,mv_planes,2,Rochelle,Planes
+fig_rocketraccoon,mv_guards,2,Rocket Raccoon,Guardians of the Galaxy
+fig_rocketraccoon,mv_ralphbrk,3,Rocket Raccoon,Ralph Breaks the Internet
+fig_roklotz,mv_doug,2,Roger Klotz,Doug's 1st Movie
+fig_rorabbit,mv_whofrrr,2,Roger Rabbit,Who Framed Roger Rabbit
+fig_rodcliffe,mv_olicomp,3,Roger Radcliffe,Oliver and Company
+fig_rodcliffe,mv_101dal61,2,Roger Radcliffe,One Hundred and One Damatians
+fig_rolly,mv_101dal61,2,Rolly,One Hundred and One Dalmatians
+fig_ropoclo,mv_monsters,4,Roly Poly Clown,Monsters Inc.
+fig_ropoclo,mv_toyst,2,Roly Poly Clown,Toy Story
+fig_ropoclo,mv_toyst2,4,Roly Poly Clown,Toy Story 2
+fig_ropoclo,mv_toyst3,4,Roly Poly Clown,Toy Story 3
+fig_rclements,mv_alad,3,Ron Clements,Aladdin
+fig_rclements,di_rocl,6,Ron Clements,Director Ron Clements
+fig_rclements,pr_rocl,7,Ron Clements,Producer Ron Clements
+fig_rclements,wr_rocl,8,Ron Clements,Writer Ron Clements
+fig_rclements,mv_hercules,3,Ron Clements,Hercules
+fig_rclements,mv_moana,4,Ron Clements,Moana
+fig_rclements,mv_tlmm,3,Ron Clements,The Lillte Mermaid
+fig_rclements,mv_tpatf,3,Ron Clements,The Princess and the frog
+fig_rclements,mv_treasurepl,3,Ron Clements,Treasure Planet
+fig_ronno,mv_bambi2,2,Ronno,Bambi II
+fig_roo,mv_pigbm,2,Roo,Piglet's Big Movie
+fig_roo,mv_heffalump,2,Roo,Pooh’s Heffalump Movie
+fig_roo,mv_ralphbrk,3,Roo,Ralph Breaks the Internet
+fig_roo,mv_mapooh,2,Roo,The many Adventures of Winnie the Pooh
+fig_roo,mv_tiggermv,2,Roo,The Tigger Movie
+fig_roper,mv_planes,2,Roper,Planes
+fig_rothemouse,mv_aristo,2,Roquefort the Mouse,The Aristocats
+fig_rosetta,mv_secotw,2,Rosetta,Secret of the Wings
+fig_rosetta,mv_piratefair,2,Rosetta,The Pirate Fairy
+fig_rosetta,mv_tinkerlnb,2,Rosetta,Tinker Bell and the Legend of the NeverBeast
+fig_ros,mv_abuli,2,Rosie,A Bug's Life
+fig_rotwsky,mv_cars,2,Rotor Turbowsky,Cars
+fig_rover,mv_101dal61,2,Rover,One Hundred and One Dalmatians
+fig_roxanne,mv_goofy,2,Roxanne,A Goofy Movie
+fig_roz,mv_monstersuni,2,Roz,Monster University
+fig_rudder,mv_dory,2,Rudder,Finding Dory
+fig_rufus,mv_resc,2,Rufus,The Rescuers
+fig_russ,mv_up,2,Russell,Up
+fig_ruseze,mv_cars,2,Rusty Rust-eze,Cars
+fig_sad,mv_inout,2,Sadness,Inside Out
+fig_salcarrera,mv_cars,2,Sally Carrera,Cars
+fig_sanfranokyo,mv_bh6,4,San Fransokyo,Big Hero 6
+fig_sanfranokyo,mv_ralphbrk,2,San Fransokyo,Ralph Breaks the Internet
+fig_sanfranokyo,mv_zoo,4,San Fransokyo,Zootopia
+fig_sarge,mv_inout,2,Sarge,Inside Out
+fig_sargeant,mv_cars,2,Sargeant,Cars
+fig_sasha,mv_mmmus,2,Sasha,Make mine Music
+fig_scar,mv_hercules,4,Scar,Hercules
+fig_scar,mv_liki,2,Scar,The Lion King
+fig_scatcat,mv_aristo,2,Scat Cat,The Aristocats
+fig_scenejungle,mv_jungle,4,Scenery of a jungle,The Jungle Book
+fig_scenejungle,mv_resc,4,Scenery of a jungle,The Rescuers
+fig_scenestreet,mv_lattr,4,Scenery of a street,Lady and the Tramp
+fig_scenestreet,mv_resc,4,Scenery of a street,The Rescuers
+fig_scottsquibbles,mv_monstersuni,2,"Scott ""Squishy"" Squibbles",Monster University
+fig_scottleady,mv_teapet,2,Scott Leadready II,Teacher’s Pet
+fig_scribble,mv_tinkerlnb,2,Scribble,Tinker Bell and the Legend of the NeverBeast
+fig_scrmcduck,,2,Scrooge McDuck,DuckTales: The Movie – Treasure of the Lost Lamp
+fig_scud,mv_toyst,2,Scud,Toy Story
+fig_sculmaid,mv_swits,2,Scullery Maid,The Sword in the Stone
+fig_scuttle,mv_tlmm,2,Scuttle,The Little Mermaid
+fig_sebastian,mv_alad,3,Sebastian,Aladdin
+fig_sebastian,mv_tlmm,2,Sebastian,The Little Mermaid
+fig_scottbbles,mv_secotw,2,Silvermist,Secret of the Wings
+fig_scottbbles,mv_piratefair,2,Silvermist,The Pirate Fairy
+fig_scottbbles,mv_tinkerlnb,2,Silvermist,Tinker Bell and the Legend of the NeverBeast
+fig_scarprepared,mv_liki,2,"Song ""Be Prepared""",The Lion King
+fig_pttp,mv_101dal61,2,Speech Power to the Puppies,101 Dalmatians
+fig_pttp,fig_scarprepared,4,Speech Power to the Puppies,Song Be Prepared 
+fig_sdflower,mv_moana,4,Sun-Drop Flower,Moana
+fig_sdflower,mv_tang,4,Sun-Drop Flower,Tangled
+fig_pigeons,mv_bolt,3,The Pigeons,Bolt
+fig_pigeons,mv_tang,3,The Pigeons,Tangled
+fig_oscar,mv_coco,2,Tío Oscar,Coco
+fig_rclements,mv_moana,3,Ron Clements,Moana
+fig_mexhldog,mv_101dal61,3,Mexican Hairless Dog,101 Dalmatians
+fig_manny,mv_abuli,2,Manny,A Bug's Life
+fig_molt,mv_abuli,2,Molt,A Bug's Life
+fig_lester,mv_goofy,2,Lester the Possum,A Goofy Movie
+fig_lisa,mv_goofy,2,Lisa,A Goofy Movie
+fig_maxgoof,mv_goofy,2,Max Goof,A Goofy Movie
+fig_mickey,mv_goofy,4,Mickey Mouse,A Goofy Movie
+fig_mickey,mv_goofy,3,Mickey Mouse,A Goofy Movie
+fig_mickey,mv_goofy,3,Mickey Mouse,A Goofy Movie
+fig_mickey,mv_goofy,4,Mickey Mouse,A Goofy Movie
+fig_jafar,mv_alad,2,Jafar,Aladdin
+fig_jmusker,mv_alad,3,John Musker,Aladdin
+fig_mickey,mv_alad,3,Mickey Mouse,Aladdin
+fig_jafar,mv_alad19,2,Jafar,Aladdin 2019
+fig_josecari,mv_alice,3,José Carioca,Alice in Wonderland
+fig_josecari,mv_alice,3,José Carioca,Alice in Wonderland
+fig_khearts,mv_alice,2,King of Hearts,Alice in Wonderland
+fig_madhat,mv_alice,2,Mad Hatter,Alice in Wonderland
+fig_march,mv_alice,2,March Hare,Alice in Wonderland
+fig_jskellington,mv_emojii,4,Jack Skellington,As Told by Emoji
+fig_jafar,mv_emojii,4,Jafar,As Told by Emojiis
+fig_mrmole,mv_bambi,3,Mr. Mole,Bambi
+fig_mena,mv_bambi2,2,Mena,Bambi II
+fig_lcatcaf,mv_bh6,4,Lucky Cat Cafe,Big Hero 6
+fig_mochi,mv_bh6,3,Mochi,Big Hero 6
+fig_kferg,mv_brave,2,King Fergus,Brave
+fig_loguf,mv_brave,2,Lord McGuffin,Brave
+fig_lomac,mv_brave,2,Lord Macintosh,Brave
+fig_lording,mv_brave,2,Lord Dingwall,Brave
+fig_luxball,mv_brave,4,Ball from Luxo,Brave
+fig_mart,mv_brave,2,Martin,Brave
+fig_maud,mv_brave,2,Maudie,Brave
+fig_merida,mv_brave,2,Merida,Brave
+fig_jacksortm,mv_cars,2,Jackson Storm,Cars
+fig_juniorcar,mv_cars,2,"Junior ""Midnight"" Moon",Cars
+fig_lizz,mv_cars,2,Lizzie,Cars
+fig_lmcqueen,mv_cars,2,Lightning McQueen,Cars
+fig_louise,mv_cars,2,"Louise ""Barnstormer"" Nash",Cars
+fig_luigi,mv_cars,2,Luigi,Cars
+fig_lynda,mv_cars,2,Lynda Weathers,Cars
+fig_mack,mv_cars,2,Mack,Cars
+fig_maddy,mv_cars,2,Maddy McGear,Cars
+fig_mater,mv_cars,2,Mater,Cars
+fig_mia,mv_cars,2,Mia,Cars
+fig_mike,mv_cars,3,"Michael ""Mike"" Wazowski",Cars
+fig_minnycar,mv_cars,3,Minny,Cars
+fig_lmcqueen,mv_cars2,2,Lightning McQueen,Cars 2
+fig_lohbear,mv_cars2,4,Lots-O'-Huggin' Bear,Cars 2
+fig_luxball,mv_cars2,4,Ball from Luxo,Cars 2
+fig_mia,mv_cars2,2,Mia,Cars 2
+fig_minnycar,mv_cars2,2,Minny,Cars 2
+fig_lmcqueen,mv_cars3,2,Lightning McQueen,Cars 3
+fig_luxball,mv_cars3,4,Ball from Luxo,Cars 3
+fig_mickey,mv_chlit,4,Mickey Mouse,Chicken Little
+fig_jaqcind,mv_cind,2,Jaq,Cinderella
+fig_kingcind,mv_cind,2,King,Cinderella
+fig_ladytrm,mv_cind,2,Lady Tremaine,Cinderella
+fig_lucifer,mv_cind,2,Lucifer,Cinderella
+fig_imelda,mv_coco,2,Mamá Imelda,Coco
+fig_juan,mv_coco,2,Juan Ortodoncia,Coco
+fig_julio,mv_coco,2,Papá Julio,Coco
+fig_luxball,mv_coco,4,Ball from Luxo,Coco
+fig_mamacoco,mv_coco,2,Mamá Coco,Coco
+fig_miguel,mv_coco,2,Miguel,coco
+fig_mexhldog,fig_dante,4,Mexican Hairless Dog,Dante
+fig_jmusker,di_jomu,6,John Musker,Director
+fig_jafar,mv_donlamp,3,Jafar,Donald's Lamp Trade
+fig_judgefun,mv_doug,2,Judy Funnie,Doug's 1st Movie
+fig_larry,mv_doug,2,Larry,Doug's 1st Movie
+fig_lincoln,mv_doug,2,Lincoln,Doug's 1st Movie
+fig_mayortippi,mv_doug,2,Mayor Tippi Dink,Doug's 1st Movie
+fig_moosleech,mv_doug,2,Moo Sleech,Doug's 1st Movie
+fig_mrbluff,mv_doug,2,Mr. Bluff,Doug's 1st Movie
+fig_mrchimney,mv_doug,2,Mr. Chiminy,Doug's 1st Movie
+fig_mrdink,mv_doug,2,Mr. Dink,Doug's 1st Movie
+fig_mrfunnie,mv_doug,2,Mr. Funnie,Doug's 1st Movie
+fig_mrsfunny,mv_doug,2,Mrs. Funnie,Doug's 1st Movie
+fig_josecari,mv_ducktls,3,José Carioca,Duck Tales
+fig_launch,,2,Launchpad McQuack,DuckTales: The Movie – Treasure of the Lost Lamp
+fig_louvan,,2,Louie Vanderquack,DuckTales: The Movie – Treasure of the Lost Lamp
+fig_merlock,,2,Merlock the Magician,DuckTales: The Movie – Treasure of the Lost Lamp
+fig_mrsfeath,,2,Mrs. Featherby,DuckTales: The Movie – Treasure of the Lost Lamp
+fig_jimcro,mv_dumbo,2,Jim Crow,Dumbo
+fig_jafar,mv_elhol,3,Jafar,Electric Holiday
+fig_madhat,mv_elhol,2,Mad Hatter,Electric Holiday
+fig_minnie,mv_elhol,2,Minnie Mouse,Electric Holiday
+fig_hyhippo,mv_fant,2,Hyacinth Hippo,Fantasia
+fig_mickey,mv_fant,2,Mickey Mouse,Fantasia
+fig_mothpega,mv_fant,2,Mother Pegasus,Fantasia
+fig_hyhippo,mv_fant2,2,Hyacinth Hippo,Fantasia 2000
+fig_mothpega,mv_fant2,3,Mother Pegasus,Fantasia 2000
+fig_jacques,mv_dory,2,Jacques,Finding Dory
+fig_jennydory,mv_dory,2,Jenny,Finding Dory
+fig_lmcqueen,mv_dory,4,Lightning McQueen,Finding Dory
+fig_luxball,mv_dory,4,Ball from Luxo,Finding Dory
+fig_marlin,mv_dory,2,Marlin,Finding Dory
+fig_mrray,mv_dory,2,Mr. Ray,Finding Dory
+fig_luxball,mv_nemo,4,Ball from Luxo,Finding Nemo
+fig_mike,mv_nemo,3,"Michael ""Mike"" Wazowski",Finding Nemo
+fig_kagn,mv_frozen,2,King Agnarr,Frozen
+fig_marsh,mv_frozen,2,Marshmallow,Frozen
+fig_mickey,mv_frozen,4,Mickey Mouse,Frozen
+fig_mickey,mv_frozen,4,Mickey Mouse,Frozen
+fig_jimcrick,mv_funff,2,Jiminy Cricket,Fun and Fancy Free
+fig_luana,mv_funff,2,Luana Patten,Fun and Fancy Free
+fig_mickey,mv_funff,2,Mickey Mouse,Fun and Fancy Free
+fig_mortimer,mv_funff,3,Mortimer Snerd,Fun and Fancy Free
+fig_lazardo,mv_gepetto,2,Lazardo V,Gepetto
+fig_jmusker,mv_hercules,3,John Musker,Hercules
+fig_jafar,mv_housemouse,2,Jafar,House of Mouse
+fig_jimcrick,mv_housemouse,3,Jiminy Cricket,House of Mouse
+fig_josecari,mv_housemouse,3,José Carioca,House of Mouse
+fig_madhat,mv_housemouse,3,Mad Hatter,House of Mouse
+fig_luxball,mv_inc2,4,Ball from Luxo,INcredibles 2
+fig_jake,mv_inout,2,Cop Jake,Inside Out
+fig_jang,mv_inout,2,Jangles the Clown,Inside Out
+fig_joy,mv_inout,2,Joy,Inside Out
+fig_luxball,mv_inout,4,Ball from Luxo,Inside Out
+fig_mosad,mv_inout,2,Mother's Sadness,Inside Out
+fig_luxball,mv_jjatt,4,Ball from Luxo,Jack-Jack-Attack
+fig_jskellington,mv_jampch,3,Jack Skellington,James and the Giant Peach
+fig_mickey,mv_jampch,3,Mickey Mouse,James and the giant Peach
+fig_hyena,mv_lattr,2,Hyena,Lady and the Tramp
+fig_jimdea,mv_lattr,2,Jim Dear,Lady and the Tramp
+fig_jimsfr,mv_lattr,2,Jim's Friend,Lady and the Tramp
+fig_ladytr,mv_lattr,2,Lady,Lady and the Tramp
+fig_jookiba,mv_lands,2,Dr. Jamba Jookiba,Lilo & Stitch
+fig_lilo,mv_lands,2,Lilo,Lilo & Stitch
+fig_medmonds,mv_lands,2,Myrtle Edmonds,Lilo & Stitch
+fig_luxball,mv_lands,4,Ball from Luxo,Lilo and Stitch
+fig_luxball,mv_luxo,2,Ball from Luxo,Luxo Jr.
+fig_jessie,mv_mtr,4,Jessie the Yodeling Cowgirl,Meet the Robinsons
+fig_jimcrick,mv_housemouse,3,Jiminy Cricket,Mickey's Magical Christmas
+fig_minnie,mv_ouach,2,Minnie Mouse,Mickey's Once upon a Christmas
+fig_minnie,mv_ouach,2,Minnie Mouse,Mickey's Twice Upon a Christmas
+fig_jmusker,mv_moana,4,John Musker,Moana
+fig_jmusker,mv_moana,3,John Musker,Moana
+fig_marsh,mv_moana,3,Marshmallow,Moana
+fig_mfhook,mv_moana,2,Maui's fish hook,Moana
+fig_moana,mv_moana,2,Moana,Moana
+fig_moanamov,mv_moana,4,Moana cover,Moana
+fig_motunui,mv_moana,2,Motunui,Moana
+fig_luxball,mv_monstersuni,4,Ball from Luxo,Monster University
+fig_jessie,mv_monsters,4,Jessie the Yodeling Cowgirl,Monster AG
+fig_johnworth,mv_monstersuni,2,Johnny J. Worthington III,Monster University
+fig_jeff,mv_monsters,2,Jeff Fungus,Monsters Inc.
+fig_jerry,mv_monsters,2,Jerry Slugworth,Monsters Inc.
+fig_luxball,mv_monsters,4,Ball from Luxo,Monsters Inc.
+fig_mike,mv_monsters,2,"Michael ""Mike"" Wazowski",Monsters Inc.
+fig_mike,mv_monstersuni,2,"Michael ""Mike"" Wazowski",Monsters University
+fig_mrsflint,mv_monsters,2,Ms. Flint,"Monsters, Inc."
+fig_lbdoll,mv_mulan,3,Little Brother Doll,Mulan
+fig_jock,mv_olicomp,2,Jock,Oliver and Company
+fig_mickey,mv_olicomp,4,Mickey Mouse,Oliver and Company
+fig_inspcraven,mv_101dal61,2,Inspector Craven,One Hundred and One Dalmatians
+fig_jasper,mv_101dal61,2,Jasper,One Hundred and One Dalmatians
+fig_jock,mv_101dal61,3,Jock,One Hundred and One Dalmatians
+fig_labrador,mv_101dal61,2,Labrador,One Hundred and One Dalmatians
+fig_luckydog,mv_101dal61,2,Lucky,One Hundred and One Dalmatians
+fig_lucy,mv_101dal61,2,Lucy,One Hundred and One Dalmatians
+fig_megpap,mv_paperman,3,Meg,Paperman
+fig_indianch,mv_ppan,2,Indian Chief,Peter Pan
+fig_johndarl,mv_ppan,2,John Darling,Peter Pan
+fig_mamahook,mv_ppan,2,Mama Hook,Peter Pan
+fig_marydarl,mv_ppan,2,Mary Darling,Peter Pan
+fig_mermaids,mv_ppan,2,Mermaids,Peter Pan
+fig_michda,mv_ppan,2,Michael Darling,Peter Pan
+fig_kanga,mv_pigbm,2,Kanga,Piglet's Big Movie
+fig_jimcrick,mv_pinocchio,2,Jiminy Cricket,Pinocchio
+fig_johnworth,mv_pinocchio,2,"""Honest"" John Worthington Foulfellow",Pinocchio
+fig_lmpwck,mv_pinocchio,2,Lampwick,Pinocchio
+fig_ishani,mv_planes,2,Ishani,Planes
+fig_judgdav,mv_planes,2,Judge Davis,Planes
+fig_leadbot,mv_planes,2,Leadbottom,Planes
+fig_lilkim,mv_planes,2,Little King,Planes
+fig_leadbot,mv_planefr,3,Leadbottom,Planes: Fire & Rescue
+fig_lildipper,mv_planefr,2,Lil' Dipper,Planes: Fire & Rescue
+fig_lmcqueen,mv_planefr,3,Lightning McQueen,Planes: Fire & Rescue
+fig_maru,mv_planefr,2,Maru,Planes: Fire & Rescue
+fig_mayday,mv_planefr,2,Mayday,Planes: Fire & Rescue
+fig_lon,mv_poca,2,Lon,Pocahontas
+fig_kanga,mv_heffalump,2,Kanga,Pooh’s Heffalump Movie
+fig_lumpy,mv_heffalump,2,Lumpy,Pooh’s Heffalump Movie
+fig_mamahef,mv_heffalump,2,Mama Heffalump,Pooh’s Heffalump Movie
+fig_luxball,mv_presto,4,Ball from Luxo,Presto
+fig_luxball,mv_presto,4,Ball from Luxo,Presto
+fig_jskellington,mv_tpatf,4,Jack Skellington,Princess and the frog
+fig_jmusker,pr_jomu,8,John Musker,Producer
+fig_jaqcind,mv_ralphbrk,3,Jaq,Ralph Breaks the Internet
+fig_jessie,mv_ralphbrk,3,Jessie the Yodeling Cowgirl,Ralph breaks the internet
+fig_jskellington,mv_ralphbrk,4,Jack Skellington,Ralph breaks the Internet
+fig_judgehopps,mv_ralphbrk,3,Judy Hopps,Ralph Breaks the Internet
+fig_kagn,mv_ralphbrk,3,King Agnarr,Ralph Breaks the Internet
+fig_kermit,mv_ralphbrk,4,Kermit the Frog,Ralph breaks the Internet
+fig_lmcqueen,mv_ralphbrk,4,Lightning McQueen,Ralph breaks the Internet
+fig_madhat,mv_ralphbrk,4,Mad Hatter,Ralph Breaks the Internet
+fig_megpap,mv_ralphbrk,3,Meg,Ralph Breaks the Internet
+fig_merida,mv_ralphbrk,3,Merida,Ralph Breaks the Internet
+fig_mfhook,mv_ralphbrk,4,Maui's fish hook,Ralph Breaks the Internet
+fig_mickey,mv_ralphbrk,4,Mickey Mouse,Ralph breaks the Internet
+fig_mickey,mv_ralphbrk,4,Mickey Mouse,Ralph breaks the Internet
+fig_moana,mv_ralphbrk,3,Moana,Ralph Breaks the Internet
+fig_mochi,mv_ralphbrk,3,Mochi,Ralph Breaks the Internet
+fig_motunui,mv_ralphbrk,3,Motunui,Ralph Breaks the Internet
+fig_mrbiglimo,mv_ralphbrk,4,Mr. Big's Limoservice,Ralph Breaks the Internet
+fig_lcatcaf,mv_ralphbrk,4,Lucky Cat Cafe,Ralph Breaks the Internet
+fig_lalo,mv_ratatou,2,Lalo,Ratatouille
+fig_larou,mv_ratatou,2,Larousse,Ratatouille
+fig_mikeblu,mv_recess,2,Mikey Blumberg,Recess: School's Out
+fig_mrsfinster,mv_recess,2,Ms. Finster,Recess: School's Out
+fig_luxball,mv_redsdr,4,Ball from Luxo,Red's Dream
+fig_janenever,mv_rtneverl,2,Jane,Return to Never Land
+fig_johndarl,mv_rtneverl,4,John Darling,Return to Never Land
+fig_mamahook,mv_rtneverl,2,Mama Hook,Return to Never Land
+fig_michda,mv_rtneverl,2,Michael Darling,Return to Never Land
+fig_mickey,mv_rtneverl,4,Mickey Mouse,Return to Never Land
+fig_krich,mv_rhood,2,King Richard,Robin Hood
+fig_ladyklu,mv_rhood,2,Lady Kluck,Robin Hood
+fig_liljohn,mv_rhood,2,Little John,Robin Hood
+fig_maidmar,mv_rhood,2,Maid Marian,Robin Hood
+fig_motherlilsis,mv_rhood,2,Mother Little Sister,Robin Hood
+fig_mothrabbit,mv_rhood,2,Mother Rabbit,Robin Hood
+fig_josecari,mv_salam,2,José Carioca,Saludos Amigos
+fig_leeblair,mv_salam,2,Lee Blair,Saludos Amigos
+fig_maryblair,mv_salam,2,Mary Blair,Saludos Amigos
+fig_iridessa,mv_secotw,2,Iridessa,Secret of the Wings
+fig_lomilori,mv_secotw,2,Lord Milori,Secret of the Wings
+fig_mickey,mv_secotw,4,Mickey Mouse,Secret of the Wings
+fig_khubert,mv_tsby,2,King Hubert,Sleeping Beauty
+fig_kstefan,mv_tsby,2,King Stefan,Sleeping Beauty
+fig_maleficient,mv_tsby,2,Maleficent,Sleeping Beauty
+fig_malgoon,mv_tsby,2,Maleficent's Goons,Sleeping Beauty
+fig_merrywe,mv_tsby,2,Merryweather,Sleeping Beauty
+fig_mickey,mv_stbtwl,2,Mickey Mouse,Steamboat Willie
+fig_maximus,mv_tang,2,Maximus,Tangled
+fig_lbdoll,mv_tarzan,3,Little Brother Doll,Tarzan
+fig_mickey,mv_teapet,4,Mickey Mouse,Teacher's Pet
+fig_ianwaz,mv_teapet,2,Ian Wazselewski,Teacher’s Pet
+fig_leonard,mv_teapet,2,Leonard Helperman,Teacher’s Pet
+fig_maryhelp,mv_teapet,2,Mary Helperman,Teacher’s Pet
+fig_mrjolly,mv_teapet,2,Mr. Jolly,Teacher’s Pet
+fig_mrsboogin,mv_teapet,2,Mrs. Boogin,Teacher’s Pet
+fig_ichabod,mv_ichtoad,2,Ichabod Crane,The Adventures of Ichabod and Mr. Toad
+fig_moley,mv_ichtoad,2,Moley,The Adventures of Ichabod and Mr. Toad
+fig_lafayette,mv_aristo,2,Lafayette the Basset Hound,The Aristocats
+fig_marie,mv_aristo,2,Marie,The Aristocats
+fig_mmeade,mv_aristo,3,Madame Adelaide Bonfamille,The Aristocats
+fig_keid,mv_blcaul,2,King Eidilleg,The Black Cauldron
+fig_mrdigger,mv_foxho,3,Mr. Digger,The Fox and the Hound
+fig_lib,mv_tgoodi,2,Libby,The Good Dinosaur
+fig_lurl,mv_tgoodi,2,Lurleane,The Good Dinosaur
+fig_luxball,mv_tgoodi,4,Ball from Luxo,The Good Dinosaur
+fig_momida,mv_tgoodi,2,Momma Ida,The Good Dinosaur
+fig_lon,mv_hbnd,3,Lon,The Hunchback of Notre Dame
+fig_japarr,mv_inc,2,Jack Jack Parr,The Incredibles
+fig_karen,mv_inc,2,Karen,The Incredibles
+fig_kari,mv_inc,2,Kari,The Incredibles
+fig_krush,mv_inc,2,Krushauer,The Incredibles
+fig_luxball,mv_inc,4,Ball from Luxo,The Incredibles
+fig_mayorinc,mv_inc,2,Mayor,The Incredibles
+fig_mirage,mv_inc,2,Mirage,The Incredibles
+fig_juniorjb,mv_jungle,2,Junior,The Jungle Book
+fig_kaa,mv_jungle,2,Kaa,The Jungle Book
+fig_klouie,mv_jungle,2,King Louie,The Jungle Book
+fig_luckyvult,mv_jungle,2,Lucky,The Jungle Book
+fig_kaa,mv_jungle2,2,Kaa,The Jungle Book 2
+fig_klouie,mv_jungle2,2,King Louie,The Jungle Book 2
+fig_luckyvult,mv_jungle2,2,Lucky,The Jungle Book 2
+fig_messua,mv_jungle2,2,Messua,The Jungle Book 2
+fig_mickey,mv_jungle2,3,Mickey Mouse,The Jungle Book 2
+fig_jock,mv_lattr,2,Jock,The Lady and the Tramp
+fig_jock,mv_liki,4,Jock,The Lion King
+fig_madhat,mv_liki2,4,Mad Hatter,The Lion King 1/1/2
+fig_jmusker,mv_tlmm,3,John Musker,The Little Mermaid
+fig_kermit,mv_tlmm,3,Kermit the Frog,The Little Mermaid
+fig_ktrit,mv_tlmm,2,King Triton,The Little Mermaid
+fig_mickey,mv_tlmm,3,Mickey Mouse,The Little Mermaid
+fig_melody,mv_tlmm2,2,Melody,The little Mermaid II
+fig_kanga,mv_mapooh,2,Kanga,The Many Adventures of Winnie
+fig_mrnarrator,mv_mapooh,2,Mr. Narrator,The many Adventures of Winnie the Pooh
+fig_jskellington,mv_monster,3,Jack Skellington,The Monster of Phineas-n-Ferbenstein
+fig_kermit,mv_muppets,2,Kermit the Frog,The Muppet Movie
+fig_jskellington,mv_nbchr,2,Jack Skellington,The Nightmare before christmas
+fig_iridessa,mv_piratefair,2,Iridessa,The Pirate Fairy
+fig_jamesfairy,mv_piratefair,2,James,The Pirate Fairy
+fig_jmusker,mv_tpatf,3,John Musker,The Princess and the Frog
+fig_jmusker,mv_tpatf,3,John Musker,The Princess and the Frog
+fig_ktrit,mv_tpatf,3,King Triton,The Princess and the Frog
+fig_lottie,mv_tpatf,2,Charlotte (Lottie) La Bouff,The Princess and the Frog
+fig_louis,mv_tpatf,2,Louis,The Princess and the Frog
+fig_modie,mv_tpatf,2,Mama Odie,The Princess and the Frog
+fig_luke,mv_resc,2,Luke,The Rescuers
+fig_mmemed,mv_resc,2,Madame Medusa,The Rescuers
+fig_mrchair,mv_resc,2,Mr. Chairman,The Rescuers
+fig_jafar,mv_jafar,2,Jafar,The Return of Jafar
+fig_merlin,mv_swits,2,Merlin,The Sword in the Stone
+fig_mmemim,mv_swits,2,Madame Mim,The Sword in the Stone
+fig_josecari,mv_thrcab,2,José Carioca,The Three Caballeros
+fig_josecari,mv_musketeers,3,José Carioca,The Three Musketeers
+fig_minnie,mv_musketeers,2,Minnie Mouse,The Three Musketeers
+fig_kanga,mv_tiggermv,2,Kanga,The Tigger Movie
+fig_mickey,mv_tiggermv,4,Mickey Mouse,Tigger The Movie
+fig_iridessa,mv_tinkerlnb,2,Iridessa,Tinker Bell and the Legend of the Neverbeast
+fig_morgan,mv_tinkerlnb,2,Morgan,Tinker Bell and the Legend of the NeverBeast
+fig_ifpram,mv_toyst,2,Infant Pram,Toy Story
+fig_jessie,mv_toyst,3,Jessie the Yodeling Cowgirl,Toy Story
+fig_luxball,mv_toyst,4,Ball from Luxo,Toy Story
+fig_mdavis,mv_toyst,2,Molly Davis,Toy Story
+fig_mrpohead,mv_toyst,2,Mr. Potato Head,Toy Story
+fig_mrsdavis,mv_toyst,2,Mrs. Davis,Toy Story
+fig_luxball,mv_toyst2,4,Ball from Luxo,Toy Story 2
+fig_mdavis,mv_toyst2,3,Molly Davis,Toy Story 2
+fig_mrpohead,mv_toyst2,2,Mr. Potato Head,Toy Story 2
+fig_ken,mv_toyst3,2,Ken,Toy Story 3
+fig_lohbear,mv_toyst3,2,Lots-O'-Huggin' Bear,Toy Story 3
+fig_luxball,mv_toyst3,4,Ball from Luxo,Toy Story 3
+fig_luxball,mv_toyst3,4,Ball from Luxo,Toy Story 3
+fig_mdavis,mv_toyst3,3,Molly Davis,Toy Story 3
+fig_mrpohead,mv_toyst3,2,Mr. Potato Head,Toy Story 3
+fig_kbeverly,mv_toyst4,2,Karen Beverly,Toy Story 4
+fig_luxball,mv_toyst4,4,Ball from Luxo,Toy Story 4
+fig_marg,mv_toyst4,2,Margaret,Toy Story 4
+fig_mdavis,mv_toyst4,3,Molly Davis,Toy Story 4
+fig_mrpohead,mv_toyst4,2,Mr. Potato Head,Toy Story 4
+fig_luxball,mv_toystterr,4,Ball from Luxo,Toy Story of Terror
+fig_luxball,mv_toysttf,4,Ball from Luxo,Toy Story That Time Forgot
+fig_jmusker,mv_treasurepl,3,John Musker,Treasure Planet
+fig_kevup,mv_up,2,Kevin,Up
+fig_lohbear,mv_up,4,Lots-O'-Huggin' Bear,Up
+fig_luxball,mv_up,4,Ball from Luxo,Up
+fig_luxball,mv_up,4,Ball from Luxo,Up
+fig_mike,mv_walle,4,"Michael ""Mike"" Wazowski",Wall-E
+fig_mccrea,mv_walle,2,Captain B. McCrea,WallE
+fig_hyhippo,mv_whofrrr,2,Hyacinth Hippo,Who Framed Roger Rabbit
+fig_jimcrick,mv_whofrrr,3,Jiminy Cricket,Who framed Roger Rabbit
+fig_josecari,mv_whofrrr,3,José Carioca,Who framed Roger Rabbit
+fig_judgedoom,mv_whofrrr,2,Judge Doom,Who Framed Roger Rabbit
+fig_lenahy,mv_whofrrr,2,Lena Hyena,Who Framed Roger Rabbit
+fig_ltsantino,mv_whofrrr,2,Lt. Santino,Who Framed Roger Rabbit
+fig_marvinac,mv_whofrrr,2,Marvin Acme,Who Framed Roger Rabbit
+fig_mickey,mv_whofrrr,2,Mickey Mouse,Who framed Roger Rabbit
+fig_minnie,mv_whofrrr,2,Minnie Mouse,Who Framed Roger Rabbit
+fig_minnie,mv_whofrrr,3,Minnie Mouse,Who Framed Roger Rabbit
+fig_mickey,mv_wir,4,Mickey Mouse,Wreck it Ralph
+fig_jmusker,wr_jomu,7,John Musker,Writer
+fig_judgehopps,mv_zoo,2,Judy Hopps,Zootopia
+fig_mfhook,mv_zoo,4,Maui's fish hook,Zootopia
+fig_mickey,mv_zoo,4,Mickey Mouse,Zootopia
+fig_moanamov,mv_zoo,4,Moana cover,Zootopia
+fig_mrbiglimo,mv_zoo,4,Mr. Big's Limoservice,Zootopia
+fig_lcatcaf,mv_zoo,4,Lucky Cat Cafe,Zootopia
