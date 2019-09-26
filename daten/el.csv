@@ -1853,10 +1853,10 @@ fig_mrdink,mv_doug,2,Mr. Dink,Doug's 1st Movie
 fig_mrfunnie,mv_doug,2,Mr. Funnie,Doug's 1st Movie
 fig_mrsfunny,mv_doug,2,Mrs. Funnie,Doug's 1st Movie
 fig_josecari,mv_ducktls,3,José Carioca,Duck Tales
-fig_launch,,2,Launchpad McQuack,DuckTales: The Movie – Treasure of the Lost Lamp
-fig_louvan,,2,Louie Vanderquack,DuckTales: The Movie – Treasure of the Lost Lamp
-fig_merlock,,2,Merlock the Magician,DuckTales: The Movie – Treasure of the Lost Lamp
-fig_mrsfeath,,2,Mrs. Featherby,DuckTales: The Movie – Treasure of the Lost Lamp
+fig_launch,mv_ducktls,2,Launchpad McQuack,DuckTales: The Movie – Treasure of the Lost Lamp
+fig_louvan,mv_ducktls,2,Louie Vanderquack,DuckTales: The Movie – Treasure of the Lost Lamp
+fig_merlock,mv_ducktls,2,Merlock the Magician,DuckTales: The Movie – Treasure of the Lost Lamp
+fig_mrsfeath,mv_ducktls,2,Mrs. Featherby,DuckTales: The Movie – Treasure of the Lost Lamp
 fig_jimcro,mv_dumbo,2,Jim Crow,Dumbo
 fig_jafar,mv_elhol,3,Jafar,Electric Holiday
 fig_madhat,mv_elhol,2,Mad Hatter,Electric Holiday
