@@ -1,4 +1,4 @@
-﻿id,name,art,movie name,studio,year,gross,director,producer,writer,cameo,tyyype,sonst
+id,name,art,movie name,studio,year,gross,director,producer,writer,cameo,tyyype,sonst
 di_aabl,Aaron Blaise,6,,,,,,,,,,
 di_adsh,Adam Shankman,6,,,,,,,,,,
 di_anst,Andrew Stanton,6,,,,,,,,,,
@@ -1200,7 +1200,7 @@ fig_skpy,Skippy,2,Robin Hood,,,,,,,,,
 fig_sleebook,Sleeping Beauty storybook,2,Sleeping Beauty,,,,,,,Tangled,4,
 fig_sleepy,Sleepy,2,Snow White and the Seven Dwarfs,,,,,,,,,
 fig_slim,Slim,2,Home on the Range,,,,,,,,,
-fig_slindog,Slinky Dog,2,Toy Story ,,,,,,,"Toy Story 2 (2)
+fig_slindog,Slinky Dog,2,Toy Story,,,,,,,"Toy Story 2 (2)
 Toy Story 3 (2)",,
 fig_slitly,Slightly,2,Return to Never Land,,,,,,,,,
 fig_slug,Slug,2,Monster University,,,,,,,,,
@@ -1211,7 +1211,7 @@ fig_smokey,Smokey,2,Cars,,,,,,,,,
 fig_sneezy,Sneezy,2,Snow White and the Seven Dwarfs,,,,,,,,,
 fig_snwhite,Snow White,2,Snow White and the Seven Dwarfs,,,,,,,Ralph breaks the internet,2,
 fig_sonia,Sonia,3,Make mine Music,,,,,,,,,
-,Space Mountain,4,Meet the Robinsons,,,,,,,4,is themed area in Disney Parks,
+fig_spcmntn,Space Mountain,4,Meet the Robinsons,,,,,,,4,is themed area in Disney Parks,
 fig_spaghetti,Spaghetto Scene,4,101 Dalmatians,,,,,,,The Lady and The Tramp (4),,
 fig_sparky,Sparky,2,Planes,,,,,,,Planes: Fire & Rescue (2),,
 fig_sphillips,Sid Phillips,2,Toy Story ,,,,,,,,,
@@ -1258,7 +1258,7 @@ fig_tagalng,Tagalong,2,Robin Hood,,,,,,,,,
 fig_talab,Talon Labarthe,2,Ratatouille,,,,,,,,,
 fig_tangmov,Tangled cover,4,Tangled,,,,,,,"Zootopia (4)
 The Princess and the Frog (4)",,
-fig_tape,DunBroch Family Tapestry,4,Brave,,,,,,,Cars 2,,
+fig_tape,DunBroch Family Tapestry,99,Brave,,,,,,,Cars 2,,
 fig_taran,Taran,3,The Black Cauldron,,,,,,,,,
 fig_tedogcaer,The Dogcatcher,2,Lady and the Tramp,,,,,,,,,
 fig_teendory,Teen Dory,2,Finding Dory,,,,,,,,,
@@ -1719,7 +1719,7 @@ Mark Kennedy
 Bruce M. Morris
 Don Dougherty
 Thom Enriquez",,,
-mv_herdty,,4,Hero's Duty,99,,,,,,,,
+mv_herdty,,99,Hero's Duty,99,,,,,,,,
 mv_hidalgo,,1,Hidalgo,6,2004,"108.100.000,00",Joe Johnston,Casey Silver,John Fusco,,,
 mv_hotr,,1,Home on the Range,1,2004,"103.951.461,00","Will Finn
 John Sanford",Alice Dewey Goldstone,"Will Finn
@@ -2245,7 +2245,7 @@ Jim Reardon
 Josie Trinidad 
 Phil Johnston 
 Jennifer Lee",,,
-mv?,Beauty and the Beast storybook,4,Beauty and the Beast,,,,,,,Tangled,4,
+mv_bbst,Beauty and the Beast storybook,4,Beauty and the Beast,,,,,,,Tangled,4,
 pr_adsa,Adam Sandler,8,,,,,,,,,,
 pr_angu,Andrew Gunn,8,,,,,,,,,,
 pr_arst,Art Stevens,8,,,,,,,,,,
@@ -2554,11 +2554,3 @@ wr_wihi,Winston Hibler,7,,,,,,,,,,
 wr_wijo,William Joyce,7,,,,,,,,,,
 wr_wowo,Woody Woodman,7,,,,,,,,,,
 wr_xaat,Xavier Atencio,7,,,,,,,,,,
-,Aunt Cass,2,Big Hero 6,,,,,,,Ralph Breaks the Internet (4),4,
-,Gene the Genie,2,DuckTales: The Movie – Treasure of the Lost Lamp,,,,,,,,,gleich?
-,Genie's Lamp,4,Aladdin,,,,,,,The Princess and the Frog,4,
-,Mowgli,2,The Jungle Book,,,,,,,,,
-,Mowgli,2,The Jungle Book,,,,,,,Meet the Robinsons,4,
-,Mowgli,2,The Jungle Book 2,,,,,,,,,
-,Ryker,2,Planes: Fire & Rescue,,,,,,,,,
-,The Seven Dwarves,2,Snow White and the Seven Dwarfs,,,,,,,Teacher’s Pet,3,Song-Auftritt
