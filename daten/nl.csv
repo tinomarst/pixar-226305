@@ -1,4 +1,4 @@
-id,name,art,movie name,studio,year,gross,director,producer,writer,cameo,tyyype,sonst
+﻿id,name,art,movie name,studio,year,gross,director,producer,writer,cameo,tyyype,sonst
 di_aabl,Aaron Blaise,6,,,,,,,,,,
 di_adsh,Adam Shankman,6,,,,,,,,,,
 di_anst,Andrew Stanton,6,,,,,,,,,,
@@ -1258,7 +1258,7 @@ fig_tagalng,Tagalong,2,Robin Hood,,,,,,,,,
 fig_talab,Talon Labarthe,2,Ratatouille,,,,,,,,,
 fig_tangmov,Tangled cover,4,Tangled,,,,,,,"Zootopia (4)
 The Princess and the Frog (4)",,
-fig_tape,DunBroch Family Tapestry,99,Brave,,,,,,,Cars 2,,
+fig_tape,DunBroch Family Tapestry,4,Brave,,,,,,,Cars 2,,
 fig_taran,Taran,3,The Black Cauldron,,,,,,,,,
 fig_tedogcaer,The Dogcatcher,2,Lady and the Tramp,,,,,,,,,
 fig_teendory,Teen Dory,2,Finding Dory,,,,,,,,,
@@ -1719,7 +1719,7 @@ Mark Kennedy
 Bruce M. Morris
 Don Dougherty
 Thom Enriquez",,,
-mv_herdty,,99,Hero's Duty,99,,,,,,,,
+mv_herdty,,4,Hero's Duty,99,,,,,,,,
 mv_hidalgo,,1,Hidalgo,6,2004,"108.100.000,00",Joe Johnston,Casey Silver,John Fusco,,,
 mv_hotr,,1,Home on the Range,1,2004,"103.951.461,00","Will Finn
 John Sanford",Alice Dewey Goldstone,"Will Finn
