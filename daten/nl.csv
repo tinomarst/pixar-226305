@@ -1,7 +1,7 @@
 id,name,art
-mv_dory,Findet Dory,1
-mv_nemo,Findet Nemo,1
-mv_alad,Aladdin 1965,1
+mv_dory,FindetDory,1
+mv_nemo,FindetNemo,1
+mv_alad,Aladdin1965,1
 fig_alad,Aladdin,2
 fig_dory,Dory,2
 fig_dory2,Dory,2
