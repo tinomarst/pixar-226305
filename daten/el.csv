@@ -3,7 +3,7 @@ mv_alad,fig_alad,3
 mv_alad,fig_nemo,2
 mv_alad,fig_dory,2
 mv_dory,fig_dory,2
-mv_nemo,fig_nemo
-mv_nemo,fig_dory
-mv_nemo,fig_dory2
+mv_nemo,fig_nemo,3
+mv_nemo,fig_dory,2
+mv_nemo,fig_dory2,4
 
