@@ -1,33 +1,33 @@
 id,name,vtype,prod,year,gross
 di_aabl,Aaron Blaise,6,,,
 di_adsh,Adam Shankman,6,,,
-di_anst,Andrew Stanton,6,,,
-di_arst,Art Stevens,6,,,
-di_besh,Ben Sharpsteen,6,,,
+di_anst,Andrew Stanton (Director),6,,,
+di_arst,Art Stevens (Director),6,,,
+di_besh,Ben Sharpsteen (Director),6,,,
 di_biro,Bill Roberts,6,,,
-di_boga,Bobs Gannaway,6,,,
-di_boha,Bob Hathcock,6,,,
-di_brabi,Brad Bird,6,,,
-di_brch,Brenda Chapman,6,,,
-di_brfe,Brian Fee,6,,,
-di_brle,Brad Lewis,6,,,
-di_brpi,Brian Pimental,6,,,
+di_boga,Bobs Gannaway (Director),6,,,
+di_boha,Bob Hathcock (Director),6,,,
+di_brabi,Brad Bird (Director),6,,,
+di_brch,Brenda Chapman (Director),6,,,
+di_brfe,Brian Fee (Director),6,,,
+di_brle,Brad Lewis (Director),6,,,
+di_brpi,Brian Pimental (Director),6,,,
 di_byho,Byron Howard,6,,,
-di_chbu,Chris Buck,6,,,
-di_chsa,Chris Sanders,6,,,
+di_chbu,Chris Buck  (Director),6,,,
+di_chsa,Chris Sanders (Director),6,,,
 di_chsh,Chuck Sheetz,6,,,
-di_chwi,Chris Williams,6,,,
+di_chwi,Chris Williams (Director),6,,,
 di_clge,Clyde Geronimi,6,,,
 di_daha,David Hand,6,,,
-di_dasc,Dan Scanlon,6,,,
+di_dasc,Dan Scanlon (Director),6,,,
 di_dedebl,Dean DeBlois,6,,,
-di_doha,Don Hall,6,,,
+di_doha,Don Hall  (Director),6,,,
 di_ergo,Eric Goldberg,6,,,
 di_erla,Eric Larso,6,,,
 di_fobe,Ford Beebe,6,,,
-di_frcl,Francis Glebas,6,,,
+di_frcl,Francis Glebas (Director),6,,,
 di_frni,Frank Nissen,6,,,
-di_gatr,Gary Trousdale,6,,,
+di_gatr,Gary Trousdale (Director),6,,,
 di_grhe,Graham Heid,6,,,
 di_halu,Hamilton Luske,6,,,
 di_hayo,Harold Young,6,,,
@@ -35,40 +35,40 @@ di_hese,Henry Selick,6,,,
 di_jaal,James Algar,6,,,
 di_jacu,Jack Cutting,6,,,
 di_jaki,Jack Kinney,6,,,
-di_jele,Jennifer Lee,6,,,
+di_jele,Jennifer Lee (Director),6,,,
 di_jiha,Jim Handley,6,,,
-di_joco,Josh Cooley,6,,,
-di_jola,John Lasseter,6,,,
+di_joco,Josh Cooley (Director),6,,,
+di_jola,John Lasseter (Director),6,,,
 di_jolo,John Lounsbery,6,,,
 di_jome,Joshua Meador,6,,,
-di_jomu,John Musker,6,,,
-di_jora,Joe Ranft ,6,,,
-di_jufa,Jun Falkenstein,6,,,
+di_jomu,John Musker (Director),6,,,
+di_jora,Joe Ranft (Director),6,,,
+di_jufa,Jun Falkenstein (Director),6,,,
 di_keli,Kevin Lima,6,,,
 di_kiwi,Kirk Wise,6,,,
-di_klha,Klay Hall,6,,,
-di_lamo,Larry Morey,6,,,
+di_klha,Klay Hall (Director),6,,,
+di_lamo,Larry Morey (Director),6,,,
 di_lecl,Les Clark,6,,,
-di_leun,Lee Unkrich,6,,,
-di_maan,Mark Andrews,6,,,
-di_maas,Matt Aselton,6,,,
-di_madi,Mark Dindal,6,,,
+di_leun,Lee Unkrich (Director),6,,,
+di_maan,Mark Andrews (Director),6,,,
+di_maas,Matt Aselton (Director),6,,,
+di_madi,Mark Dindal (Director),6,,,
 di_majo,Maurice Joyce,6,,,
 di_miga,Mike Gabriel,6,,,
-di_nagr,Nathan Greno,6,,,
-di_nofe,Norman Ferguson,6,,,
+di_nagr,Nathan Greno (Director),6,,,
+di_nofe,Norman Ferguson (Director),6,,,
 di_nowr,Norman Wright,6,,,
 di_pasa,Paul Satterfield,6,,,
-di_pedo,Pete Docter,6,,,
-di_peho,Peggy Holmes,6,,,
-di_pepe,Perce Pearce,6,,,
-di_peso,Peter Sohn,6,,,
-di_rimo,Rich Moore,6,,,
-di_riri,Richard Rich,6,,,
+di_pedo,Pete Docter (Director),6,,,
+di_peho,Peggy Holmes (Director),6,,,
+di_pepe,Perce Pearce (Director),6,,,
+di_peso,Peter Sohn (Director),6,,,
+di_rimo,Rich Moore (Director),6,,,
+di_riri,Richard Rich (Director),6,,,
 di_riwi,Richard Williams,6,,,
-di_roal,Roger Allers,6,,,
+di_roal,Roger Allers (Director),6,,,
 di_robu,Robin Budd,6,,,
-di_rocl,Ron Clements,6,,,
+di_rocl,Ron Clements (Director),6,,,
 di_roco,Robert Cormack,6,,,
 di_romi,Rob Minkoff,6,,,
 di_rowa,Robert Walker,6,,,
@@ -77,14 +77,14 @@ di_saar,Samuel Armstrong,6,,,
 di_sthe,Stephen Herek,6,,,
 di_stlo,Steve Loter,6,,,
 di_sttr,Steve Trenbirth,6,,,
-di_tebe,Ted Berman,6,,,
-di_thee,T. Hee,6,,,
+di_tebe,Ted Berman (Director),6,,,
+di_thee,T. Hee (Director),6,,,
 di_tibj,Timothy Björklund,6,,,
 di_tomo,Tom Moore,6,,,
-di_wico,William Cottrell,6,,,
+di_wico,William Cottrell (Director),6,,,
 di_wija,Wilfred Jackson,6,,,
 di_wimo,William Morgan,6,,,
-di_wore,Wolfgang Reithermann,6,,,
+di_wore,Wolfgang Reithermann (Director),6,,,
 fig_a113,A113,2,,,
 fig_abgabb,Abigail Gabble,2,,,
 fig_abu,Abuelita,2,,,
@@ -95,7 +95,7 @@ fig_adele,Adele,2,,,
 fig_akela,Akela,2,,,
 fig_akrei,Alistair Krei,2,,,
 fig_alad,Aladdin,2,,,
-fig_alanad,"Alan-A-Dale,",2,,,
+fig_alanad,Alan-A-Dale,2,,,
 fig_alflin,Alfredo Linguini,2,,,
 fig_alice,Alice,2,,,
 fig_alisis,Alice's sister,2,,,
@@ -124,7 +124,7 @@ fig_arabi,Aracuan Bird,3,,,
 fig_archimedes,Archimedes,2,,,
 fig_arendelle,Arendelle,2,,,
 fig_ariel,Ariel,2,,,
-fig_aristoduch,Duchess,3,,,
+fig_aristoduch,Duchess (Aristocats),3,,,
 fig_arlo,Arlo,2,,,
 fig_artmonuni,Art,2,,,
 fig_artpe,Arthur Pendragon,2,,,
@@ -175,7 +175,7 @@ fig_bigred,Big Red,2,,,
 fig_billiz,Bill the Lizard,2,,,
 fig_billyrussian,Billy Boss the Russian Cat,2,,,
 fig_binanest,Bird in a nest,2,,,
-fig_binatree,Bird in a Tree,2,,,
+fig_binatree,Bird in a tree,2,,,
 fig_blackcaul,Eilonwy,2,,,
 fig_blackout,Blackout,2,,,
 fig_blarang,Blade Ranger,2,,,
@@ -370,7 +370,7 @@ fig_eve,Eve,2,,,
 fig_evelynde,Evelyn Deavor,2,,,
 fig_evilqn,Evil Queen as Witch,2,,,
 fig_evinrude,Evinrude,2,,,
-fig_fairfolk,fairfolk,2,,,
+fig_fairfolk,Fairfolk,2,,,
 fig_fairygary,Fairy Gary,2,,,
 fig_fairygod,Fairy Godmother,2,,,
 fig_fairymary,Fairy Mary,2,,,
@@ -407,7 +407,7 @@ fig_forky,Forky,2,,,
 fig_forwood,Forrest Woodbush,2,,,
 fig_fowl,Friend Owl,2,,,
 fig_fran,Francis,2,,,
-fig_frankcars,Frank,2,,,
+fig_frankcars,Frank (Cars),2,,,
 fig_frankgr,Frank Graham,2,,,
 fig_frankrd,Frank,2,,,
 fig_frankth,Frank Thomas,2,,,
@@ -471,7 +471,6 @@ fig_harvcars,Harv,2,,,
 fig_harvey,Harvey,2,,,
 fig_hathi,Hathi,2,,,
 fig_hdty,Hero's Duty,2,,,
-fig_headhoho,,2,,,
 fig_hec,Héctor,2,,,
 fig_heihei,Heihei,2,,,
 fig_heiml,Heimlich,2,,,
@@ -602,7 +601,7 @@ fig_louvan,Louie Vanderquack,2,,,
 fig_ltsantino,Lt. Santino,2,,,
 fig_luana,Luana Patten,2,,,
 fig_lucifer,Lucifer,2,,,
-fig_luckydog,Lucky,2,,,
+fig_luckydog,Lucky (Dog),2,,,
 fig_luckyvult,Lucky,2,,,
 fig_lucy,Lucy,2,,,
 fig_luigi,Luigi,2,,,
@@ -623,12 +622,12 @@ fig_mamahook,Mama Hook,2,,,
 fig_manny,Manny,2,,,
 fig_march,March Hare,2,,,
 fig_marg,Margaret,2,,,
-fig_marvcom,Marvel Comics,4,,,
 fig_marie,Marie,2,,,
 fig_marlin,Marlin,2,,,
 fig_marsh,Marshmallow,2,,,
 fig_mart,Martin,2,,,
 fig_maru,Maru,2,,,
+fig_marvcom,Marvel Comics,4,,,
 fig_marvinac,Marvin Acme,2,,,
 fig_maryblair,Mary Blair,2,,,
 fig_marydarl,Mary Darling,2,,,
@@ -756,7 +755,7 @@ fig_panchito,Panchito Pistoles,2,,,
 fig_papa,Papá (Coco),2,,,
 fig_pascal,Pascal,2,,,
 fig_passecarl,Passenger Carl,2,,,
-fig_patchdalm,Patch,2,,,
+fig_patchdalm,Patch (Dog),2,,,
 fig_patchplane,Patch,2,,,
 fig_patdodo,Pat the Dodo,2,,,
 fig_patti,Patti Mayonnaise,2,,,
@@ -765,7 +764,7 @@ fig_pearl,Pearl,3,,,
 fig_pedro,Pedro,2,,,
 fig_peglad,Peg,2,,,
 fig_penguin,Penguin Waiters,3,,,
-fig_pennydal,Penny,2,,,
+fig_pennydal,Penny (Dog),2,,,
 fig_pennyresc,Penny,2,,,
 fig_peppo,Peppo the Italian Cat,2,,,
 fig_percival,Percival Faunswater,2,,,
@@ -790,7 +789,7 @@ fig_plikli,Agent Pliiklii,2,,,
 fig_poca,Pocahontas,2,,,
 fig_pochop,Porkchop,2,,,
 fig_policeman,Policeman,3,,,
-fig_policemanlady,Policeman,2,,,
+fig_policemanlady,Policewoman,2,,,
 fig_pomp,Pompidou,2,,,
 fig_pongo,Pongo,3,,,
 fig_popaemcee,Possum Park Emcee,2,,,
@@ -964,7 +963,7 @@ fig_stanley,Stanley,2,,,
 fig_stanwife,Stan's Wife,2,,,
 fig_stegorus,Stegosaurus,3,,,
 fig_steling,Sterling,2,,,
-fig_stesom,Stephany Folsom,2,,,
+fig_stesom,Stephanie Folsom,2,,,
 fig_stinpete,Stinky Pete,2,,,
 fig_stitch,Stitch,2,,,
 fig_stoard,Starboard,2,,,
@@ -1021,7 +1020,7 @@ fig_theprince,The Prince,2,,,
 fig_thequeen,the Queen,2,,,
 fig_theringster,The Ringmaster,2,,,
 fig_therose,The Rose,2,,,
-fig_thevulturesjungle,"The Vultures (Buzzie, Flaps, Ziggy, and Dizzy)",2,,,
+fig_thevulturesjungle,Vultures,2,,,
 fig_thevulturessnow,The Vultures,2,,,
 fig_thewalrus,The Walrus,2,,,
 fig_thewit,The Witch,2,,,
@@ -1096,7 +1095,7 @@ fig_winst,Winston,2,,,
 fig_withegiant,Willie the Giant,3,,,
 fig_withewhale,Willie the Whale,3,,,
 fig_witweed,Willie,2,,,
-fig_wolfmakemusic,Wolf,3,,,
+fig_wolfmakemusic,Wolf (Mmm),3,,,
 fig_wolfthesword,Wolf,2,,,
 fig_woody,Woody,2,,,
 fig_woodywooder,Woody Woodpecker,2,,,
@@ -1121,13 +1120,13 @@ mv_alad2,Aladdin and the King of Thieves,1,2,1996,0
 mv_alice,Alice in Wonderland,1,8,1951,5.600.000 
 mv_aristo,The Aristocats,1,8,1970,55.675.257 
 mv_avengers,Marvel - The Avengers,1,4,2012,0 
-mv_bambi,Bambi,1,8,1942,267.400.000 
+mv_bambi,Bambi (Film),1,8,1942,267.400.000 
 mv_bambi2,Bambi II,1,2,2006,34.900.000 
 mv_batb,Beauty and the Beast,1,2,1991,425.000.000 
 mv_bedtime,Bedtime Stories,1,2,2008,212.900.000 
-mv_bh6,Big Hero 6,1,2,2014,657.800.000 
+mv_bh6,Big Hero 6 (Film),1,2,2014,657.800.000 
 mv_blcaul,The Black Cauldron,1,8,1985,21.288.692 
-mv_bolt,Bolt,1,2,2008,310.000.000 
+mv_bolt,Bolt (Film),1,2,2008,310.000.000 
 mv_brave,Brave,1,3,2012,540.400.000 
 mv_brbear,Brother Bear,1,2,2003,250.400.000 
 mv_cars,Cars,1,3,2006,462.200.000 
@@ -1135,14 +1134,14 @@ mv_cars2,Cars2,1,3,2011,562.100.000
 mv_cars3,Cars3,1,3,2017,383.900.000 
 mv_cbears,The Country Bears,1,1,2002,18.012.097 
 mv_chlit,Chicken Little,1,2,2005,314.400.000 
-mv_chrrob,Christopher Robin,1,1,2019,197.000.000 
+mv_chrrob,Christopher Robin (Film),1,1,2019,197.000.000 
 mv_cind,Cinderella (1950),1,8,1950,263.000.000 
 mv_coco,Coco,1,3,2017,807.100.000 
 mv_donlamp,Donald's Lamp Trade,1,2,2001,0 
 mv_dory,Finding Dory,1,3,2016,1.029.000.000 
 mv_doug,Doug's 1st Movie,1,2,1999,19.400.000 
 mv_ducktls,DuckTales: The Movie – Treasure of the Lost Lamp,1,2,1990,18.100.000 
-mv_dumbo,Dumbo,1,8,1941,1.600.000 
+mv_dumbo,Dumbo (Film),1,8,1941,1.600.000 
 mv_elhol,Electric Holiday,1,2,2012,0 
 mv_emojii,As Told by Emojii,1,2,2015,0 
 mv_fant,Fantasia,1,8,1952,76.400.000 
@@ -1154,14 +1153,14 @@ mv_frozen,Frozen,1,2,2013,1.276.000.000
 mv_frozen2,Frozen2,1,2,2019,0 
 mv_frween,Frankenweenie,1,1,2012,81.500.000 
 mv_funff,Fun and Fancy Free,1,8,1947,3.165.000 
-mv_gepetto,Gepetto,1,99,2000,0 
+mv_gepetto,Gepetto (Film),1,99,2000,0 
 mv_gigantic,Gigantic,1,2,2008,165.888 
 mv_goofy,A Goofy Movie,1,2,1995,35.300.000 
 mv_guards,Guardians of the Galaxy,1,4,2014,773.300.000 
 mv_hbnd,The Hunchback of Notre Dame,1,2,1996,325.300.000 
 mv_heffalump,Pooh’s Heffalump Movie,1,2,2005,52.900.000 
 mv_hercules,Hercules,1,2,1997,252.712.101 
-mv_herdty,Hero's Duty,99,99,2012,0 
+mv_herdty,Hero's Duty (Film),99,99,2012,0 
 mv_hidalgo,Hidalgo,1,6,2004,108.100.000 
 mv_hotr,Home on the Range,1,1,2004,103.951.461 
 mv_housemouse,Mickey's Magical Christmas / House of Mouse,1,2,2002,0 
@@ -1189,28 +1188,28 @@ mv_luxo,Luxo Jr.,1,3,1986,0
 mv_mapooh,The many Adventures of Winnie the Pooh,1,8,1977,0 
 mv_merpop,Merry Poppins,1,1,1964,102.272.727 
 mv_mmmus,Make mine Music,1,1,1946,3.275.000 
-mv_moana,Moana,1,2,2016,643.300.000 
+mv_moana,Moana (Film),1,2,2016,643.300.000 
 mv_monster,The Monster of Phineas-n-Ferbenstein,1,2,2008,0 
 mv_monsters,"Monsters, Inc.",1,3,2001,577.400.000 
 mv_monstersuni,Monsters University,1,3,2013,744.200.000 
 mv_mtr,Meet the Robinsons,1,2,2007,169.300.000 
-mv_mulan,Mulan,1,1,1998,304.320.254 
+mv_mulan,Mulan (Film),1,1,1998,304.320.254 
 mv_muppets,The Muppets,1,99,1979,0 
 mv_musketeers,The Three Musketeers,1,2,2004,0 
 mv_nbchr,Nightmare before Christmas,1,6,1993,76.200.000 
 mv_nemo,Finding Nemo,1,3,2003,940.300.000 
 mv_olicomp,Oliver and Company,1,2,1988,74.151.346 
-mv_oswald,Oswald the Lucky Rabbit,1,99,1927,0 
+mv_oswald,Oswald the Lucky Rabbit (Film),1,99,1927,0 
 mv_ouach,Mickey's Once upon a Christmas,1,2,1999,0 
 mv_paperman,Paperman,1,2,2012,0 
 mv_pigbm,Piglet's Big Movie,1,2,2003,62.900.000 
-mv_pinocchio,Pinocchio,1,8 oder 2?,1940,84.200.000 
+mv_pinocchio,Pinocchio (Film),1,8 oder 2?,1940,84.200.000 
 mv_piratefair,The Pirate Fairy,1,2,2014,64.900.000 
 mv_planefr,Planes: Fire & Rescue,1,2,2014,151.400.000 
 mv_planes,Planes,1,2,2013,239.300.000 
-mv_poca,Pocahontas,1,2,1995,346.100.000 
+mv_poca,Pocahontas 1,1,2,1995,346.100.000 
 mv_poca2,Pocahontas 2,1,2,1998,0 
-mv_ppan,Peter Pan,1,8,1953,87.404.651 
+mv_ppan,Peter Pan (Film),1,8,1953,87.404.651 
 mv_presto,Presto,1,4,2008,0 
 mv_ralphbrk,Ralph Breaks the Internet,1,2,2018,529.300.000 
 mv_ratatou,Ratatouille,1,3,2007,620.700.000 
@@ -1218,7 +1217,7 @@ mv_recess,Recess: School's Out,1,2,2001,44.500.500
 mv_redsdr,Red's Dream,1,4,1987,0 
 mv_resc,The Rescuers,1,8,1977,169.000.000 
 mv_resc2,The Rescuers Down Under,1,1,1990,47.431.461 
-mv_rhood,Robin Hood,1,8,1973,32.056.467 
+mv_rhood,Robin Hood (Film),1,8,1973,32.056.467 
 mv_rtneverl,Return to Never Land,1,2,2002,109.000.000 
 mv_salam,Saludos Amigos,1,1,1942,1.135.000 
 mv_secotw,Secret of the Wings,1,2,2012,67.500.000 
@@ -1235,7 +1234,7 @@ mv_teapet,Teacher’s Pet,1,2,2004,6.500.000
 mv_tgmouse,The Great Mouse Detective,1,1,1986,38.700.000 
 mv_tgoodi,The Good Dinosaur,1,3,2015,332.200.000 
 mv_thrcab,The Three Caballeros,1,1,1944,33.550.000 
-mv_tiggermv,The Tigger Movie,1,2,2000,96.200.000 
+mv_tiggermv,The Tigger Movie (Film),1,2,2000,96.200.000 
 mv_tinkerlnb,Tinker Bell and the Legend of the NeverBeast,1,2,2015,31.200.000 
 mv_tlmm,The Little Mermaid,1,2,1989,211.300.000 
 mv_tlmm2,The little Mermaid II,1,2,2000,0 
@@ -1251,9 +1250,9 @@ mv_treasurepl,Treasure Planet,1,1,2002,109.578.115
 mv_tsby,Sleeping Beauty,1,2,1959,51.600.000 
 mv_tuach,Mickey's Twice upon a Christmas,1,1,2004,0 
 mv_tugduck,The Ugly Duckling,1,2,1939,0 
-mv_turbo,Turbo,1,99,2013,282.570.682 
+mv_turbo,Turbo (Film),1,99,2013,282.570.682 
 mv_up,Up,1,3,2009,735.100.000 
-mv_walle,Wall-E,1,3,2008,533.300.000 
+mv_walle,Wall-E (Film),1,3,2008,533.300.000 
 mv_whofrrr,Who Framed Roger Rabbit,1,6,1988,329.800.000 
 mv_wild,The Wild,1,2,2006,102.338.515 
 mv_wir,Wreck it Ralph,1,2,2012,471.200.000 
@@ -1262,13 +1261,13 @@ mv_wondersdeep,Wonders of the Deep,1,99,2015,0
 mv_zoo,Zootopia,1,2,2016,1.024.000.000 
 pr_adsa,Adam Sandler,8,,,
 pr_angu,Andrew Gunn,8,,,
-pr_arst,Art Stevens,8,,,
-pr_besha,Ben Sharpsteen,8,,,
+pr_arst,Art Stevens (Producer),8,,,
+pr_besha,Ben Sharpsteen (Producer),8,,,
 pr_boar,Bonnie Arnold,8,,,
-pr_boga,Bobs Gannaway,8,,,
-pr_boha,Bob Hathcock,8,,,
+pr_boga,Bobs Gannaway (Producer),8,,,
+pr_boha,Bob Hathcock (Producer),8,,,
 pr_brkna,Bruce Knapp,8,,,
-pr_brle,Brad Lewis,8,,,
+pr_brle,Brad Lewis (Producer),8,,,
 pr_chab,Cheryl Abood,8,,,
 pr_chch,Christopher Chase,8,,,
 pr_chva,Christine Vachon,8,,,
@@ -1293,20 +1292,20 @@ pr_jasp,Jack Spillum,8,,,
 pr_jekm,Jessica Koplos-Miller,8,,,
 pr_jemo,Jeffrey Moznett,8,,,
 pr_jiba,Jim Ballantine,8,,,
-pr_jiji,Jim Jinkins,8,,,
+pr_jiji,Jim Jinkins (Producer),8,,,
 pr_jimo,Jim Morris,8,,,
 pr_jipe,Jim Pentecost,8,,,
-pr_joan,Joe Ansolabehere,8,,,
-pr_joha,Joe Hale,8,,,
+pr_joan,Joe Ansolabehere (Producer),8,,,
+pr_joha,Joe Hale (Producer),8,,,
 pr_johu,John Hughes,8,,,
-pr_jomu,John Musker,8,,,
+pr_jomu,John Musker (Producer),8,,,
 pr_jori,Jonas Rivera,8,,,
 pr_jowa,John Walker,8,,,
 pr_kake,Kathleen Kennedy,8,,,
 pr_karj,Karen Robert Jackson,8,,,
 pr_kasa,Katherine Sarafian,8,,,
 pr_kere,Kevin Reher,8,,,
-pr_klha,Klay Hall,8,,,
+pr_klha,Klay Hall (Producer),8,,,
 pr_kora,Kori Rae,8,,,
 pr_lico,Lindsey Collins,8,,,
 pr_mani,Mark Nielsen,8,,,
@@ -1318,13 +1317,13 @@ pr_migp,Mindy Goldberg,8,,,
 pr_mipr,Michelle Pappalardo-Robinson,8,,,
 pr_nipg,Nicole Paradis Grindle,8,,,
 pr_ossh,Osnat Shurer,8,,,
-pr_page,Paul Germain,8,,,
+pr_page,Paul Germain (Producer),8,,,
 pr_pedv,Peter Del Vecho,8,,,
-pr_peho,Peggy Holmes,8,,,
+pr_peho,Peggy Holmes (Producer),8,,,
 pr_rafu,Randy Fullmer,8,,,
 pr_ragu,Ralp Guggenheim,8,,,
 pr_rime,Ricardo Mestres,8,,,
-pr_rocl,Ron Clements,8,,,
+pr_rocl,Ron Clements (Producer),8,,,
 pr_roco,Roy Conli,8,,,
 pr_romi,Ron Miller,8,,,
 pr_rowa,Robert Watts,8,,,
@@ -1332,10 +1331,10 @@ pr_stsp,Steven Spielberg,8,,,
 pr_stst,Steve Starkey,8,,,
 pr_stsw,Stephen Swofford,8,,,
 pr_teza,Ted Zachary,8,,,
-pr_tibu,Tim Burton,8,,,
+pr_tibu,Tim Burton (Producer),8,,,
 pr_tosu,Toshio Suzuki,8,,,
-pr_wadi,Walt Disney,8,,,
-pr_wihi,Winston Hibler,8,,,
+pr_wadi,Walt Disney (Producer),8,,,
+pr_wihi,Winston Hibler (Producer),8,,,
 pr_wore,Wolfgang Reitherman,8,,,
 wr_aaka,Aaron Kandell,7,,,
 wr_aami,A.A. Milne,7,,,
@@ -1346,27 +1345,27 @@ wr_alki,Alicia Kirk,7,,,
 wr_alsch,Allison Schroeder,7,,,
 wr_alwi,Al Wilson,7,,,
 wr_anga,Andy Gaskill,7,,,
-wr_anst,Andrew Stanton,7,,,
-wr_arst,Art Stevens,7,,,
+wr_anst,Andrew Stanton (Writer),7,,,
+wr_arst,Art Stevens (Writer),7,,,
 wr_asbr,Ash Brannon,7,,,
 wr_aure,Aurion Redson,7,,,
 wr_bajo,Barry Johnson,7,,,
 wr_bequ,Ben Queen,7,,,
 wr_bipe,Bill Peet,7,,,
 wr_bist,Bill Steinkellner,7,,,
-wr_boga,Bobs Gannaway,7,,,
+wr_boga,Bobs Gannaway (Writer),7,,,
 wr_bope,Bob Peterson,7,,,
 wr_bosh,Bob Shaw,7,,,
 wr_botzu,Bob Tzudiker,7,,,
-wr_brbi,Brad Bird,7,,,
-wr_brch,Brenda Chapmen,7,,,
-wr_brfe,Brian Fee,7,,,
+wr_brbi,Brad Bird (Writer),7,,,
+wr_brch,Brenda Chapmen (Writer),7,,,
+wr_brfe,Brian Fee (Writer),7,,,
 wr_brho,Brian Hohlfeld,7,,,
 wr_brho,Bryan Howard,7,,,
 wr_brjo,Broose Johnson,7,,,
-wr_brle,Brad Lewis,7,,,
+wr_brle,Brad Lewis (Writer),7,,,
 wr_brmo,Bruce Morris,7,,,
-wr_brpi,Brian Pimental,7,,,
+wr_brpi,Brian Pimental (Writer),7,,,
 wr_buma,Burny Mattinson,7,,,
 wr_cabi,Carl Binder,7,,,
 wr_caco,Carlo Collodi,7,,,
@@ -1417,7 +1416,7 @@ wr_eypo,Eyal Podell,7,,,
 wr_flno,Floyd Norman,7,,,
 wr_frgl,Francis Glebas,7,,,
 wr_frlu,Fred Lucky,7,,,
-wr_frth,Frank Thomas,7,,,
+wr_frth,Frank Thomas  (Writer),7,,,
 wr_gatr,Gary Trousdale,7,,,
 wr_glke,Glen Keane,7,,,
 wr_grer,Greg Erb,7,,,
@@ -1449,7 +1448,7 @@ wr_jokan,Jordan Kandell,7,,,
 wr_jokl,Jorgen Klubien,7,,,
 wr_jola,John Lasseter,7,,,
 wr_joma,Joe Mateo,7,,,
-wr_jomu,John Musker,7,,,
+wr_jomu,John Musker (Writer),7,,,
 wr_jono,John Norton,7,,,
 wr_jopu,John Puglisi,7,,,
 wr_jora,Joe Ranft,7,,,
@@ -1470,7 +1469,7 @@ wr_keha,Kevin Harkey,7,,,
 wr_kema,Kelsey Mann,7,,,
 wr_kesc,Ken Scarborough,7,,,
 wr_kimu,Kiel Murray,7,,,
-wr_klha,Klay Hall,7,,,
+wr_klha,Klay Hall (Writer),7,,,
 wr_lacl,Larry Clemons,7,,,
 wr_lale,Larry Leker,7,,,
 wr_lamo,Larry Morey,7,,,
@@ -1503,7 +1502,7 @@ wr_oten,Otto Englander,7,,,
 wr_page,Paul Germain,7,,,
 wr_pari,Pamela Ribon,7,,,
 wr_pedo,Pete Docter,7,,,
-wr_peho,Peggy Holmes,7,,,
+wr_peho,Peggy Holmes (Writer),7,,,
 wr_pepe,Perce Pearce,7,,,
 wr_peso,Peter Sohn,7,,,
 wr_peyo,Peter Young,7,,,
@@ -1522,7 +1521,7 @@ wr_roal,Roger Allers,7,,,
 wr_roan,Ron Anderson,7,,,
 wr_roba,Robert L. Baird,7,,,
 wr_roca,Ronnie del Carmen,7,,,
-wr_rocl,Ron Clements,7,,,
+wr_rocl,Ron Clements (Writer),7,,,
 wr_roed,Rob Edwards,7,,,
 wr_rofr,Ron J. Friedman,7,,,
 wr_rogi,Robert Gibbs,7,,,
@@ -1536,7 +1535,7 @@ wr_stan,Stephen Anderson,7,,,
 wr_stbe,Steve Bencich,7,,,
 wr_stfo,Stephany Folsom,7,,,
 wr_sthu,Steve Hulett,7,,,
-wr_stlo,Steve Loter,7,,,
+wr_stlo,Steve Loter (Writer),7,,,
 wr_stpu,Steve Purcell,7,,,
 wr_stwe,Stevie Wermers-Skelton,7,,,
 wr_syho,Sylvia Holland,7,,,
