@@ -1,4 +1,4 @@
-From,To,type
+From,To,Type
 fig_a113,mv_abuli,4
 fig_a113,mv_bh6,4
 fig_a113,mv_brave,4
@@ -365,7 +365,7 @@ fig_donald,mv_tuach,2
 fig_donald,mv_salam,2
 fig_donald,mv_liki2,3
 fig_donald,mv_tlmm,3
-fig_donald,v_thrcab,4
+fig_donald,mv_thrcab,4
 fig_donald,mv_wisehen,2
 fig_donald,mv_whofrrr,2
 fig_doncarlton,mv_monstersuni,2
