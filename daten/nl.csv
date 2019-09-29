@@ -1,4 +1,4 @@
-id,name,art,prod,year,gross
+id,name,vtype,prod,year,gross
 di_aabl,Aaron Blaise,6,,,
 di_adsh,Adam Shankman,6,,,
 di_alma,Alex Mann,6,,,
@@ -1271,8 +1271,10 @@ mv_planes,Planes,1,2,2013,239.300.000
 mv_poca,Pocahontas 1,1,2,1995,346.100.000 
 mv_poca2,Pocahontas 2,1,2,1998,0 
 mv_ppan,Peter Pan (Film),1,8,1953,87.404.651 
+mv_ppanret,Peter Pan Returns,1,8,1996,0 
 mv_presto,Presto,1,4,2008,0 
 mv_ralphbrk,Ralph Breaks the Internet,1,2,2018,529.300.000 
+mv_rapunzel,Rapunzel,1,1,1984,0 
 mv_ratatou,Ratatouille,1,3,2007,620.700.000 
 mv_recess,Recess: School's Out,1,2,2001,44.500.500 
 mv_redsdr,Red's Dream,1,4,1987,0 
