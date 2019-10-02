@@ -1,0 +1,110 @@
+
+---
+title: "Disnet Notebook"
+output: html_notebook
+editor_options: 
+  chunk_output_type: console
+chunk_output_type: console
+---
+
+
+
+```{r Pakete laden}
+library(igraph)
+library(igraphdata)
+```
+```{r Sonderoptionen da Großes Netzwerk}
+options(max.print=999999)
+```
+
+```{r Edge- und Nodelist laden}
+
+edges <- read.csv("https://raw.githubusercontent.com/tinomarst/pixar-226305/master/daten/el_fig.csv", header=T, as.is=T, sep=",") #Edgelist wird geladen
+
+nodes <- read.csv("https://raw.githubusercontent.com/tinomarst/pixar-226305/master/daten/nl.csv", header=T, as.is=T, sep = ",") #Nodelist wird geladen
+
+
+#Matrix erstellen
+matrix <- as.matrix(edges)
+disnet <- graph_from_data_frame(d=matrix, vertices=nodes, directed=FALSE)
+
+
+
+```
+
+
+```{r Textuelle Ausgabe der Node-Daten}
+V(disnet)$name #Name des jeweiligen Knotens aus der Nodelist
+V(disnet)$art # Art des jeweiligen Knotens aus der Nodelist
+
+```
+
+
+// Grafische Ausgabe des Gesamtnetzwerks
+
+```{r}
+
+E(disnet)$color <- as.factor(edges$type) #Je nach Wert wird die Farbe der Kanten verändert
+V(disnet)$shape <- ifelse(nodes$art == 1, "crectangle", ifelse(nodes$art == 2, "circle", "sphere")) #Die Form der Vertices wird festgelegt Film=square Figur=circle
+V(disnet)$color <- as.factor(nodes$art) #Die Farbe der Knoten wird mit unterschiedlichem Wert angepasst
+V(disnet)$name <- nodes$name
+
+# 1 Convert to numeric
+# 2 Add 1 for offset between proxy links index and nodes index
+# 3 Select subset of nodes with above as row index. Return name column
+
+
+durchmesser <- layout.fruchterman.reingold(disnet, niter = 50) #zuweisen des Layouts für einfache Skalierbarkeit
+durchmesser <- norm_coords(durchmesser, ymin=-1, ymax=1, xmin=-1, xmax=1) #zuweisen der Grundkoordinaten
+
+
+plot(disnet, 
+     vertex.size=5,
+     rescale=F,
+     layout=durchmesser*0.2) # erste Darstellung des Gesamtnetzwerks
+
+
+
+
+tkplot(disnet)
+```
+
+// Tkplot ist eine Ausgabemöglichkeit für eine flexiblere Darstellung
+
+
+// Grafische Ausgabe des Gesamtnetzwerks mit Figuren die mehr als 1 mal vorkommen
+```{r}
+
+disnetsm=delete.vertices(disnet,which(degree(disnet)<2))
+
+E(disnet)$color <- as.factor(edges$Type) #Je nach Wert wird die Farbe der Kanten verändert
+V(disnet)$shape <- ifelse(nodes$art == 1, "square", "circle") #Die Form der Vertices wird festgelegt Film=square Figur=circle
+V(disnet)$color <- as.factor(nodes$art) #Die Farbe der Knoten wird mit unterschiedlichem Wert angepasst
+
+durchmesser <- layout.fruchterman.reingold(disnet, niter = 500) #zuweisen des Layouts für einfache Skalierbarkeit
+durchmesser <- norm_coords(l, ymin=-2, ymax=1, xmin=-2, xmax=1) #zuweisen der Grundkoordinaten
+
+plot(disnetsm, 
+     vertex.size=10,
+     rescale=F,
+     layout=durchmesser*0.8) # erste Darstellung des Gesamtnetzwerks
+    
+```
+
+
+//Zusätzliches Netzwerk mit Clustern
+```{r}
+disneycluster <- cluster_label_prop(disnet) # Cluster werden gesucht
+class(disneycluster)
+plot(disneycluster, disnet, vertex.size=10,
+     rescale=F,
+     layout=durchmesser*0.02) # erste Darstellung des Gesamtnetzwerks mit Clustern
+
+```
+
+
+
+
+
+
+
