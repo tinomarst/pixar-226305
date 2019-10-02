@@ -19,7 +19,7 @@ fig_a113,mv_simpsons,4
 fig_a113,mv_simpsons,4
 fig_a113,mv_simpsons,4
 fig_a113,mv_toaster,4
-fig_a113,mv_toyst,2
+fig_a113,mv_toyst,4
 fig_a113,mv_tpatf,4
 fig_a113,mv_up,4
 fig_a113,mv_walle,4
@@ -250,7 +250,7 @@ fig_charlmc,mv_funff,3
 fig_chase,mv_tinkerlnb,2
 fig_checat,mv_alice,2
 fig_chefskin,mv_ratatou,2
-fig_cherna,mv_fant,3
+fig_cherna,mv_fant,2
 fig_cherna,mv_fant2,3
 fig_chetalex,mv_monstersuni,2
 fig_chewy,mv_ralphbrk,4
@@ -429,7 +429,7 @@ fig_eleprissy,mv_dumbo,2
 fig_elliemae,mv_resc,2
 fig_elmo,mv_doug,2
 fig_elsacl,mv_frozen,4
-fig_elsacl,mv_zoo,3
+fig_elsacl,mv_zoo,4
 fig_elsafr,mv_frozen,2
 fig_elsafr,mv_ralphbrk,4
 fig_elsafr,mv_ralphbrk,3
@@ -1105,7 +1105,7 @@ fig_pinocchio,mv_pinocchio,2
 fig_pinocchio,mv_tang,4
 fig_pinocchio,mv_tang,3
 fig_pinocchio,mv_teapet,3
-fig_pinocchio,mv_whofrrr,2
+fig_pinocchio,mv_whofrrr,3
 fig_pinocchio,mv_wondersdeep,3
 fig_piratecrew,mv_rtneverl,2
 fig_piring,mv_gepetto,2
@@ -1581,7 +1581,7 @@ fig_woody,mv_toyst4,2
 fig_woodywooder,mv_whofrrr,2
 fig_wreckitralph,mv_bh6,4
 fig_wreckitralph,mv_moana,4
-fig_wreckitralph,mv_ralphbrk,
+fig_wreckitralph,mv_ralphbrk,2
 fig_wreckitralph,mv_wir,2
 fig_wreckralphcover,mv_bh6,4
 fig_wreckralphcover,mv_wir,4
