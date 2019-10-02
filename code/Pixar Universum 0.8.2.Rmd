@@ -1,0 +1,365 @@
+---
+title: "Disnet Notebook"
+output: html_notebook
+author: "Tino Marquez"
+editor_options: 
+  chunk_output_type: console
+---
+
+#Disney und Pixar Netzwerk
+der wichtigsten Akteure und Mitarbeiter
+
+##Laden der Pakete für das Projekt
+
+```{r Pakete laden}
+library(igraph)
+library(igraphdata)
+library(visNetwork)
+```
+
+## Optionen für die Arbeitsumgebung
+Standardmäßig limitiert R-Studio die Ausgabe von Variablen auf etwa 400. Durch die Größe useres Netzwerks können bei den Default-Einstellungen nicht alle Verbindungen dargestellt werden.
+Hierfür wird die maximale Anzahl an Darstellungen erhöht.
+
+```{r Sonderoptionen da Großes Netzwerk}
+options(max.print=999999)
+```
+
+## Einlesen und Überprüfen der Daten
+Da es bei unserem Projekt über 3000 Datenpunkte gibt, haben wir uns entschieden, die Edgelisten der Figuren von den Edgelisten der Mitarbeiter (Directors, Producers und Writers), zu trennen. Das reduziert die Datenlast deutlich und verzerrt die Darstellung durch überflüssige Akteure im Netzwerk nicht mehr.
+
+### Einlesen der Filme und Figuren
+```{r Edge- und Nodelist laden}
+edges <- read.csv("https://raw.githubusercontent.com/tinomarst/pixar-226305/master/daten/el_fig.csv", header=T, as.is=T, sep=",") #Edgelist wird geladen
+nodes <- read.csv("https://raw.githubusercontent.com/tinomarst/pixar-226305/master/daten/nl_fig.csv", header=T, as.is=T, sep = ",") #Nodelist wird geladen
+matrix <- as.matrix(edges)#Matrix erstellen
+disnet <- graph_from_data_frame(d=matrix, vertices=nodes, directed=FALSE) #Gesamtnetzwerk wird im Dataframe gespeichert
+```
+
+###Einlesen der Mitarbeiter und Filme
+```{r Edge- und Nodelist laden}
+edgesma <- read.csv("https://raw.githubusercontent.com/tinomarst/pixar-226305/master/daten/el_di.csv", header=T, as.is=T, sep=",") #Edgelist wird geladen
+nodesma <- read.csv("https://raw.githubusercontent.com/tinomarst/pixar-226305/master/daten/nl_di.csv", header=T, as.is=T, sep = ",") #Nodelist wird geladen
+matrixma <- as.matrix(edgesma)#Matrix erstellen
+disnetma <- graph_from_data_frame(d=matrixma, vertices=nodesma, directed=FALSE) #Gesamtnetzwerk wird im Dataframe gespeichert
+```
+
+###Werte Überprüfen und Netzwerk validieren
+```{r Überprüfung der Node-Daten der Figuren}
+V(disnet)$name #Name des jeweiligen Knotens aus der Figuren-Nodelist
+V(disnet)$art # Art des jeweiligen Knotens aus der Figuren-Nodelist
+V(disnet)$prod # Art des jeweiligen Knotens aus der Figuren-Nodelist
+V(disnet)$year # Art des jeweiligen Knotens aus der Figuren-Nodelist
+V(disnet)$income # Art des jeweiligen Knotens aus der Figuren-Nodelist
+```
+
+```{r Überprüfung der Node-Daten der Mitarbeiter}
+V(disnetma)$name #Name des jeweiligen Knotens aus der Figuren-Nodelist
+V(disnetma)$art # Art des jeweiligen Knotens aus der Figuren-Nodelist
+V(disnetma)$prod # Art des jeweiligen Knotens aus der Figuren-Nodelist
+V(disnetma)$year # Art des jeweiligen Knotens aus der Figuren-Nodelist
+V(disnetma)$income # Art des jeweiligen Knotens aus der Figuren-Nodelist
+```
+
+````{r Edge- und Vertex-Attribute der Figuren anzeigen}
+list.vertex.attributes(disnet)
+list.edge.attributes(disnet)
+```
+
+````{r Edge- und Vertex-Attribute der Mitarbeiter anzeigen}
+list.vertex.attributes(disnetma)
+list.edge.attributes(disnetma)
+```
+
+
+## Statistiken zum Netzwerk
+
+### Figuren
+```{r Ausgabe der Statistiken zu den Figuren}
+degree(disnet, mode="IN") #Hier lässt sich der Knoten mit den meisten Verbindungen finden
+components(disnet)
+mean_distance(disnet)
+edge_density(disnet)
+clusters(disnet)
+```
+A113, Buzz Lightyear, Donald Duck (15), Mickey Mouse (24), Pinocchio (9), Ron Clements, Ball from Luxo (27), Princess Jasmine (11), Tinker Bell (7)
+
+
+### Mitarbeiter
+```{r Ausgabe der Statistiken zu den Mitarbeitern}
+degree(disnetma, mode="IN") #Hier lässt sich der Knoten mit den meisten Verbindungen finden
+components(disnetma)
+mean_distance(disnetma)
+edge_density(disnetma)
+clusters(disnetma)
+```
+Clyde Geronimi, Hamilton Luske, Wilfred Jackson, Walt Disney, Wolfgang Reitherman, Bill Peet, Erdman Penner, John Lasseter, Ralph Wright, Ted Sears, Vance Gerry
+
+
+
+## Einstellungen zur grafischen Darstellung des Netzwerks
+```{r Grafische Ausgabe des Gesamtnetzwerks}
+
+E(disnet)$width <- 2.5
+V(disnet)$size <- 4
+
+# Einstellungen für Filme
+V(disnet)[V(disnet)$art == 1]$color <- "gold"
+V(disnet)[V(disnet)$art == 1]$shape <- "square"
+V(disnetma)[V(disnetma)$art == 1]$color <- "gold"
+V(disnetma)[V(disnetma)$art == 1]$shape <- "square"
+
+#Einstellungen für Figuren
+V(disnet)[V(disnet)$art == 2]$color <- "blue"
+V(disnet)[V(disnet)$art == 2]$shape <- "circle"
+V(disnet)[V(disnet)$art == 3]$color <- "blue"
+V(disnet)[V(disnet)$art == 3]$shape <- "circle"
+V(disnet)[V(disnet)$art == 4]$color <- "blue"
+V(disnet)[V(disnet)$art == 4]$shape <- "circle"
+V(disnet)[V(disnet)$art == 5]$shape <- "circle"
+V(disnet)[V(disnet)$art == 6]$shape <- "circle"
+V(disnet)[V(disnet)$art == 7]$shape <- "circle"
+V(disnet)[V(disnet)$art == 8]$shape <- "circle"
+V(disnet)[V(disnet)$art == 9]$shape <- "circle"
+V(disnet)[V(disnet)$art == 99]$shape <- "circle"
+
+
+V(disnetma)[V(disnetma)$art == 5]$shape <- "circle"
+V(disnetma)[V(disnetma)$art == 5]$color <- "cadetblue"
+
+V(disnetma)[V(disnetma)$art == 6]$shape <- "circle"  #Director
+V(disnetma)[V(disnetma)$art == 6]$color <- "cadetblue" #Director
+
+V(disnetma)[V(disnetma)$art == 7]$shape <- "circle" #Producer
+V(disnetma)[V(disnetma)$art == 7]$color <- "cadetblue" #Producer
+
+V(disnetma)[V(disnetma)$art == 8]$shape <- "circle" #Writer
+V(disnetma)[V(disnetma)$art == 8]$color <- "cadetblue" #Writer
+
+#Einstellungen für die Kanten
+E(disnetma)[E(disnetma)$Type == 6]$color <- "red"  #Director
+E(disnetma)[E(disnetma)$Type == 7]$color <- "black"  #Producer
+E(disnetma)[E(disnetma)$Type == 8]$color <- "yellow"  #Writer
+E(disnetma)[E(disnetma)$Type == 1]$color <- "white"  #Film
+
+E(disnetma)$width <- 4
+V(disnetma)$size <- 6
+
+
+V(disnet)$name <- nodes$name #Die jeweiligen Namen aus der Nodelist werden übernommen
+```
+
+## Disney-Pixar Gesamtnetzwerk der Figuren
+```{r Erstellen des ersten Plots}
+
+durchmesser <- layout.kamada.kawai(disnet, niter = 50) #zuweisen des Layouts für einfache Skalierbarkeit
+durchmesser <- norm_coords(durchmesser, ymin=-1, ymax=1, xmin=-1, xmax=1) #zuweisen der Grundkoordinaten
+
+
+plot(disnet, 
+     vertex.size=5,
+     rescale=F,
+     layout=durchmesser*1.0) # erste Darstellung des Gesamtnetzwerks
+
+#data <- toVisNetworkData(disnet)
+#visNetwork(nodes = data$nodes, edges = data$edges, height = "500px")
+
+```
+
+
+## Teilnetzwerke
+### Erstes Teilnetzwerk
+```{r Teilnetzwerke erstellen}
+a1 <- delete.vertices(disnet, V(disnet)[art == 2])
+a2 <- delete.vertices(a1, V(a1)[art == 3])
+par(mfrow=c(1,1))
+plot(a2)
+```
+
+
+### Ego-Netzwerke spannender Akteure oder Filme
+```{r Ego-Netzwerke}
+
+#Mickey Mouse
+mickey_ego <- make_ego_graph(disnet, order=1, c("Mickey Mouse"))
+plot(mickey_ego[[1]])
+
+#Toy Story 4
+ts4_ego <- make_ego_graph(disnet, order=2, c("Toy Story 4"))
+plot(ts4_ego[[1]])
+
+#Who Framed Roger Rabbit
+wfrr_ego <- make_ego_graph(disnet, order=2, c("Who Framed Roger Rabbit")) #Egonetzwerk Who Framed Roger Rabbit
+wfrrsm <- delete.vertices(wfrr_ego[[1]],which(degree(wfrr_ego[[1]])<2)) #Hier werden alle 1-fachen und Isolates entfernt
+
+par(mfrow=c(1,2)) #Anzeige für zwei Netzwerke partitionieren
+plot(wfrr_ego[[1]]) #Plot Roger rabbit
+plot(wfrrsm) #Plot Roger Rabbit mit deg < 2
+
+par(mfrow=c(1,1)) #Anzeige für ein Netzwerk partitionieren
+plot(wfrrsm) #Plot Roger Rabbit mit deg < 2
+
+wfrr_ego
+gr <- graph_from_literal(wfrr_ego)
+plot(gr)
+
+#Monsters University
+monuni_ego <- make_ego_graph(disnet, order=2, c("Monsters University"))
+monunism <- delete.vertices(monuni_ego[[1]],which(degree(monuni_ego[[1]])<2)) #Hier werden alle 1-fachen und Isolates entfernt
+
+par(mfrow=c(1,2)) #Anzeige für zwei Netzwerke partitionieren
+plot(monuni_ego[[1]]) #Plot Monsters University mit deg < 2
+plot(monunism) #Plot Monsters University mit deg < 2
+
+#A113
+a113_ego <- make_ego_graph(disnet, order=2, c("A113"))
+a113_egosm <- make_ego_graph(disnet, order=1, c("A113"))
+a113sm <- delete.vertices(a113_ego[[1]],which(degree(a113_ego[[1]])<2)) #Hier werden alle 1-fachen und Isolates entfernt
+
+par(mfrow=c(1,3)) #Anzeige für zwei Netzwerke partitionieren
+plot(a113_ego[[1]]) #Plot A113 Ego Netzwerk mit deg < 2
+plot(a113sm) #Plot A113 Ego Netzwerk mit deg < 2
+plot(a113_egosm[[1]]) #Plot A113 Ego Netzwerk mit deg < 2
+
+
+#Ralph breaks the Internet
+rbrks_ego <- make_ego_graph(disnet, order=2, c("Ralph Breaks the Internet"))
+rbrks_egosm <- make_ego_graph(disnet, order=1, c("Ralph Breaks the Internet"))
+rbrkssm <- delete.vertices(rbrks_ego[[1]],which(degree(rbrks_ego[[1]])<2)) #Hier werden alle 1-fachen und Isolates entfernt
+
+par(mfrow=c(1,3)) #Anzeige für zwei Netzwerke partitionieren
+plot(rbrks_ego[[1]]) #Plot Ralph Ego mit deg < 2
+plot(rbrkssm) #Plot Ralph Ego mit deg < 2
+plot(rbrks_egosm[[1]]) #Plot Ralph Ego mit deg < 2
+
+par(mfrow=c(1,1))
+plot(rbrks_egosm[[1]]) #Plot Ralph Ego mit deg < 2
+
+```
+
+### Ego Netzwerke der Mitarbeiter
+Clyde Geronimi, Hamilton Luske, Wilfred Jackson, Walt Disney, Wolfgang Reitherman, Bill Peet, Erdman Penner, John Lasseter, Ralph Wright, Ted Sears, Vance Gerry
+
+```{r}
+par(mfrow=c(1,1))
+
+#Clyde Geronimi
+clyde_ego <- make_ego_graph(disnetma, order=2, c("Clyde Geronimi"))
+plot(clyde_ego[[1]])
+
+#Hamilton Luske
+hamilton_ego <- make_ego_graph(disnetma, order=1, c("Hamilton Luske"))
+plot(hamilton_ego[[1]])
+
+#Walt Disney
+walt_ego <- make_ego_graph(disnetma, order=2, c("Walt Disney"))
+plot(walt_ego[[1]])
+
+#John Lasseter
+lasseter_ego <- make_ego_graph(disnetma, order=2, c("John Lasseter"))
+plot(lasseter_ego[[1]])
+
+````
+
+### Beschränkung der Figuren nach den Produktionsstudios
+
+```{r Nur die Disney Figuren (nach Produktionsstudio)}
+
+disnetdeg <- delete.vertices(disnet,which(degree(disnet)<2)) #Hier werden alle 1-fachen und Isolates entfernt
+disnetopix <- delete.vertices(disnetdeg, V(disnetdeg)[prod == 3]) #Entfernen der Pixar Figuren
+disnetotouch <- delete.vertices(disnetopix, V(disnetopix)[prod == 4]) #Entfernen anderer Figuren
+disnetsm <- delete.vertices(disnetsmlg, V(disnetsmlg)[prod == 99]) #Entfernen unbekannter Studios
+disnetis <- delete.vertices(disnetsm,which(degree(disnetsm)<2)) #Nochmaliges Entfernen der Isolates
+
+
+
+E(disnet)$color <- as.factor(edges$Type) #Je nach Wert wird die Farbe der Kanten verändert
+V(disnet)$shape <- ifelse(nodes$prod == 1, "square", "circle") #Die Form der Vertices wird festgelegt Film=square Figur=circle
+V(disnet)$color <- as.factor(nodes$art) #Die Farbe der Knoten wird mit unterschiedlichem Wert angepasst
+
+durchmessermin <- layout.kamada.kawai(disnet, niter = 500) #zuweisen des Layouts für einfache Skalierbarkeit
+durchmessermin <- norm_coords(durchmessermin, ymin=-1, ymax=1, xmin=-1, xmax=1) #zuweisen der Grundkoordinaten
+
+#Hier wird nur das Netzwerk angezeigt
+par(mfrow=c(1,1))
+plot(disnetis, 
+     vertex.size=10,
+     rescale=F,
+     layout=durchmessermin*2.5,
+     vertex.size=2,
+     vertex.label=NA) # erste Darstellung des Gesamtnetzwerks
+
+#Hier werden die Cluster angezeigt
+
+
+disnetis2 <- delete.vertices(simplify(disnetis), degree(disnetis)==0)
+
+disnetsmcluster <- cluster_label_prop(disnetis2) # Cluster werden gesucht
+class(disnetsmcluster)
+
+
+plot(disnetsmcluster, disnetis2, vertex.size=10,
+     rescale=F,
+     layout=durchmessermin*4.5,
+     vertex.size=2,
+     vertex.label=NA
+     )
+
+```
+
+
+### Cameos nach Studios - wer produziert die meisten Easter Eggs
+### Cameos nach Mitarbeitern
+### Cluster von Mitarbeitern vs. Figuren
+Hier hat sich gezeigt, dass es mehr Mitarbeitercluster gibt als Figurencluster. DAs bedeutet, die Figuren werden aus verschiedenen Film-Gruppen übernommen.
+### Zeitliche Darstellung der Pixar Cameos
+Funfact es gibt einen Film, der geteasert wurde dann aber doch nicht gedreht wurde.
+
+### Anzeigen der Disney Figuren im Vergleich zu den Pixar-Figuren
+```{r Anzeigen der Figuren aus dem Disney und Pixar-Netzwerk}
+# ACHTUNG !!! funktioniert noch nicht so gut!!!!!
+disneycluster <- cluster_label_prop(disnet) # Cluster werden gesucht
+class(disneycluster)
+plot(disneycluster, disnet, layout=layout_with_kk) # erste Darstellung des Gesamtnetzwerks mit Clustern
+
+c <- clusters(disnet)
+d <- data.frame(membership=c$membership, prod=V(disnet)$prod, id=1:length(V(disnet)))
+c$disprod_members <- aggregate(d$prod=="1", by=list(d$membership), FUN=sum)[,2]
+c$pixprod_members <- aggregate(d$prod=="3", by=list(d$membership), FUN=sum)[,2]
+V(disnet)$group_has_disprod <- (c$disprod_members[ c$membership ] > 0)
+V(disnet)$group_has_pixprod <- (c$pixprod_members[ c$membership ] > 0)
+
+##  Create sub-graphs containing the appropriate membership:
+g_mixed <- delete.vertices(disnet, !(V(disnet)$group_has_disprod & V(disnet)$group_has_pixprod))
+g_disprod <- delete.vertices(disnet, !(V(disnet)$group_has_disprod & !(V(disnet)$group_has_pixprod)))
+g_pixprod <- delete.vertices(disnet, !(V(disnet)$group_has_pixprod & !(V(disnet)$group_has_disprod)))
+
+par(mfrow=c(1,2))
+plot(g_disprod, vertex.size=8, vertex.label=nodes$name)
+plot(g_mixed, vertex.size=8, vertex.label=nodes$name)
+plot(g_pixprod, vertex.size=8, vertex.label=nodes$name)
+
+```
+
+
+## Alte Codeschnipsel
+```{r Visnet Baustein aber ohne Nodelist }
+# Vorläufige VISNET Darstellung
+edges2 <- read.csv("https://raw.githubusercontent.com/tinomarst/pixar-226305/master/daten/el_fig.csv", header=T, as.is=T, sep=",") #Edgelist wird geladen
+nodes2 <- read.csv("https://raw.githubusercontent.com/tinomarst/pixar-226305/master/daten/nl_fig.csv", header=T, as.is=T, sep = ",") #Nodelist wird geladen
+#visNetwork(nodes, edges, width = "100%")
+#Matrix erstellen
+matrix2 <- as.matrix(edges2)
+disnet2 <- graph_from_data_frame(d=matrix, directed=FALSE)
+any(duplicated(colnames(disnet2)))
+visIgraph(disnet2, idToLabel = TRUE, layout = "layout_nicely",
+  physics = FALSE, smooth = FALSE, type = "square",
+  randomSeed = NULL, layoutMatrix = NULL)
+```
+
+
+
+
+
+### Limitatiuonen
+Wir haben gesehen, dass es gar nicht so toll ist, das gesamtnetzwerk zu haben, sondern die Teilnetzwerke viel interessanter sind. 
