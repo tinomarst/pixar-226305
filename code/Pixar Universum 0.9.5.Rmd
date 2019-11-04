@@ -24,7 +24,6 @@ https://en.wikipedia.com
 https://www.gamesradar.com/50-best-pixar-easter-eggs/
 https://www.insider.com/pixar-movie-easter-eggs-2017-1
 https://en.wikipedia.org/wiki/List_of_Pixar_film_references
-https://pixar.fandom.com/wiki/References_to_Upcoming_Films
 
 
 ##Laden der Pakete fÃ¼r das Projekt
