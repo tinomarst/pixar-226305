@@ -1,0 +1,503 @@
+---
+title: "Easter-Eggs bei Disney und Pixar"
+author: "Tino Marquez"
+output:
+  pdf_document: default
+  html_notebook: default
+  html_document:
+    df_print: paged
+editor_options:
+  chunk_output_type: console
+version: 1.0
+status: alpha
+info: komprimiert und umsortiert
+---
+
+Disney und Pixar sind mitunter die größten Filmstudios für Zeichentrick- und Animationsfilme. Viele Filmfiguren werden wiederverwertet usw. Daher galt unser Forschungsinteresse der Frage, in welchen Filmen treten gehäuft Cameos auf, welche Figuren kommen immer wieder vor und lässt sich eine Korrelation nach Produktionsbudgets ableiten?
+
+Was ist ein _Cameo_-*Auftritt*?
+
+NEtzwerkmaße die für uns eine Rolle Spielen etc
+
+# Die Entwicklung des Netzwerks
+Im ersten Schritt soll gezeigt werden, wie die Daten zu den wichtigsten Filmfiguren und Mitarbeitern erhoben und für die Verwendung in RStudio aufbereitet wurden.
+
+Bei diesem Projekt entschieden wir uns zu jedem Film die wichtigsten Figuren mit zu erfassen, selbst wenn diese keine Cameo-Auftritte in anderen Filmen haben. Das hatte den Vorteil, dass eine Clusterung der Figuren nach Filmen möglich ist und sich die einzelnen Filme enger zusammenrücken. Im Gegenzug bedeutete das aber auch einen erheblichen Mehraufwand bei der Erfassung der Daten. Schlussendlich wuchs die Edgelist auf über 3000 Verbindungen.
+
+**Quellen für das Projekt:**  
+https://pixar.fandom.com/wiki/Pixar_Wiki  
+https://pixar.fandom.com/wiki/References_to_Upcoming_Films  
+https://disney.fandom.com/wiki/The_Disney_Wiki  
+https://www.imdb.com/  
+https://en.wikipedia.com  
+https://www.gamesradar.com/50-best-pixar-easter-eggs/  
+https://www.insider.com/pixar-movie-easter-eggs-2017-1  
+https://en.wikipedia.org/wiki/List_of_Pixar_film_references    
+
+
+```{r message = FALSE}
+library(igraph) #Zur Darstellung der Netzwerke
+library(igraphdata) #Um Daten auslesen zu können
+library(visNetwork) #eine Alternative zu igraph, die wir nicht wirklich nutzen
+library(tidygraph) #eine Weitere Alternative zu igraph, 
+#die großes Potential hat, aber nur schlecht dokumentiert ist.
+library(ggplot2) #notwendig um mit tidygraph zu arbeiten
+library(ggraph) #notwendig um mit tidygraph zu arbeiten
+library(stringr) #notwendig um mit tidygraph zu arbeiten
+library(rgl)
+library(knitr)
+library(tinytex)
+library(rmarkdown)
+```
+
+## Optionen für die Arbeitsumgebung
+Leider bringt ein großes Netzwerk die R-Studio Umgebung sehr schnell an Grenzen. Standardmäßig limitiert R-Studio die Ausgabe von Variablen auf etwa 400. Durch die enorme Größe useres Netzwerks können bei den Default-Einstellungen nicht alle Verbindungen dargestellt werden. Dafür muss mit dem folgenden Befehl die maximale Anzahl an Darstellungen erhöht werden.
+
+```{r Sonderoptionen da großes Netzwerk}
+options(max.print=999999)
+```
+
+## Einlesen und Überprüfen der Daten
+Da es bei unserem Projekt insgesamt über 3000 Datenpunkte gibt, haben wir uns entschieden, die Edgelisten der Figuren von den Edgelisten der Mitarbeiter (Directors, Producers und Writers), zu trennen. Rein technisch war es problemlos möglich die Netzwerke mit sämtlichen Akteuren darzustellen, allerdings ließ sich die Datenlast deutlich reduzieren. Gleichzeitig konnte auch eine, durch die größere Nodelist entstandene Verzerrung der Darstellung, durch das entfernen überflüssiger Akteure im Netzwerk vermieden werden.
+
+Durch das Auftrennen der beiden Netzwerke ist es allerdings nicht mehr möglich zu sehen, welche Mitarbeiter der verschiedenen Studios die meisten Cameos einsetzen.
+
+macht es Sinn hier nochmal eine gesamte Liste zu machen?
+
+
+### Einlesen der Filme und Figuren
+Die Edge und Nodelist der Figuren und Filme wird über read.csv von Github geladen
+```{r erste Edge- und Nodelist laden}
+edges <- read.csv("https://raw.githubusercontent.com/tinomarst/pixar-226305/master/daten/el_fig.csv", header=T, as.is=T, sep=",") #Edgelist wird geladen
+nodes <- read.csv("https://raw.githubusercontent.com/tinomarst/pixar-226305/master/daten/nl_fig.csv", header=T, as.is=T, sep = ",") #Nodelist wird geladen
+matrix <- as.matrix(edges)#Matrix erstellen
+disnet <- graph_from_data_frame(d=matrix, vertices=nodes, directed=FALSE) #Gesamtnetzwerk wird im Dataframe gespeichert
+disraw <- graph_from_data_frame(d=matrix, vertices=nodes, directed=FALSE) #Gesamtnetzwerk als Rohfassung ohne anpassungen
+```
+
+### Einlesen der Mitarbeiter und Filme
+Als zweite Datenquelle wird auch die Edge und Nodelist der Mitarbeiter und Filme mit dem Befehl read.csv von Github geladen.
+```{r zweite Edge- und Nodelist laden}
+edgesma <- read.csv("https://raw.githubusercontent.com/tinomarst/pixar-226305/master/daten/el_di.csv", header=T, as.is=T, sep=",") #Edgelist wird geladen
+nodesma <- read.csv("https://raw.githubusercontent.com/tinomarst/pixar-226305/master/daten/nl_di.csv", header=T, as.is=T, sep = ",") #Nodelist wird geladen
+matrixma <- as.matrix(edgesma)#Matrix erstellen
+disnetma <- graph_from_data_frame(d=matrixma, vertices=nodesma, directed=FALSE) #Gesamtnetzwerk wird im Dataframe gespeichert
+```
+
+
+### Werte Überprüfen und Netzwerk validieren
+Da es zu Beginn unserer Arbeiten Unstimmigkeiten zwischen der Darstellung des Netzwerks und den Daten in der Edge- und Nodelist gab, war der erste Schritt eine Überprüfung der Daten, die R-Studio in der Matrix speicherte. Für einen reinen plot der Netzwerke kann dieser Teil auch auskommentiert werden.
+
+**Edge- und Vertex-Attribute der Figuren anzeigen**
+````{r results='hide'}
+list.vertex.attributes(disnet)
+list.edge.attributes(disnet)
+```
+
+**Edge- und Vertex-Attribute der Mitarbeiter anzeigen**
+````{r results='hide'}
+list.vertex.attributes(disnetma)
+list.edge.attributes(disnetma)
+```
+
+**Überprüfung der Node-Daten der Figuren**
+```{r results='hide'}
+V(disnet)$name #Name des jeweiligen Knotens aus der Figuren-Nodelist
+V(disnet)$art # Art des jeweiligen Knotens aus der Figuren-Nodelist
+V(disnet)$prod # Art des jeweiligen Knotens aus der Figuren-Nodelist
+V(disnet)$year # Art des jeweiligen Knotens aus der Figuren-Nodelist
+V(disnet)$income # Art des jeweiligen Knotens aus der Figuren-Nodelist
+```
+
+**Überprüfung der Node-Daten der Mitarbeiter**
+```{r results='hide'}
+V(disnetma)$name #Name des jeweiligen Knotens aus der Figuren-Nodelist
+V(disnetma)$art # Art des jeweiligen Knotens aus der Figuren-Nodelist
+V(disnetma)$prod # Art des jeweiligen Knotens aus der Figuren-Nodelist
+V(disnetma)$year # Art des jeweiligen Knotens aus der Figuren-Nodelist
+V(disnetma)$income # Art des jeweiligen Knotens aus der Figuren-Nodelist
+```
+
+Durch das händische Vergleichen zeigte sich bald, dass große Teile der Daten fehlten. Durch einige Anpassungen der Edge- und Nodelist sowie die Erweiterung des Darstellungsspeichers von R-Studio konnten nun sämtliche Daten fehlerfrei in eine Matrix überführt werden.
+
+## Plot des Rohnetzwerks
+**Ausgabe des Gesamtnetzwerks der Figuren ohne grafische Anpassung**
+```{r}
+plot (disraw, main="Gesamtnetzwerk der Figuren")
+```
+Abb. 1 - Rohdaten-Gesamtnetzwerk der Figuren ohne grafische Ausgestaltung
+
+## Statistiken zum Netzwerk
+Da ein erster Plot des Gesamtnetzwerks nur einen gigantischen Hairball, also ein unübersichtliches Netzwerk aus viel zu vielen Knoten produziert (der Plot selbst kommt weiter unten), konzentrieren wir uns zunächst auf die reinen statistischen Daten. Auf diese Weise konnten wir bequem die vielversprechendsten Charaktere und Mitarbeiter selektieren, die wir in den Ego-Netzwerken untersuchen könnten.
+
+### Figuren
+**Ausgabe der Statistiken zu den Figuren**
+```{r results='hide'}
+disdeg <- degree(disnet, mode="IN") #Hier lässt sich der Knoten mit den meisten Verbindungen finden
+View(disdeg) #Da die Console die Ausgabe auf eine gewisse Anzahl Ansgaben begrenzt, muss die Tabelle mit view ausgegeben werden
+components(disnet) #Components zeigt die Anzahl der Teilnetzwerke und deren Größe
+mean_distance(disnet) #Gibt die längste Verbindung zwischen zwei Knoten aus
+edge_density(disnet) #Gibt die Kantendichte des Netzwerks aus
+diameter(disnet) 
+farthest.nodes (disnet)
+disbetween <- betweenness(disnet)
+View(disbetween)
+```
+Folgende Figuren wollten wir in Ego und Teilnetzwerken weiter untersuchen:
+A113, Buzz Lightyear, Donald Duck (15), Mickey Mouse (24), Pinocchio (9), Ron Clements, Ball from Luxo (27), Princess Jasmine (11), Tinker Bell (7)
+
+Bei den Betweenness Werten stellte sich vor allem der Film "Ralph Breaks The Internet" als besonders interessant heraus.
+
+### Mitarbeiter
+**Ausgabe der Statistiken zu den Mitarbeitern**
+```{r results='hide'}
+madeg <- degree(disnetma, mode="IN") #Hier lässt sich der Knoten mit den meisten Verbindungen finden
+View(madeg) #Da die Console die Ausgabe auf eine gewisse Anzahl Ansgaben begrenzt, muss die Tabelle mit view ausgegeben werden
+components(disnetma) #Components zeigt die Anzahl der Teilnetzwerke und deren Größe
+mean_distance(disnetma) #Gibt die längste Verbindung zwischen zwei Knoten aus
+edge_density(disnetma) #Gibt die Kantendichte des Netzwerks aus
+```
+Folgende Mitarbeiter wollten wir in Ego und Teilnetzwerken weiter untersuchen:
+Clyde Geronimi, Hamilton Luske, Wilfred Jackson, Walt Disney, Wolfgang Reitherman, Bill Peet, Erdman Penner, John Lasseter, Ralph Wright, Ted Sears, Vance Gerry
+
+
+## Einstellungen zur grafischen Darstellung des Netzwerks
+In der folgenden Darstellung zeigt sich, dass unser Gesamtnetzwerk nicht besonders übersichtlich ist.
+
+Da wir mit einem solchen Netzwerk nicht arbeiten können, ist eine Anpassung der Darstellung notwendig, mit der die einzelnen Knoten unterschieden werden können. Aufgrund der getrennten Netzwerke müssen die Einstellungen für die Farben oder Gewichtungen der Kanten jeweils doppelt vorgenommen werden. Im gleichen Schritt wird eine Entzerrung des Netzwerks versucht.
+
+**Grafische Anpassung der Knoten und Kanten des Gesamtnetzwerks**
+```{r echo=FALSE}
+E(disnet)$width <- 2.5
+V(disnet)$size <- 4
+
+# Einstellungen für Filme
+V(disnet)[V(disnet)$art == 1]$color <- "gold" #Gesamtnetzwerk Figuren
+V(disnet)[V(disnet)$art == 1]$shape <- "square" #Gesamtnetzwerk Figuren
+V(disnetma)[V(disnetma)$art == 1]$color <- "gold" #Gesamtnetzwerk Mitarbeiter
+V(disnetma)[V(disnetma)$art == 1]$shape <- "square" #Gesamtnetzwerk Mitarbeiter
+
+#Einstellungen für Figuren
+V(disnet)[V(disnet)$art == 2]$color <- "blue"
+V(disnet)[V(disnet)$art == 2]$shape <- "circle"
+V(disnet)[V(disnet)$art == 3]$color <- "blue"
+V(disnet)[V(disnet)$art == 3]$shape <- "circle"
+V(disnet)[V(disnet)$art == 4]$color <- "blue"
+V(disnet)[V(disnet)$art == 4]$shape <- "circle"
+V(disnet)[V(disnet)$art == 5]$shape <- "circle"
+V(disnet)[V(disnet)$art == 6]$shape <- "circle"
+V(disnet)[V(disnet)$art == 7]$shape <- "circle"
+V(disnet)[V(disnet)$art == 8]$shape <- "circle"
+V(disnet)[V(disnet)$art == 9]$shape <- "circle"
+V(disnet)[V(disnet)$art == 99]$shape <- "circle"
+V(disnetma)[V(disnetma)$art == 5]$shape <- "circle"
+V(disnetma)[V(disnetma)$art == 5]$color <- "cadetblue"
+V(disnetma)[V(disnetma)$art == 6]$shape <- "circle"  #Director
+V(disnetma)[V(disnetma)$art == 6]$color <- "cadetblue" #Director
+V(disnetma)[V(disnetma)$art == 7]$shape <- "circle" #Producer
+V(disnetma)[V(disnetma)$art == 7]$color <- "cadetblue" #Producer
+V(disnetma)[V(disnetma)$art == 8]$shape <- "circle" #Writer
+V(disnetma)[V(disnetma)$art == 8]$color <- "cadetblue" #Writer
+
+#Einstellungen für die Kanten
+E(disnetma)[E(disnetma)$Type == 6]$color <- "red"  #Director
+E(disnetma)[E(disnetma)$Type == 7]$color <- "black"  #Producer
+E(disnetma)[E(disnetma)$Type == 8]$color <- "yellow"  #Writer
+E(disnetma)[E(disnetma)$Type == 1]$color <- "white"  #Film
+E(disnetma)$width <- 4
+V(disnetma)$size <- 6
+V(disnet)$name <- nodes$name #Die jeweiligen Namen aus der Nodelist werden übernommen
+```
+
+## Disney-Pixar Gesamtnetzwerk der Figuren
+```{r Erstellen des ersten Plots}
+#zuweisen des Layouts für einfache Skalierbarkeit
+durchmesser <- layout.kamada.kawai(disnet)
+#zuweisen der Grundkoordinaten
+durchmesser <- norm_coords(durchmesser, ymin=-1, ymax=1, xmin=-1, xmax=1) 
+
+
+plot(disnet, 
+     vertex.size=5,
+     rescale=F,
+     layout=durchmesser*2.0,
+     main="Gesamtnetzwerk aller erhobener Figuren") # erste Darstellung des Gesamtnetzwerks
+
+#data <- toVisNetworkData(disnet)
+#visNetwork(nodes = data$nodes, edges = data$edges, height = "500px")
+
+```
+Da sich in dem Gesamtnetzwerk keine Beziehungen erkennen lassen, muss das Netzwerk zunächst etwas eingedampft werden. Dazu entfernen wir sämtliche Knoten, die nur eine Verbindung aufweisen. Also Figuren, die in nur einem Film vorkommen oder Isolates sind.
+```{r Erstellen des zweiten Plots}
+
+#Alle Knoten entfernen, die nur eine Verbindung oder weniger haben
+disnetoi <- delete.vertices(simplify(disnet), degree(disnet)<=1)
+
+#Für die neue Darstellung muss auch das neue Netzwerk als Maßstab genommen werden
+durchmesseroi <- layout.kamada.kawai(disnetoi)
+
+#zuweisen der Grundkoordinaten
+durchmesseroi <- norm_coords(durchmesseroi, ymin=-1, ymax=1, xmin=-1, xmax=1)
+
+```
+
+```{r echo=FALSE}
+V(disnetoi)[V(disnetoi)$art == 1]$color <- "gold" #Gesamtnetzwerk ohne Isolates
+V(disnetoi)[V(disnetoi)$art == 1]$shape <- "square" #Gesamtnetzwerk ohne Isolates
+V(disnetoi)[V(disnetoi)$art == 2]$color <- "blue"
+V(disnetoi)[V(disnetoi)$art == 2]$shape <- "circle"
+V(disnetoi)[V(disnetoi)$art == 3]$color <- "blue"
+V(disnetoi)[V(disnetoi)$art == 3]$shape <- "circle"
+V(disnetoi)[V(disnetoi)$art == 4]$color <- "blue"
+V(disnetoi)[V(disnetoi)$art == 4]$shape <- "circle"
+V(disnetoi)[V(disnetoi)$art == 5]$shape <- "circle"
+V(disnetoi)[V(disnetoi)$art == 6]$shape <- "circle"
+V(disnetoi)[V(disnetoi)$art == 7]$shape <- "circle"
+V(disnetoi)[V(disnetoi)$art == 8]$shape <- "circle"
+V(disnetoi)[V(disnetoi)$art == 9]$shape <- "circle"
+V(disnetoi)[V(disnetoi)$art == 99]$shape <- "circle"
+```
+
+```{r}
+par(mfrow=c(1,1))
+plot(disnetoi,
+    vertex.size=80*(betweenness(disnetoi) / 600000 + 1/20),
+     rescale=F,
+     layout=durchmesseroi*2.0,
+     main="Gesamtnetzwerk ohne Isolates und Einfachverbindungen")
+
+```
+
+## Teilnetzwerke
+### Erstes Teilnetzwerk
+Hier versuchen wir ein erstes Teilnetzwerk darzustellen
+```{r Teilnetzwerke erstellen} 
+a1 <- delete.vertices(disnet, V(disnet)[art == 2])
+a2 <- delete.vertices(a1, V(a1)[art == 3])
+a3 <- delete.vertices(simplify(a2), degree(a2)<=0 )
+par(mfrow=c(1,1))
+durchmessera3 <- layout.kamada.kawai(a3)
+durchmessera3 <- norm_coords(durchmessera3, ymin=-1, ymax=1, xmin=-1, xmax=1)
+plot(a3, layout=durchmessera3*1.6, rescale=FALSE, vertex.size=20*(betweenness(a3) / 600 + 0.3))
+
+```
+
+### Ego-Netzwerke spannender Akteure oder Filme
+Ego Netzwerke können vielleicht auch etwas aussagen
+
+#### Mickey Mouse
+spannend?
+
+```{r}
+
+# Mickey Mouse
+mickey_ego <- make_ego_graph(disnet, order=1, c("Mickey Mouse"))
+mmego <- mickey_ego[[1]]
+plot(mmego, vertex.size=10)
+
+```
+
+#### Ralph breaks the Internet
+In der Voruntersuchung der Daten hat sich rbti schon als spannend herausgestellt 
+
+```{r echo=FALSE}
+#Ralph breaks the Internet
+
+V(disnet)[V(disnet)$prod == 1]$color <- "blue"
+V(disnet)[V(disnet)$prod == 2]$color <- "blue"
+V(disnet)[V(disnet)$prod == 3]$color <- "green"
+V(disnet)[V(disnet)$prod == 4]$color <- "red"
+V(disnet)[V(disnet)$prod == 5]$color <- "black"
+V(disnet)[V(disnet)$prod == 6]$color <- "yellow"
+V(disnet)[V(disnet)$prod == 7]$color <- "blue"
+V(disnet)[V(disnet)$prod == 8]$color <- "blue"
+V(disnet)[V(disnet)$prod == 99]$color <- "white"
+
+```
+
+```{r}
+
+rbrks_ego <- make_ego_graph(disnet, order=2, c("Ralph Breaks the Internet"))
+rbrksi <- rbrks_ego[[1]]
+rbrks_egosm <- make_ego_graph(disnet, order=1, c("Ralph Breaks the Internet"))
+rbrksie <- rbrks_egosm[[1]]
+rbrkssm <- delete.vertices(rbrks_ego[[1]],which(degree(rbrks_ego[[1]])<2)) #Hier werden alle 1-fachen und Isolates entfernt
+
+```
+
+```{r}
+dmrego <- layout.kamada.kawai(rbrksi)
+dmrego <- norm_coords(dmrego, ymin=-1, ymax=1, xmin=-1, xmax=1)
+
+dmrsm <- layout.kamada.kawai(rbrkssm)
+dmrsm <- norm_coords(dmrsm, ymin=-1, ymax=1, xmin=-1, xmax=1)
+
+dmresm <- layout.kamada.kawai(rbrksie)
+dmresm <- norm_coords(dmresm, ymin=-1, ymax=1, xmin=-1, xmax=1)
+
+```
+
+```{r}
+par(mfrow=c(1,1)) #Anzeige für zwei Netzwerke partitionieren
+plot(rbrks_ego[[1]], rescale=FALSE, layout=dmrego*1.8) #Plot Ralph Ego mit deg < 2
+plot(rbrkssm, rescale=FALSE, layout=dmrsm*1.8) #Plot Ralph Ego mit deg < 2
+plot(rbrks_egosm[[1]], rescale=FALSE, layout=dmresm*1.8) #Plot Ralph Ego mit deg < 2
+
+plot(rbrksi, rescale=FALSE, layout=dmrego*1.8, main="Ego-Netzwerk Ralph Breaks The Internet", vertex.size= 40*(betweenness(rbrksi) / 44000 + 0.2)) #Plot Ralph Ego mit deg < 2
+
+```
+
+### Ego Netzwerke der Mitarbeiter
+
+Clyde Geronimi, Hamilton Luske, Wilfred Jackson, Walt Disney, Wolfgang Reitherman, Bill Peet, Erdman Penner, John Lasseter, Ralph Wright, Ted Sears, Vance Gerry
+
+```{r eval=FALSE}
+par(mfrow=c(1,1))
+
+#Clyde Geronimi
+clyde_ego <- make_ego_graph(disnetma, order=2, c("Clyde Geronimi"))
+plot(clyde_ego[[1]])
+
+#Hamilton Luske
+hamilton_ego <- make_ego_graph(disnetma, order=1, c("Hamilton Luske"))
+plot(hamilton_ego[[1]])
+
+#Walt Disney
+walt_ego <- make_ego_graph(disnetma, order=2, c("Walt Disney"))
+plot(walt_ego[[1]])
+
+#John Lasseter
+lasseter_ego <- make_ego_graph(disnetma, order=2, c("John Lasseter"))
+plot(lasseter_ego[[1]])
+
+```
+
+
+### Beschränkung der Figuren nach den Produktionsstudios
+
+
+### Cameos nach Studios - wer produziert die meisten Easter Eggs
+
+```{r Pixar Teilnetzwerk}
+
+pix1 <- induced.subgraph(disnet, V(disnet)[ prod %in% c("3", "") ]) #
+pix15 <- delete.vertices(simplify(pix1), degree(pix1)<=2)
+pix2 <- delete.vertices(simplify(pix15), degree(pix15)<=1)
+
+pixdeg <- degree(pix2, mode="IN") #Hier können wir sehen, wie viele Cameos in welchem Film vorkamen
+#View(pixdeg) #Ausgabe der Daten in einer separaten Tabelle
+edge_density #Hier erfassen wir wie oft Figuren wieder verwendet werden um es mit Pixar zu vergleichen
+
+V(pix2)[V(pix2)$art == 1]$color <- "red"
+V(pix2)[V(pix2)$art == 2]$color <- "blue"
+
+pixzoom <- layout.kamada.kawai(pix2) #zuweisen des Layouts für einfache Skalierbarkeit
+pixzoom <- norm_coords(pixzoom, ymin=-1, ymax=1, xmin=-1, xmax=1) #zuweisen der Grundkoordinaten
+```
+
+```{r Disney Teilnetzwerk}
+dis1 <- induced.subgraph(disnet, 
+  V(disnet)[ prod %in% c("2", "1", "") ]) #
+dis15 <- delete.vertices(simplify(dis1), degree(dis1)<=2)
+dis2 <- delete.vertices(simplify(dis15), degree(dis15)<=1)
+
+V(dis2)[V(dis2)$art == 1]$color <- "red"
+V(dis2)[V(dis2)$art == 2]$color <- "blue"
+edge_density(dis2) #Hier erfassen wir wie oft Figuren wieder verwendet werden um es mit Disney zu vergleichen
+
+diszoom <- layout.kamada.kawai(dis2) #zuweisen des Layouts für einfache Skalierbarkeit
+diszoom <- norm_coords(diszoom, ymin=-1, ymax=1, xmin=-1, xmax=1) #zuweisen der Grundkoordinaten
+```
+
+```{r Disney und Pixar Teilnetzwerk}
+
+dip1 <- induced.subgraph(disnet, 
+  V(disnet)[ prod %in% c("2", "3", "1", "") ]) #
+dip15 <- delete.vertices(simplify(dip1), degree(dip1)<=2)
+dip2 <- delete.vertices(simplify(dip15), degree(dip15)<=2)
+
+pixdisdeg <- degree(dip2, mode="IN") #Hier können wir sehen, wie viele Cameos in welchem Film vorkamen
+#View(pixdisdeg) #Ausgabe der Daten in einer separaten Tabelle
+
+V(dip2)[V(dip2)$art == 1]$color <- "red"
+V(dip2)[V(dip2)$art == 2]$color <- "blue"
+
+dipzoom <- layout.kamada.kawai(dip2) #zuweisen des Layouts für einfache Skalierbarkeit
+dipzoom <- norm_coords(dipzoom, ymin=-1, ymax=1, xmin=-1, xmax=1) #zuweisen der Grundkoordinaten
+```
+
+```{r Plot der drei Netzwerke}
+par(mfrow=c(1,2))
+plot(pix2, 
+     vertex.size=5000*(betweenness(pix2) / 90000 + 1/800),
+     rescale=T,
+     cex=0.1,
+     layout=pixzoom*1.2,
+     main="Cameos bei Pixar")
+
+plot(dis2, 
+     vertex.size=1000*(betweenness(dis2) / 90000 + 1/200), #affine transformation um große Werte kleiner darzustellen als sie sind
+     rescale=F,
+     cex=0.1,
+     layout=diszoom*1.2,
+     main="Cameos bei Disney")
+
+
+par(mfrow=c(1,2))
+plot(dis2, 
+     vertex.size=1000*(betweenness(dis2) / 90000 + 1/200), #affine transformation um große Werte kleiner darzustellen als sie sind
+     rescale=F,
+     cex=0.1,
+     layout=diszoom*1.2,
+     main="Disney Cameos Betweenness")
+
+plot(dis2, 
+     vertex.size=degree(dis2), #affine transformation um große Werte kleiner darzustellen als sie sind
+     rescale=F,
+     cex=0.1,
+     layout=diszoom*1.2,
+     main="Disney Cameos degree")
+
+
+par(mfrow=c(1,2))
+
+plot(dip2, 
+     vertex.size=10,
+     rescale=F,
+     cex=0.1,
+     layout=dipzoom*1.2,
+     main="Cameos Universumübergreifend")
+
+plot(dip2, 
+     vertex.size=500*(betweenness(dip2) / 60000 + 1/120),
+     rescale=F,
+     cex=0.1,
+     layout=dipzoom*1.2,
+     main="Cameos Universumübergreifend")
+
+dipcluster <- cluster_label_prop(dip2) # Cluster werden gesucht
+class(dipcluster)
+
+par(mfrow=c(1,1))
+plot(dipcluster, dip2, vertex.size=600*(betweenness(dip2) / 120000 + 1/200),
+     rescale=F,
+     vertex.label.cex=0.4,
+     label.dist=1,
+     layout=dipzoom*1.8,
+     main="Cameos als Cluster")
+```
+
+### Betweenness
+Um darzustellen, welche Figuren besonders wichtig sind, greifen wir bei der Darstellung der Cameo-Netze auf den Betweenness-Wert zurück. Dieser sagt aus, welche Figuren einen besonders hohen Stellenwert im Netzwerk einnehmen, da sie verschiedene Akteure und Teilnetze überhaupt erst verbinden. Je höher dieser Wert ist, umso mehr Akteure und Teilnetze verbindet er.
+
+Bei der Analyse unserer Teilnetzwerke (Disney und Pixar) greifen wir auf diesen Wert zurück um die Größe der Knoten in Abhängigkeit ihrer Wichtigkeit zu variieren.
+
+### Cameos nach Studios - wer produziert die meisten Easter Eggs
+### Cameos nach Mitarbeitern
+### Cluster von Mitarbeitern vs. Figuren
+Hier hat sich gezeigt, dass es mehr Mitarbeitercluster gibt als Figurencluster. DAs bedeutet, die Figuren werden aus verschiedenen Film-Gruppen übernommen.
+
+### Zeitliche Darstellung der Pixar Cameos
+Funfact es gibt einen Film, der geteasert wurde dann aber doch nicht gedreht wurde.
+
+
