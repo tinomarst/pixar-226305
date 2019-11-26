@@ -132,11 +132,11 @@ Durch einen händischen Vergleich zeigte sich bald, dass große Teile der Daten 
 ## Plot des Rohnetzwerks
 **Ausgabe des Gesamtnetzwerks der Figuren ohne grafische Anpassung**
 
-```{r echo=FALSE}
+```{r echo=FALSE, warning=FALSE}
 rawzoom <- layout.kamada.kawai(disraw)
 rawzoom <- norm_coords(rawzoom, ymin=-1, ymax=1, xmin=-1, xmax=1)
 par(mar=c(0,2,2,1))
-plot (disraw, layout=rawzoom*1.4, rescale=F, vertex.size=5, vertex.label.cex=0.4)
+plot (disraw, layout=rawzoom*1.4, rescale=F, vertex.size=5, vertex.frame.width=0.01, edge.width=0.3, vertex.label.cex=0.4)
 ```
 Abb. 1 - Rohdaten-Gesamtnetzwerk der Figuren ohne grafische Ausgestaltung
 
@@ -145,7 +145,7 @@ Abb. 1 - Rohdaten-Gesamtnetzwerk der Figuren ohne grafische Ausgestaltung
 Da ein erster Plot des Gesamtnetzwerks nur einen gigantischen Hairball, also ein unübersichtliches Netzwerk aus viel zu vielen Knoten produziert (der Plot selbst kommt weiter unten), konzentrieren wir uns zunächst auf die reinen statistischen Daten. Auf diese Weise konnten wir bequem die vielversprechendsten Charaktere und Mitarbeiter selektieren, die wir in den Ego-Netzwerken untersuchen könnten.
 
 ### Ausgabe der Statistiken zu den Figuren
-```{r results='hide'}
+```{r results='hide', warning=FALSE}
 disdeg <- degree(disnet, mode="IN") #Hier lässt sich der Knoten mit den meisten Verbindungen finden
 #View(disdeg) #Da die Console die Ausgabe auf eine gewisse Anzahl Ansgaben begrenzt, muss die Tabelle mit view ausgegeben werden
 components(disnet) #Components zeigt die Anzahl der Teilnetzwerke und deren Größe
@@ -162,7 +162,7 @@ A113 (25), Buzz Lightyear (10), Donald Duck (15), Mickey Mouse (24), Pinocchio (
 Bei den Betweenness Werten stellte sich vor allem der Film "Ralph Breaks The Internet" als besonders interessant heraus.
 
 ### Ausgabe der Statistiken zu den Mitarbeitern
-```{r echo=FALSE, results='hide'}
+```{r echo=FALSE, results='hide', warning=FALSE}
 madeg <- degree(disnetma, mode="IN") #Hier lässt sich der Knoten mit den meisten Verbindungen finden
 #View(madeg) #Da die Console die Ausgabe auf eine gewisse Anzahl Ansgaben begrenzt, muss die Tabelle mit view ausgegeben werden
 components(disnetma) #Components zeigt die Anzahl der Teilnetzwerke und deren Größe
@@ -196,12 +196,12 @@ V(disnet)[V(disnet)$art == 1]$shape <- "square" #Gesamtnetzwerk Figuren
 V(disnetma)[V(disnetma)$art == 1]$shape <- "square" #Gesamtnetzwerk Mitarbeiter
 
 #Einstellungen für Figuren
-V(disnet)[V(disnet)$prod == 1]$color <- "blue"
-V(disnet)[V(disnet)$prod == 2]$color <- "blue" 
+V(disnet)[V(disnet)$prod == 1]$color <- "cornflowerblue"
+V(disnet)[V(disnet)$prod == 2]$color <- "cornflowerblue" 
 V(disnet)[V(disnet)$prod == 3]$color <- "green"
 V(disnet)[V(disnet)$prod == 4]$color <- "red"
 V(disnet)[V(disnet)$prod == 5]$color <- "black"
-V(disnet)[V(disnet)$prod == 8]$color <- "blue"
+V(disnet)[V(disnet)$prod == 8]$color <- "cornflowerblue"
 V(disnet)[V(disnet)$prod == 6]$color <- "yellow"
 V(disnet)[V(disnet)$prod == 99]$color <- "white"
 
@@ -242,8 +242,10 @@ plot(disnet,
 #visNetwork(nodes = data$nodes, edges = data$edges, height = "500px")
 
 ```
+
 Da sich in dem Gesamtnetzwerk keine Beziehungen erkennen lassen, muss das Netzwerk zunächst etwas eingedampft werden. Dazu entfernen wir sämtliche Knoten, die nur eine Verbindung aufweisen. Also Figuren, die in nur einem Film vorkommen oder Isolates sind.
-```{r Erstellen des zweiten Plots}
+
+```{r echo=FALSE, warning=FALSE}
 
 #Alle Knoten entfernen, die nur eine Verbindung oder weniger haben
 disnetoi <- delete.vertices(simplify(disnet), degree(disnet)<=1)
@@ -256,14 +258,14 @@ durchmesseroi <- norm_coords(durchmesseroi, ymin=-1, ymax=1, xmin=-1, xmax=1)
 
 ```
 
-```{r echo=FALSE}
+```{r echo=FALSE, warning=FALSE}
 V(disnetoi)[V(disnetoi)$art == 1]$color <- "gold" #Gesamtnetzwerk ohne Isolates
 V(disnetoi)[V(disnetoi)$art == 1]$shape <- "square" #Gesamtnetzwerk ohne Isolates
-V(disnetoi)[V(disnetoi)$art == 2]$color <- "blue"
+V(disnetoi)[V(disnetoi)$art == 2]$color <- "cornflowerblue"
 V(disnetoi)[V(disnetoi)$art == 2]$shape <- "circle"
-V(disnetoi)[V(disnetoi)$art == 3]$color <- "blue"
+V(disnetoi)[V(disnetoi)$art == 3]$color <- "cornflowerblue"
 V(disnetoi)[V(disnetoi)$art == 3]$shape <- "circle"
-V(disnetoi)[V(disnetoi)$art == 4]$color <- "blue"
+V(disnetoi)[V(disnetoi)$art == 4]$color <- "cornflowerblue"
 V(disnetoi)[V(disnetoi)$art == 4]$shape <- "circle"
 V(disnetoi)[V(disnetoi)$art == 5]$shape <- "circle"
 V(disnetoi)[V(disnetoi)$art == 6]$shape <- "circle"
@@ -274,7 +276,7 @@ V(disnetoi)[V(disnetoi)$art == 99]$shape <- "circle"
 E(disnetoi)$color <- as.factor(edges$Type)
 ```
 
-```{r}
+```{r echo=FALSE, warning=FALSE}
 par(mfrow=c(1,1), mar=c(0,1,0,1))
 plot(disnetoi, 
      vertex.label.cex=0.2,
@@ -295,7 +297,8 @@ plot(disnetoi,
 ## Teilnetzwerke
 ### Erstes Teilnetzwerk
 Hier versuchen wir ein erstes Teilnetzwerk darzustellen
-```{r Teilnetzwerke erstellen} 
+
+```{r echo=FALSE, warning=FALSE} 
 a1 <- delete.vertices(disnet, V(disnet)[art == 2])
 a2 <- delete.vertices(a1, V(a1)[art == 3])
 a3 <- delete.vertices(simplify(a2), degree(a2)<=0 )
@@ -308,12 +311,12 @@ durchmessera3 <- norm_coords(durchmessera3, ymin=-1, ymax=1, xmin=-1, xmax=1)
 par(mfrow=c(1,1), mar=c(0,1,0,1))
 
 #Optik
-V(a3)[V(a3)$prod == 1]$color <- rgb(0,0,1,alpha=0.3)
-V(a3)[V(a3)$prod == 2]$color <- rgb(0,0,1,alpha=0.3) 
+V(a3)[V(a3)$prod == 1]$color <- rgb(0,0.3,1,alpha=0.3)
+V(a3)[V(a3)$prod == 2]$color <- rgb(0,0.3,1,alpha=0.3) 
 V(a3)[V(a3)$prod == 3]$color <- rgb(0,1,0,alpha=0.3)
 V(a3)[V(a3)$prod == 4]$color <- rgb(1,0,0,alpha=0.3)
 V(a3)[V(a3)$prod == 5]$color <- rgb(0,0,0,alpha=0.3)
-V(a3)[V(a3)$prod == 8]$color <- rgb(0,0,1,alpha=0.3)
+V(a3)[V(a3)$prod == 8]$color <- rgb(0,0.3,1,alpha=0.3)
 V(a3)[V(a3)$prod == 6]$color <- rgb(1,1,0,alpha=0.3)
 V(a3)[V(a3)$prod == 99]$color <- rgb(1,1,1,alpha=0.3)
 
@@ -329,6 +332,7 @@ plot(a3,
      vertex.size=20*(betweenness(a3) / 600 + 0.3))
 
 ```
+da kommt noch text
 
 ### Ego-Netzwerke spannender Akteure oder Filme
 Ego Netzwerke können vielleicht auch etwas aussagen
@@ -336,7 +340,7 @@ Ego Netzwerke können vielleicht auch etwas aussagen
 #### Mickey Mouse
 spannend?
 
-```{r}
+```{r echo=FALSE, warning=FALSE}
 
 # Mickey Mouse
 mickey_ego <- make_ego_graph(disnet, order=2, c("Mickey Mouse"))
@@ -364,7 +368,7 @@ In der Voruntersuchung der Daten hat sich rbti schon als spannend herausgestellt
 
 
 
-```{r}
+```{r echo=FALSE, warning=FALSE}
 
 
 
@@ -376,7 +380,7 @@ rbrkssm <- delete.vertices(rbrks_ego[[1]],which(degree(rbrks_ego[[1]])<2)) #Hier
 
 ```
 
-```{r}
+```{r echo=FALSE, warning=FALSE}
 dmrego <- layout.kamada.kawai(rbrksi)
 dmrego <- norm_coords(dmrego, ymin=-1, ymax=1, xmin=-1, xmax=1)
 
@@ -388,24 +392,24 @@ dmresm <- norm_coords(dmresm, ymin=-1, ymax=1, xmin=-1, xmax=1)
 
 ```
 
-```{r}
+```{r echo=FALSE, warning=FALSE}
 
 V(rbrksi)["Ralph Breaks the Internet"]$color <- "black"
 
-par(mfrow=c(1,1), mar=c(0,2,2,1)) #Anzeige für zwei Netzwerke partitionieren
+par(mfrow=c(1,1), mar=c(0,0,0,0)) #Anzeige für zwei Netzwerke partitionieren
 
 
 
-plot(rbrks_ego[[1]], rescale=FALSE, vertex.label.dist=1, vertex.label.deg=pi/2, vertex.label.cex=0.5, edge.width=1, layout=dmrego*1.2) #Plot Ralph Ego mit deg < 2
-plot(rbrkssm, vertex.label.dist=1, vertex.label.deg=pi/2, rescale=FALSE, vertex.label.cex=0.5, edge.width=1, layout=dmrsm*1.2) #Plot Ralph Ego mit deg < 2
-plot(rbrks_egosm[[1]], vertex.label.dist=1, vertex.label.deg=pi/2, rescale=FALSE, vertex.label.cex=0.5, edge.width=1, layout=dmresm*1.2) #Plot Ralph Ego mit deg < 2
+plot(rbrks_ego[[1]], rescale=FALSE, vertex.label.dist=1, vertex.label.deg=pi/2, vertex.label.cex=0.5, edge.width=1, layout=dmrego*1.0) #Plot Ralph Ego mit deg < 2
+plot(rbrkssm, vertex.label.dist=1, vertex.label.deg=pi/2, rescale=FALSE, vertex.label.cex=0.5, edge.width=1, layout=dmrsm*1.0) #Plot Ralph Ego mit deg < 2
+plot(rbrks_egosm[[1]], vertex.label.dist=1, vertex.label.deg=pi/2, rescale=FALSE, vertex.label.cex=0.5, edge.width=1, layout=dmresm*1.0) #Plot Ralph Ego mit deg < 2
 
 
 E(rbrksi)$color <- as.factor(edges$Type)
 V(rbrksi)[V(rbrksi)$prod == 3]$color <- rgb(0,1,0,alpha=0.85)
-V(rbrksi)[V(rbrksi)$prod == 2]$color <- rgb(0,0,1,alpha=0.85)
-V(rbrksi)[V(rbrksi)$prod == 1]$color <- rgb(0,0,1,alpha=0.85)
-V(rbrksi)[V(rbrksi)$prod == 8]$color <- rgb(0,0,1,alpha=0.85)
+V(rbrksi)[V(rbrksi)$prod == 2]$color <- rgb(0.39,0.58,0.92,alpha=0.85)
+V(rbrksi)[V(rbrksi)$prod == 1]$color <- rgb(0.39,0.58,0.92,alpha=0.85)
+V(rbrksi)[V(rbrksi)$prod == 8]$color <- rgb(0.39,0.58,0.92,alpha=0.85)
 V(rbrksi)[V(rbrksi)$prod == 4]$color <- rgb(1,0,0,alpha=0.85)
 V(rbrksi)[V(rbrksi)$prod == 6]$color <- rgb(1,1,0,alpha=0.9)
 V(rbrksi)[V(rbrksi)$prod == 5]$color <- rgb(0,0,0,alpha=0.7)
@@ -415,7 +419,7 @@ plot(rbrksi,
      rescale=FALSE,
      edge.width=1,
      label.degree = pi*1.35,
-     layout=dmrego*1.1,
+     layout=dmrego*1.0,
      #main="Ego-Netzwerk Ralph Breaks The Internet",
      vertex.label.dist=1,
      vertex.label.deg=pi/2,
@@ -425,15 +429,15 @@ plot(rbrksi,
      vertex.frame.width=0.8)
 
     legend(0.9, -0.57, legend=c("Pixar", "Disney", "Marvel", "Lucasfilm", "Warner-Bros"),
-       col=c("green", "blue", "red", "black", "yellow"), lty=1, lwd=10, cex=0.8)
+       col=c("green", "cornflowerblue", "red", "black", "yellow"), lty=1, lwd=10, cex=0.8)
 ```
 
 ### Ego Netzwerke der Mitarbeiter
 
 Clyde Geronimi, Hamilton Luske, Wilfred Jackson, Walt Disney, Wolfgang Reitherman, Bill Peet, Erdman Penner, John Lasseter, Ralph Wright, Ted Sears, Vance Gerry
 
-```{r eval=FALSE, echo=FALSE}
-par(mfrow=c(1,1), mar(0,1,1,1))
+```{r eval=FALSE, echo=FALSE, warning=FALSE}
+par(mfrow=c(1,1), mar(0,0.5,0.5,0))
 E(disnet)$color <- as.factor(edges$Type)
 
 
@@ -472,7 +476,7 @@ pixdeg <- degree(pix2, mode="IN") #Hier können wir sehen, wie viele Cameos in w
 edge_density #Hier erfassen wir wie oft Figuren wieder verwendet werden um es mit Pixar zu vergleichen
 
 V(pix2)[V(pix2)$art == 1]$color <- rgb(1,0,0,alpha=0.8)
-V(pix2)[V(pix2)$art == 2]$color <- rgb(0,0,1,alpha=0.8)
+V(pix2)[V(pix2)$art == 2]$color <- rgb(0.39,0.58,0.92,alpha=0.8)
 
 pixzoom <- layout.kamada.kawai(pix2) #zuweisen des Layouts für einfache Skalierbarkeit
 pixzoom <- norm_coords(pixzoom, ymin=-1, ymax=1, xmin=-1, xmax=1) #zuweisen der Grundkoordinaten
@@ -487,7 +491,7 @@ dis15 <- delete.vertices(simplify(dis1), degree(dis1)<=2)
 dis2 <- delete.vertices(simplify(dis15), degree(dis15)<=1)
 
 V(dis2)[V(dis2)$art == 1]$color <- rgb(1,0,0,alpha=0.8)
-V(dis2)[V(dis2)$art == 2]$color <- rgb(0,0,1,alpha=0.8)
+V(dis2)[V(dis2)$art == 2]$color <- rgb(0.39,0.58,0.92,alpha=0.8)
 edge_density(dis2) #Hier erfassen wir wie oft Figuren wieder verwendet werden um es mit Disney zu vergleichen
 
 diszoom <- layout.kamada.kawai(dis2) #zuweisen des Layouts für einfache Skalierbarkeit
@@ -506,7 +510,7 @@ pixdisdeg <- degree(dip2, mode="IN") #Hier können wir sehen, wie viele Cameos i
 #View(pixdisdeg) #Ausgabe der Daten in einer separaten Tabelle
 
 V(dip2)[V(dip2)$art == 1]$color <- rgb(1,0,0,alpha=0.8)
-V(dip2)[V(dip2)$art == 2]$color <- rgb(0,0,1,alpha=0.8)
+V(dip2)[V(dip2)$art == 2]$color <- rgb(0.39,0.58,0.92,alpha=0.8)
 
 dipzoom <- layout.kamada.kawai(dip2) #zuweisen des Layouts für einfache Skalierbarkeit
 dipzoom <- norm_coords(dipzoom, ymin=-1, ymax=1, xmin=-1, xmax=1) #zuweisen der Grundkoordinaten
@@ -581,11 +585,11 @@ Hier könnte mehr Bla Bla stehen
 
 par(mfrow=c(1,1), mar=c(0,1,0,1))
 
-V(dip2)[V(dip2)$prod == 3]$color <- rgb(0,1,0,alpha=0.85)
-V(dip2)[V(dip2)$prod == 2]$color <- rgb(0,0,1,alpha=0.85)
-V(dip2)[V(dip2)$prod == 1]$color <- rgb(0,0,1,alpha=0.85)
-V(dip2)[V(dip2)$prod == 8]$color <- rgb(0,0,1,alpha=0.85)
-V(dip2)[V(dip2)$prod == 4]$color <- rgb(1,0,0,alpha=0.85)
+V(dip2)[V(dip2)$prod == 3]$color <- rgb(0.91,0.31,0.21,alpha=0.85)
+V(dip2)[V(dip2)$prod == 2]$color <- rgb(0.39,0.58,0.92,alpha=0.85)
+V(dip2)[V(dip2)$prod == 1]$color <- rgb(0.39,0.58,0.92,alpha=0.85)
+V(dip2)[V(dip2)$prod == 8]$color <- rgb(0.39,0.58,0.92,alpha=0.85)
+V(dip2)[V(dip2)$prod == 4]$color <- rgb(0.91,0.31,0.21,alpha=0.85)
 V(dip2)[V(dip2)$prod == 6]$color <- rgb(1,1,0,alpha=0.9)
 V(dip2)[V(dip2)$prod == 5]$color <- rgb(0,0,0,alpha=0.7)
 V(dip2)[V(dip2)$prod == 99]$color <- rgb(1,1,1,alpha=0.9)
@@ -606,13 +610,15 @@ plot(dip2,
      )
 
     legend(1, -0.7, legend=c("Pixar", "Disney"),
-       col=c("green", "blue"), lty=1, lwd=5, cex=0.5)
+       col=c("brown1", "cornflowerblue"), lty=1, lwd=5, cex=0.5)
 
 #################################   
 ### Cameos in Clustern
 #################################
         
 dipcluster <- cluster_label_prop(dip2) # Cluster werden gesucht
+    #cluster_label_prop(dip2) #generiert random cluster - oft aber schönere
+    #cluster_walktrap(dip2) #liefert konsistente Ergebnisse
 class(dipcluster)
 
 par(mfrow=c(1,1), mar=c(0,0,0,0))
@@ -648,7 +654,7 @@ Vielen Dank an Markus, der Tino die mathematischen Hintergründe der affinen Tra
 ### Limitationen
 Wir haben gesehen, dass es gar nicht so toll ist, das Gesamtnetzwerk zu haben, sondern die Teilnetzwerke viel interessanter sind. 
 
-```{r}
+```{r echo=FALSE}
 #disdeg
 #disbetween
 ```
