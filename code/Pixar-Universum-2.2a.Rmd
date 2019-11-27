@@ -14,10 +14,12 @@ info: komprimiert und umsortiert
 ---
 
 ```{r echo=FALSE, comment='hide'}
-#Wenn du R noch nicht kennst oder Code nicht besonders magst, kann ich das verstehen. R ist auch nicht ganz einfach. Und wenn es #darum geht, zusätzlich noch ein schönes Dokument zu schaffen, kann man viel, sehr viel Zeit versenken.
+#Wenn du R noch nicht kennst oder Code nicht besonders magst, kann ich das verstehen. R ist auch nicht ganz einfach. #Und wenn es darum geht, zusätzlich noch ein schönes Dokument zu schaffen, kann man viel, sehr viel Zeit versenken.
 #Um die Schritte möglichst nachvollziehbar zu machen, habe ich das gesamte Dokument so weit es geht durchkommentiert.
-#Gib dir einen Ruck und lies das Dokument durch - dann wird die Erstellung deines eigenen Netzwerks eigentlich kein Problem.
+#Gib dir einen Ruck und lies das Dokument durch - dann wird die Erstellung deines eigenen Netzwerks oder von #Ego-Netzwerken eigentlich kein Problem.
 ```
+
+
 
 Disney und Pixar sind mitunter die größten Filmstudios für Zeichentrick- und Animationsfilme. Viele Filmfiguren werden wiederverwertet usw. Daher galt unser Forschungsinteresse der Frage, in welchen Filmen treten gehäuft Cameos auf, welche Figuren kommen immer wieder vor und lässt sich eine Korrelation nach Produktionsbudgets ableiten?
 
@@ -71,19 +73,21 @@ options(max.print=999999)
 Die Edge und Nodelist der Figuren und Filme wird über read.csv von Github geladen
 ```{r results='hide'}
 edges <- read.csv("https://raw.githubusercontent.com/tinomarst/pixar-226305/master/daten/el_fig.csv", 
-                  header=T, as.is=T, sep=",") #Edgelist wird von Github geladen
+                  header=T, as.is=T, sep=",") #Die Edgelist wird von Github geladen
 nodes <- read.csv("https://raw.githubusercontent.com/tinomarst/pixar-226305/master/daten/nl_fig.csv", 
-                  header=T, as.is=T, sep = ",") #Nodelist wird wird von Github geladen
+                  header=T, as.is=T, sep = ",") #die Nodelist wird wird von Github geladen
 
 matrix <- as.matrix(edges)#Matrix erstellen
-#Gesamtnetzwerk der Figuren wird im Dataframe gespeichert
+#Gesamtnetzwerk der Figuren wird aus der Edge- Und Nodelist gelesen und im Dataframe gespeichert
 disnet <- graph_from_data_frame(d=matrix, vertices=nodes, directed=FALSE)
-#Gesamtnetzwerk wird für einen Rohplot nochmals eingelesen
+
+#Gesamtnetzwerk wird für einen Rohplot nochmals eingelesen, was nur für eine unserer Darstellungen wirchtig war
 disraw <- graph_from_data_frame(d=matrix, vertices=nodes, directed=FALSE) 
 ```
 
 ### Einlesen der Mitarbeiter und Filme
-Als zweite Datenquelle wird auch die Edge und Nodelist der Mitarbeiter und Filme mit dem Befehl read.csv von Github geladen.
+Als zweite Datenquelle wird auch die Edge und Nodelist der Mitarbeiter und Filme mit dem Befehl read.csv von Github geladen. Effektiv verwenden wir diese Listen nicht mehr zur Darstellung. Trotzdem lässt sich damit zeigen, dass es auch möglich ist ein zweites Netzwerk in R-Studio darstellen zu lassen.
+
 ```{r echo=FALSE, results='hide'}
 edgesma <- read.csv("https://raw.githubusercontent.com/tinomarst/pixar-226305/master/daten/el_di.csv", header=T, as.is=T, sep=",") #Edgelist wird geladen
 nodesma <- read.csv("https://raw.githubusercontent.com/tinomarst/pixar-226305/master/daten/nl_di.csv", header=T, as.is=T, sep = ",") #Nodelist wird geladen
@@ -93,16 +97,17 @@ disnetma <- graph_from_data_frame(d=matrixma, vertices=nodesma, directed=FALSE) 
 
 
 ### Werte Überprüfen und Netzwerk validieren
-Da es zu Beginn unserer Arbeiten Unstimmigkeiten zwischen der Darstellung des Netzwerks und den Daten in der Edge- und Nodelist gab, war der erste Schritt eine Überprüfung der Daten, die R-Studio in der Matrix speicherte. Für einen reinen plot der Netzwerke kann dieser Teil auch auskommentiert werden.
-
+Da es zu Beginn unserer Arbeiten Unstimmigkeiten zwischen der Darstellung des Netzwerks und den Daten in der Edge- und Nodelist gab, war der erste Schritt eine Überprüfung der Daten, die R-Studio in der Matrix speicherte. Für einen reinen Plot der Netzwerke kann dieser Teil auch auskommentiert werden.
+Wir blenden die Ausgabe aus, indem wir den Befehl results='hide' verwenden.
 **Edge- und Vertex-Attribute der Figuren anzeigen**
 ````{r results='hide'}
 list.vertex.attributes(disnet)
 list.edge.attributes(disnet)
 ```
 
+Auch bei den Befehlen, die zu Beginn eines Chunks stehen, können mehrere Einstellungen gleichzeitig vorgenommen werden. Dabei werden die verschiedenen Begriffe mit einem Komma getrennt.
 
-````{r echo=FALSE, results='hide'}
+````{r results='hide', eval=FALSE}
 #**Edge- und Vertex-Attribute der Mitarbeiter anzeigen**
 list.vertex.attributes(disnetma)
 list.edge.attributes(disnetma)
@@ -131,18 +136,17 @@ Durch einen händischen Vergleich zeigte sich bald, dass große Teile der Daten 
 
 ## Plot des Rohnetzwerks
 **Ausgabe des Gesamtnetzwerks der Figuren ohne grafische Anpassung**
-
+In diesem Schritt plotten wir das Gesamtnetzwerk um einen Eindruck von der Größe des Netzwerks zu gewinnen. Hier 
 ```{r echo=FALSE, warning=FALSE}
+#Eine detaillierte Erklärung zu den Einstellungen für den Plot findest du beim ersten angepassten Plot des Gesamtnetzwerks.
 rawzoom <- layout.kamada.kawai(disraw)
 rawzoom <- norm_coords(rawzoom, ymin=-1, ymax=1, xmin=-1, xmax=1)
-par(mar=c(0,2,2,1))
-plot (disraw, layout=rawzoom*1.4, rescale=F, vertex.size=5, vertex.frame.width=0.01, edge.width=0.3, vertex.label.cex=0.4)
+par(mar=c(0,0,0,0))
+plot (disraw, layout=rawzoom*1.3, rescale=F, vertex.size=5, vertex.frame.width=0.01, edge.width=0.3, vertex.label.cex=0.4)
 ```
 Abb. 1 - Rohdaten-Gesamtnetzwerk der Figuren ohne grafische Ausgestaltung
 
-
-## Statistiken zum Netzwerk 
-Da ein erster Plot des Gesamtnetzwerks nur einen gigantischen Hairball, also ein unübersichtliches Netzwerk aus viel zu vielen Knoten produziert (der Plot selbst kommt weiter unten), konzentrieren wir uns zunächst auf die reinen statistischen Daten. Auf diese Weise konnten wir bequem die vielversprechendsten Charaktere und Mitarbeiter selektieren, die wir in den Ego-Netzwerken untersuchen könnten.
+Da der erste Plot des Gesamtnetzwerks nur einen gigantischen Hairball, also ein unübersichtliches Netzwerk aus viel zu vielen Knoten produziert, konzentrieren wir uns zunächst auf die reinen statistischen Daten. Auf diese Weise konnten wir bequem die vielversprechendsten Charaktere und Mitarbeiter selektieren, die wir in den Ego-Netzwerken untersuchen könnten.
 
 ### Ausgabe der Statistiken zu den Figuren
 ```{r results='hide', warning=FALSE}
@@ -175,36 +179,28 @@ Clyde Geronimi, Hamilton Luske, Wilfred Jackson, Walt Disney, Wolfgang Reitherma
 
 
 ## Einstellungen zur grafischen Darstellung des Netzwerks
-In der folgenden Darstellung zeigt sich, dass unser Gesamtnetzwerk nicht besonders übersichtlich ist.
+Da uns trotzdem die allgemeine Darstellung des Gesamtnetzwerks interessiert, müssen wir unsere Visualisierung mit ein paar Befehlen anpassen. Wie sich schon in der Rohversion des Gesamtnetzwerks gezeigt hat, kann mit einem riesen Hairball nicht gearbeitet werden. Daher ist eine Anpassung der Darstellung notwendig, mit der die einzelnen Knoten unterschieden werden können. Im gleichen Schritt wird eine Entzerrung des Netzwerks vorgenommen.
 
-Da wir mit einem solchen Netzwerk nicht arbeiten können, ist eine Anpassung der Darstellung notwendig, mit der die einzelnen Knoten unterschieden werden können. Im gleichen Schritt wird eine Entzerrung des Netzwerks vorgenommen.
+Die Anpassung haben wir in diesem Schritt explizit für den Knit-Vorgang in eine PDF-Datei vorgenommen.
 
 **Grafische Anpassung der Knoten und Kanten des Gesamtnetzwerks**
+
 ```{r echo=FALSE}
-#Da wir beim Einlesen der Daten zwei Netzwerke erstellen, müssen wir auch beiden Netzwerken Eigenschaften für die Knoten und die #Kanten zuweisen. Das ist zwar doppelte Arbeit, aber dadurch können wir beide Netzwerke getrennt voneinander bearbeiten.
-#Es gibt für solche Fälle in iGraph auch eine Funktion, mit der die Einstellungen schon zu Beginn des Dokuments global für alle
-#Netzwerke festgelegt werden kann. 
+#Da wir beim Einlesen der Daten zwei Netzwerke erstellen, müssen wir auch beiden Netzwerken Eigenschaften für die Knoten und die Kanten zuweisen. Das ist zwar doppelte Arbeit, aber dadurch können wir beide Netzwerke getrennt voneinander bearbeiten.
 
-E(disnet)$width <- 2.5 #Die Kanten des Netzwerks sollen eine Stärke von 2.5 haben. Soll der Wert abweichen kann das inline, also direkt im Plot-Befehl für den jeweiligen Plot angepasst werden. Schlussendlich haben wir alle Daten einzeln anpassen müssen.
+#Es gibt für solche Fälle in iGraph auch eine Funktion, mit der die Einstellungen schon zu Beginn des Dokuments global für alle Netzwerke festgelegt werden kann. 
+
+E(disnet)$width <- 2.5 #Die Kanten des Netzwerks sollen generell eine Stärke von 2.5 haben. Damit ist eine gute Sichtbarkeit bei kleinen Netzwerken gewährleistet. Soll der Wert abweichen kann das inline, also direkt im Plot-Befehl für den jeweiligen Plot angepasst werden. Schlussendlich haben wir alle Daten einzeln anpassen müssen.
+
 #Das lag daran, dass die Darstellung in RStudio von der Darstellung in der durch KNIT erstellten PDF abweicht.
-V(disnet)$size <- 4
 
-# Einstellungen für Filme
+V(disnet)$size <- 4 #Hier legen wir auch die Größe der Knoten für alle Plots fest, die aus dem Netzwerk 'disnet' generiert werden. In vielen Fällen mussten wir die Größe für den Plot in die PDF-Datei nochmals gesondert einstellen.
 
+
+
+# Einstellungen für das Disnet-Netzwerk
+#Hier legen wir für das Disnet Netzwerk fest, dass sämtliche Filme als Rechteck "square" und Figuren als Kreise "circle" angelegt werden.
 V(disnet)[V(disnet)$art == 1]$shape <- "square" #Gesamtnetzwerk Figuren
-
-V(disnetma)[V(disnetma)$art == 1]$shape <- "square" #Gesamtnetzwerk Mitarbeiter
-
-#Einstellungen für Figuren
-V(disnet)[V(disnet)$prod == 1]$color <- "cornflowerblue"
-V(disnet)[V(disnet)$prod == 2]$color <- "cornflowerblue" 
-V(disnet)[V(disnet)$prod == 3]$color <- "green"
-V(disnet)[V(disnet)$prod == 4]$color <- "red"
-V(disnet)[V(disnet)$prod == 5]$color <- "black"
-V(disnet)[V(disnet)$prod == 8]$color <- "cornflowerblue"
-V(disnet)[V(disnet)$prod == 6]$color <- "yellow"
-V(disnet)[V(disnet)$prod == 99]$color <- "white"
-
 V(disnet)[V(disnet)$art == 2]$shape <- "circle"
 V(disnet)[V(disnet)$art == 3]$shape <- "circle"
 V(disnet)[V(disnet)$art == 4]$shape <- "circle"
@@ -214,41 +210,84 @@ V(disnet)[V(disnet)$art == 7]$shape <- "circle"
 V(disnet)[V(disnet)$art == 8]$shape <- "circle"
 V(disnet)[V(disnet)$art == 9]$shape <- "circle"
 V(disnet)[V(disnet)$art == 99]$shape <- "circle"
+# Die Zuweisung sieht etwas kompliziert aus, ist aber gar nicht so schwer. Außerdem braucht man diesen Befehl regelmäßig!
+# Zur Erklärung: Der Befehl sagt: Wenn der Wert $art aus dem Disnet-Netzwerk [V(disnet)$art == 99] den entsprechenden Wert hat, dann weise den Knoten V(disnet) die Form "circle" als $shape zu.
+# Auf Deutsch - wenn $art den Wert 1 hat, sollen die Vertices als Rechteck dargestellt werden.
 
-V(disnet)$name <- nodes$name #Dieser Schritt ist extrem wichtig. Hiermit werden die jeweiligen Bezeichungen aus der Namen-Spalte #aus der Nodelist übernommen. Wird der Name nicht ersetzt, zeigt der Plot immer die ID aus der Edgelist an.
+
+#Auch die Farben lassen sich bequem im Voraus festlegen.
+#Das Prinzip ist das gleiche. Hier beziehen wir uns allerdings auf den Wert $prod als Prdouktionsstudio aus der Nodeliste. Über den $color Befehl lässt sich dann eine spezifische Farbe zuweisen.
+#Eine gute Liste an Farben für R-Studio gibt es auf http://www.stat.columbia.edu/~tzheng/files/Rcolor.pdf
+V(disnet)[V(disnet)$prod == 1]$color <- "cornflowerblue"
+V(disnet)[V(disnet)$prod == 2]$color <- "cornflowerblue" 
+V(disnet)[V(disnet)$prod == 3]$color <- "green"
+V(disnet)[V(disnet)$prod == 4]$color <- "red"
+V(disnet)[V(disnet)$prod == 5]$color <- "black"
+V(disnet)[V(disnet)$prod == 8]$color <- "cornflowerblue"
+V(disnet)[V(disnet)$prod == 6]$color <- "yellow"
+V(disnet)[V(disnet)$prod == 99]$color <- "white"
+
+
+V(disnetma)[V(disnetma)$art == 1]$shape <- "square" # Die Einstellungen müssen für das Gesamtnetzwerk Mitarbeiter separat vorgenommen werden. Daher können die oberen Einstellungen prinzipiell kopiert werden. Allerdings muss dann der Name des Netzwerks angepasst werden.
+
+V(disnet)$name <- nodes$name 
+#Dieser Schritt ist extrem wichtig. Hiermit werden die jeweiligen Bezeichungen aus der Namen-Spalte der Nodelist übernommen. Wird der Name nicht ersetzt, zeigt der Plot immer die ID aus der Edgelist an.
+#Theoretisch lassen sich auch andere Werte (nicht nur aus der Nodelist) anzeigen. Auch Akteursmaße, wie den Betweenness- oder Degree-Wert könnt ihr so anzeigen lassen. Aber in der Regel wollt ihr den Namen sehen.
 ```
+
 
 ## Disney-Pixar Gesamtnetzwerk der Figuren
+In diesem Schritt sind die ersten optischen Einstellungen soweit vorgenommen, dass sich die Knoten im Gesamtnetzwerk unterscheiden lassen.
+
 ```{r echo=FALSE}
-#zuweisen des Layouts für einfache Skalierbarkeit
+#Hier erfolgt auch die Erklärung der meisten Einstellungen um den Plot-Befehl.
+
+#Zunächst wird eine neue Variable mit dem Namen Durchmesser erzeugt. 
+#Der weisen wir das zu verwendende Layouts für den Plot zu.
+#Durch diesen Befehl kann man beim Plotten gezielt in das Netzwerk hineinzoomen.
+#Allerdings werden bei einem Wert von mehr als 1.0 die Ränder des Netzwerks abgeschnitten.
 durchmesser <- layout_with_kk(disnet)
-#zuweisen der Grundkoordinaten
 durchmesser <- norm_coords(durchmesser, ymin=-1, ymax=1, xmin=-1, xmax=1) 
-par(mar=c(0,0,0,0))
 
-plot(disnet, 
-     vertex.size=0.3,
-     vertex.color="orange",
-     vertex.label.cex=0.1,
-     vertex.frame.width=0.001,
-     rescale=F,
-    vertex.label.dist=0.08,
-     vertex.frame.color=rgb(0,0,0,alpha=0.01),
-     layout=durchmesser*1.0,
-     edge.width=0.15,
-     ) # erste Darstellung des Gesamtnetzwerks
+#Deshalb weisen wir dem Plot eine weitere Eigenschaft zu, die einen Plot bis an die äußeren Ränder der späteren PDF ermöglicht. Diese Einstellung haben wir erst wesentlich später gefunden. Für den Plot in eine PDF ist sie unerlässlich und macht die "durchmesser"-Variable quasi überflüssig.
 
-#data <- toVisNetworkData(disnet)
-#visNetwork(nodes = data$nodes, edges = data$edges, height = "500px")
+# "par" legt den Bereich für einen Plot fest. Die Einstellung "mfrow" bezeichnet eine Matrix, in der die Plots später angezeigt werden. 1,1 bedeutet, 1 einzelner Plot pro Reihe und Spalte. 1,2 bedeutet zwei Plots nebeneinander usw.
+#Die Einstellung "mar" gibt an, wo die Ränder des Plots liegen sollen. Standard ist (1,1,1,1). Als schöner hat sich für uns allerdings der Wert (0,0,0,0) erwiesen.
+#Dabei werden die Ränder nach folgendem Schema festgelegt: (unten,links,oben,rechts). Ein Wert < 0 ist nicht möglich
+par(mfrow=c(1,1), mar=c(0,0,0,0))
+
+#Nun folgt der Plot Befehl mit einigen wichtigen Einstellungen
+plot(disnet, #Plotte das Netzwerk "disnet"
+     vertex.size=0.3, #ändere die Größe der Knoten auf den Wert 0.3 (der war passend für unser Gesamtnetzwerk) normalerweise ist ein Wert zwischen 3 und 20 optimal.
+     #vertex.color="orange", #Mit diesem Befehl kann die Farbe der Knoten angepasst werden.
+     vertex.label.cex=0.1, #Diese Einstellung ändert die Schriftgröße der Beschriftung der Knoten
+     vertex.frame.width=0.001, #Hiermit kann der Rahmen um die Knoten verändert werden. Normalerweise 1
+     rescale=F, #Dieser Befehl ist wichtig, wenn das Layout zuvor mit einer Variable (hier durchmesser) vergeben wurde. Sollen mehrere Netzwerke unabhängig voneinander gezoomt werden, sind jeweils eigene Variablen notwendig.
+     layout=durchmesser*1.0, #Mit dem Multiplikator hinter der Variable, kann das Netzwerk vergrößert oder verkleinert werden. Für einen Plot in R-Studio kann der Wert durchaus bei 3 liegen. Für die Ausgabe in der PDF sollte der Wert in der Regel nicht über 1,5 liegen.
+     vertex.label.dist=0.08, #Diese Eigenschaft legt den Abstand der Beschriftung zum jeweiligen Knoten fest
+     vertex.frame.color=rgb(0,0,0,alpha=0.01), #Auch der Umrandung eines Knotens kann eine Farbe zugewiesen werden.
+     #Hier nutzen wir keinen festen Farbnamen wie "black" sondern die Farbgebung mit einem RGB-Wert
+     #Die RGB -> Rot, Grün, Blau Werte werden hier in Prozent also 0 bis 1 angegeben und nicht von 0-255 wie in
+     #der Bildverarbeitung üblich. Der Alpha-Kanal gibt an, ob die Farbe durchsichtig sein soll. 0 bedeutet durchsichtig und 1 bedeutet voll sichtbar. 
+     edge.width=0.15, #legt die Breite der Kanten fest. Für das Gesamtnetzwerk war der Wert von 2.5 viel zu dick.
+     ) # Ende des Plot-Befehls für die erste grafische Darstellung des Gesamtnetzwerks
+
+#data <- toVisNetworkData(disnet) # IGNORIEREN
+#visNetwork(nodes = data$nodes, edges = data$edges, height = "500px") #IGNORIEREN
 
 ```
+Abb. 2 - Gesamtnetzwerk mit einer ersten grafischen Anpassung.
 
-Da sich in dem Gesamtnetzwerk keine Beziehungen erkennen lassen, muss das Netzwerk zunächst etwas eingedampft werden. Dazu entfernen wir sämtliche Knoten, die nur eine Verbindung aufweisen. Also Figuren, die in nur einem Film vorkommen oder Isolates sind.
+## Teilnetzwerke
+### Erstes Teilnetzwerk
+
+Da sich in dem Gesamtnetzwerk keine Beziehungen erkennen lassen, muss das Netzwerk zunächst etwas eingedampft werden. Dazu entfernen wir sämtliche Knoten, die nur eine Verbindung aufweisen. Also Figuren, die in nur einem Film vorkommen oder Isolates sind. Dies erfolgt in zwei Schritten, da bei der Vereinfachung und Reduktion um Isolates und Einfachverbindungen neue Isolates entstehen können. Daher wird der selbe Befehl ein zweites Mal nachegschalten.
 
 ```{r echo=FALSE, warning=FALSE}
 
 #Alle Knoten entfernen, die nur eine Verbindung oder weniger haben
-disnetoi <- delete.vertices(simplify(disnet), degree(disnet)<=1)
+disnetsimp <- delete.vertices(simplify(disnet), degree(disnet)<=1)
+disnetoi <- delete.vertices(simplify(disnetsimp), degree(disnetsimp)<=1)
 
 #Für die neue Darstellung muss auch das neue Netzwerk als Maßstab genommen werden
 durchmesseroi <- layout_nicely(disnetoi)
@@ -259,8 +298,10 @@ durchmesseroi <- norm_coords(durchmesseroi, ymin=-1, ymax=1, xmin=-1, xmax=1)
 ```
 
 ```{r echo=FALSE, warning=FALSE}
-V(disnetoi)[V(disnetoi)$art == 1]$color <- "gold" #Gesamtnetzwerk ohne Isolates
-V(disnetoi)[V(disnetoi)$art == 1]$shape <- "square" #Gesamtnetzwerk ohne Isolates
+#In diesem Chunk legen wir die Eigenschaften für die Darstellung des Gesamtnetzwerks ohne Isolates fest.
+#Deshalb wird hier das Netzwerk "disnetoi" referenziert.
+V(disnetoi)[V(disnetoi)$art == 1]$color <- "gold" 
+V(disnetoi)[V(disnetoi)$art == 1]$shape <- "square"
 V(disnetoi)[V(disnetoi)$art == 2]$color <- "cornflowerblue"
 V(disnetoi)[V(disnetoi)$art == 2]$shape <- "circle"
 V(disnetoi)[V(disnetoi)$art == 3]$color <- "cornflowerblue"
@@ -277,34 +318,43 @@ E(disnetoi)$color <- as.factor(edges$Type)
 ```
 
 ```{r echo=FALSE, warning=FALSE}
-par(mfrow=c(1,1), mar=c(0,1,0,1))
-plot(disnetoi, 
-     vertex.label.cex=0.2,
-     vertex.size=20*(betweenness(disnetoi) / 600000 + 1/20),
-     rescale=F,
-     vertex.label.dist=0.21,
-     vertex.label.deg=pi*1.6,
-     vertex.frame.color=rgb(0,0,0,alpha=0.3),
-     vertex.frame.width=0.6,
-     edge.width=0.3,
-     #edge.color=rgb(0,0,0,0.4),
-     layout=durchmesseroi*1.0)
+par(mfrow=c(1,1), mar=c(0,1,0,1)) #Festlegen der Plot-Fläche
+plot(disnetoi, #Netzwerkreferenz
+     vertex.label.cex=0.2, #Schriftgröße der Vertices
+     vertex.size=20*(betweenness(disnetoi) / 600000 + 1/20), #Vertex Größe abhängig von Betweenness
+     rescale=F, #automatische Größenanpassung verhindern
+     vertex.label.dist=0.21, #Abstand der Schrift zum jeweiligen Knoten
+     vertex.label.deg=pi*1.6, #Winkel der Beschriftung in Bezug zum Knoten. Die Bewegung läuft auf der Sinus-Kuve
+     vertex.frame.color=rgb(0,0,0,alpha=0.3), #Rahmenfarbe der Vertices
+     vertex.frame.width=0.6, #Rahmenbreite der Vertices
+     edge.width=0.3, #Breite der Kanten
+     #edge.color=rgb(0,0,0,0.4), #ist deaktiviert, da die Farbe schon oben festgelegt wurde
+     layout=durchmesseroi*1.0) #Zoomstufe auf 1.0 für Plot in PDF
+
 #title("Gesamtnetzwerk ohne Isolates und Einfachverbindungen",cex.main=1,col.main="black", line = 1)
-
-
+#mit Title kann theoretisch ein Titel über oder unter dem Plot angezeigt werden. War hier aber nicht notwendig.
 ```
+Abb. 3 - Disney Gesamtnetzwerk ohne Isolates und Einfachverbindungen
 
-## Teilnetzwerke
-### Erstes Teilnetzwerk
-Hier versuchen wir ein erstes Teilnetzwerk darzustellen
+
+Dadurch lassen sich schon wesentlich mehr Knoten erkennen. 
+
+Um darzustellen, welche Figuren besonders wichtig sind, greifen wir bei der Darstellung der Cameo-Netze auf den Betweenness-Wert zurück. Dieser sagt aus, welche Figuren einen besonders hohen Stellenwert im Netzwerk einnehmen, da sie verschiedene Akteure und Teilnetze überhaupt erst verbinden. Je höher dieser Wert ist, umso mehr Akteure und Teilnetze verbindet er.
+
+Bei der Analyse unserer Teilnetzwerke (Disney und Pixar) greifen wir auf diesen Wert zurück um die Größe der Knoten in Abhängigkeit ihrer Wichtigkeit zu variieren. Hierbei nutzen wir außerdem die Möglichkeiten der mathematischen Grundlagen der sogenannten affinen Transformation.
+
+Hierbei lässt sich die maximale und minimale Größe der Knoten durch das Einsetzen verschiedener Werte und Multiplikatoren verändern. Eine Abhandlung von Prof. Dr. Markus Stroppel dazu, findet sich im Code Ordner unseres Github.
+
+https://github.com/tinomarst/pixar-226305/raw/master/code/affine-trafo.pdf
+
 
 ```{r echo=FALSE, warning=FALSE} 
-a1 <- delete.vertices(disnet, V(disnet)[art == 2])
-a2 <- delete.vertices(a1, V(a1)[art == 3])
-a3 <- delete.vertices(simplify(a2), degree(a2)<=0 )
+a1 <- delete.vertices(disnet, V(disnet)[art == 3])
+a2 <- delete.vertices(a1, V(a1)[art == 2])
+a3 <- delete.vertices(simplify(a2), degree(a2) < 1 )
 
 #Layout
-durchmessera3 <- layout.kamada.kawai(a3)
+durchmessera3 <- layout.fruchterman.reingold(a3)
 durchmessera3 <- norm_coords(durchmessera3, ymin=-1, ymax=1, xmin=-1, xmax=1)
 
 #Größer für Druck
@@ -329,10 +379,10 @@ plot(a3,
      edge.width=0.6,
      label.dist=1,
      edge.color=rgb(0,0,0,0.4),
-     vertex.size=20*(betweenness(a3) / 600 + 0.3))
+     vertex.size=10*(betweenness(a3) / 1800 + 0.2))
 
 ```
-da kommt noch text
+Dieses Netzwerk zeigt Nur Knoten der reinen Gegenstands-Cameos 
 
 ### Ego-Netzwerke spannender Akteure oder Filme
 Ego Netzwerke können vielleicht auch etwas aussagen
@@ -396,7 +446,7 @@ dmresm <- norm_coords(dmresm, ymin=-1, ymax=1, xmin=-1, xmax=1)
 
 V(rbrksi)["Ralph Breaks the Internet"]$color <- "black"
 
-par(mfrow=c(1,1), mar=c(0,0,0,0)) #Anzeige für zwei Netzwerke partitionieren
+par(mfrow=c(1,1), mar=c(0,0,0,0)) #Anzeige für ein Netzwerke partitionieren
 
 
 
@@ -635,15 +685,6 @@ plot(dipcluster, dip2, vertex.size=1000*(betweenness(dip2) / 120000 + 1/200),
      )
 ```
 
-### Betweenness
-Um darzustellen, welche Figuren besonders wichtig sind, greifen wir bei der Darstellung der Cameo-Netze auf den Betweenness-Wert zurück. Dieser sagt aus, welche Figuren einen besonders hohen Stellenwert im Netzwerk einnehmen, da sie verschiedene Akteure und Teilnetze überhaupt erst verbinden. Je höher dieser Wert ist, umso mehr Akteure und Teilnetze verbindet er.
-
-Bei der Analyse unserer Teilnetzwerke (Disney und Pixar) greifen wir auf diesen Wert zurück um die Größe der Knoten in Abhängigkeit ihrer Wichtigkeit zu variieren.
-
-### Cameos nach Studios - wer produziert die meisten Easter Eggs
-### Cameos nach Mitarbeitern
-### Cluster von Mitarbeitern vs. Figuren
-Hier hat sich gezeigt, dass es mehr Mitarbeitercluster gibt als Figurencluster. DAs bedeutet, die Figuren werden aus verschiedenen Film-Gruppen übernommen.
 
 ### Zeitliche Darstellung der Pixar Cameos
 Funfact es gibt einen Film, der geteasert wurde dann aber doch nicht gedreht wurde.
@@ -653,6 +694,15 @@ Vielen Dank an Markus, der Tino die mathematischen Hintergründe der affinen Tra
 
 ### Limitationen
 Wir haben gesehen, dass es gar nicht so toll ist, das Gesamtnetzwerk zu haben, sondern die Teilnetzwerke viel interessanter sind. 
+
+##Tipps zur Darstellung des Markdowns
+Die Ausgabe der Chunks kann mit verschiedenen Befehlen verändert werden.
+eval=FALSE  ->  Der Chunk wird nicht ausgeführt, der Text im Chunk aber nicht angezeigt
+echo=FALSE  ->  Hiermit kann die Darstellung des Codes innerhalb des Chunks verhindert werden.
+message='hide'  ->  Werden Nachrichten und Kommentare im Chunk produziert, können diese ausgeblendet werden.
+warning=FALSE -> Ist ein Code-Teil nicht korrekt, liefert aber bei der Ausführung oder dem Plot trotzdem korrekte Ergebnisse, gibt R-Studio eine Fehlermeldung aus. Diese kann im Druck des PDF-Dokuments verhindert werden.
+results='hide'  ->  Hier wird die Ausführung des Chunks ganz normal durchgeführt. Allerdings werden die Ergebnisse (Plots oder Tabellen) nicht ausgegeben. Der Code wird aber trotzdem angezeigt.
+
 
 ```{r echo=FALSE}
 #disdeg
