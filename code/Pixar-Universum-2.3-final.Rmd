@@ -442,20 +442,29 @@ Im nächsten Schritt untersuchen wir die Ego-Netzwerke, die wir spannend fanden.
 # Mickey Mouse
 mickey_ego <- make_ego_graph(disnet, order=2, c("Mickey Mouse"))
 mmego <- mickey_ego[[1]]
-mickeyzoom <- layout.kamada.kawai(mmego)
+mickeyzoom <- layout.fruchterman.reingold(mmego)
 mickeyzoom <- norm_coords(mickeyzoom, ymin=-1, ymax=1, xmin=-1, xmax=1)
 par(mar=c(0,1,0,1))
+
+   V(mmego)$size <- 2
+   V(mmego)$label.dist <- 0.3
+   V(mmego)[V(mmego)$name== "Mickey Mouse"]$color <- "orange"
+   V(mmego)[V(mmego)$name== "Mickey Mouse"]$size <- 8
+   V(mmego)[V(mmego)$name== "Mickey Mouse"]$label.dist <- 0.8
+   V(mmego)[V(mmego)$name== "Ralph Breaks the Internet"]$color <- "orange"
+   V(mmego)[V(mmego)$name== "Ralph Breaks the Internet"]$size <- 4
+   V(mmego)[V(mmego)$name== "Ralph Breaks the Internet"]$label.dist <- 0.8
+   
 plot(mmego, 
      layout=mickeyzoom*1.0,
-     vertex.size=3,
      edge.width=0.4,
      rescale=FALSE,
-     vertex.label.cex=0.5,
+     vertex.label.cex=0.3,
      edge.color=rgb(0,0,0,alpha=0.5),
      vertex.frame.color=rgb(0,0,0,alpha=0.3),
      vertex.frame.width=0.8,
      vertex.label.degree = pi*1.5,
-     vertex.label.dist=0.4,
+     
     edge.color=rgb(0,0,0,0.8))
 #title("Mickey Mouse Ego-Netzwerk",cex.main=1,col.main="black", line = -1)
 
@@ -502,9 +511,9 @@ plot(rbrks_egosm[[1]], vertex.label.dist=1, vertex.label.deg=pi/2, rescale=FALSE
 
 E(rbrksi)$color <- as.factor(edges$Type)
 V(rbrksi)[V(rbrksi)$prod == 3]$color <- rgb(0,1,0,alpha=0.85)
-V(rbrksi)[V(rbrksi)$prod == 2]$color <- rgb(0.39,0.58,0.92,alpha=0.85)
-V(rbrksi)[V(rbrksi)$prod == 1]$color <- rgb(0.39,0.58,0.92,alpha=0.85)
-V(rbrksi)[V(rbrksi)$prod == 8]$color <- rgb(0.39,0.58,0.92,alpha=0.85)
+V(rbrksi)[V(rbrksi)$prod == 2]$color <- rgb(0.39,0.58,0.92,alpha=0.7)
+V(rbrksi)[V(rbrksi)$prod == 1]$color <- rgb(0.39,0.58,0.92,alpha=0.7)
+V(rbrksi)[V(rbrksi)$prod == 8]$color <- rgb(0.39,0.58,0.92,alpha=0.7)
 V(rbrksi)[V(rbrksi)$prod == 4]$color <- rgb(1,0,0,alpha=0.85)
 V(rbrksi)[V(rbrksi)$prod == 6]$color <- rgb(1,1,0,alpha=0.9)
 V(rbrksi)[V(rbrksi)$prod == 5]$color <- rgb(0,0,0,alpha=0.7)
@@ -512,21 +521,19 @@ V(rbrksi)[V(rbrksi)$prod == 99]$color <- rgb(1,1,1,alpha=0.9)
 
 plot(rbrksi,
      rescale=FALSE,
-     edge.width=1,
-     label.degree = pi*1.35,
+     edge.width=0.5,
      layout=dmrego*1.0,
      #main="Ego-Netzwerk Ralph Breaks The Internet",
      vertex.label.dist=1,
-     vertex.label.deg=pi/2,
-     vertex.label.cex=0.5,
-     vertex.size= 20*(betweenness(rbrksi) / 44000 + 0.2),
-     vertex.frame.color=rgb(0,0,0,alpha=0.3),
-     vertex.frame.width=0.8)
+     vertex.label.deg=pi/2.4,
+     vertex.label.cex=0.3,
+     vertex.size= 15*(betweenness(rbrksi) / 44000 + 0.2),
+     vertex.frame.color=rgb(0,0,0,alpha=0.5),
+     vertex.frame.width=0.1)
 
     legend(0.9, -0.57, legend=c("Pixar", "Disney", "Marvel", "Lucasfilm", "Warner-Bros"),
-       col=c("green", "cornflowerblue", "red", "black", "yellow"), lty=1, lwd=10, cex=0.8)
+       col=c("green", "cornflowerblue", "red", "black", "yellow"), lty=1, lwd=8, cex=0.5)
 ```
-
 
 
 ```{r eval=FALSE, echo=FALSE, warning=FALSE}
@@ -556,12 +563,6 @@ plot(lasseter_ego[[1]])
 
 ```
 
-
-### Beschränkung der Figuren nach den Produktionsstudios
-
-
-### Cameos nach Studios - wer produziert die meisten Easter Eggs
-**Pixar Teilnetzwerk**
 ```{r echo=FALSE, message='hide', results='hide'}
 
 pix1 <- induced.subgraph(disnet, V(disnet)[ prod %in% c("3", "") ]) #
@@ -579,8 +580,6 @@ pixzoom <- layout.kamada.kawai(pix2) #zuweisen des Layouts für einfache Skalier
 pixzoom <- norm_coords(pixzoom, ymin=-1, ymax=1, xmin=-1, xmax=1) #zuweisen der Grundkoordinaten
 ```
 
-**Disney Teilnetzwerk**
-
 ```{r echo=FALSE, message='hide', results='hide'}
 dis1 <- induced.subgraph(disnet, 
   V(disnet)[ prod %in% c("2", "1", "") ]) #
@@ -594,8 +593,7 @@ edge_density(dis2) #Hier erfassen wir wie oft Figuren wieder verwendet werden um
 diszoom <- layout.kamada.kawai(dis2) #zuweisen des Layouts für einfache Skalierbarkeit
 diszoom <- norm_coords(diszoom, ymin=-1, ymax=1, xmin=-1, xmax=1) #zuweisen der Grundkoordinaten
 ```
-**Disney und Pixar Teilnetzwerk**
-blabla
+
 ```{r  echo=FALSE, message='hide', results='hide'}
 
 dip1 <- induced.subgraph(disnet, 
@@ -612,10 +610,7 @@ V(dip2)[V(dip2)$art == 2]$color <- rgb(0.39,0.58,0.92,alpha=0.8)
 dipzoom <- layout.kamada.kawai(dip2) #zuweisen des Layouts für einfache Skalierbarkeit
 dipzoom <- norm_coords(dipzoom, ymin=-1, ymax=1, xmin=-1, xmax=1) #zuweisen der Grundkoordinaten
 ```
-blubb
 
-**Plot der drei Netzwerke**
-noch mal Blabla
 
 ```{r echo=FALSE}
 #plot erstes Netzwerk
@@ -641,7 +636,6 @@ plot(dis2,
 title("Cameos bei Disney",cex.main=1,col.main="black", line = -2.5)
 ```
 
-Wenn hier Text dazwischen steht?
 
 ```{r echo=FALSE, message='hide', warning=FALSE}
 
@@ -672,9 +666,6 @@ plot(dis2,
     layout=diszoom*1.0)
 title("Disney Cameos Degree",cex.main=1,col.main="black", line = -2.5)
 ```
-Hier könnte mehr Bla Bla stehen
-
-
 
 
 ```{r echo=FALSE, message='hide', warning=FALSE}
@@ -748,7 +739,6 @@ plot(dipcluster, dip2, vertex.size=1000*(betweenness(dip2) / 120000 + 1/200),
 #disbetween
 
 
-
 ## Tipps zur Darstellung des Markdowns
 
 # Die Ausgabe der Chunks kann mit verschiedenen Befehlen verändert werden.
@@ -770,92 +760,3 @@ plot(dipcluster, dip2, vertex.size=1000*(betweenness(dip2) / 120000 + 1/200),
 
 ```
 
-\newpage
-
-## Literaturverzeichnis
-
-
-Fuhse, Jan Arendt (2018): \textit{Soziale Netzwerke. Konzepte und Forschungsmethoden.} 2. Auflage. Konstanz, München: UVK Verlagsgesellschaft mbH.
-\linebreak
-
-Bondy, A., Murty, M. Ram. (2010). \textit{Graph Theory.} London: Springer Verlag
-\linebreak
-
-Duden Redaktion. (o.J.). \textit{Duden | Cameo | Rechtschreibung, Bedeutung, Definition, Herkunft.} Abgerufen 25. November 2019, von\linebreak https://www.duden.de/node/27392/revision/27421
-\linebreak
-
-Filmstarts. (o. J.). \textit{Das Geheimnis der „A113“: Die versteckten Easter Eggs in Pixar-Filmen!} Abgerufen 28. November 2019, von\linebreak http://www.filmstarts.de/filme/bildergalerien/bildergalerie-18500908/
-\linebreak
-
-HarperCollins Publishers. (o.J.). \textit{Easter egg Definition und Bedeutung | Collins Wörterbuch.} Abgerufen 28. November 2019, von\linebreak https://www.collinsdictionary.com/de/worterbuch/englisch/easter-egg
-\linebreak
-
-Kaever, O. (2019, November 12). \textit{Disney startet Streamingkanal: Kreative Komplettverweigerung.} Spiegel Online. Abgerufen von:\linebreak
-https://www.spiegel.de/kultur/tv/disney-streaming-kanal-bietet-wiederverwurstung-in-serie-a-1295956.html
-\linebreak
-
-National Museum of American History (2018). \textit{Mickey Mouse turns 90.} Abgerufen am: 25.11.2019 von:\linebreak https://americanhistory.si.edu/blog/mickey-mouse-turns-90
-\linebreak
-
-o.V. (2014). \textit{Geheimnis um Code in Disney-Filme gelüftet.} Abgerufen am: 25.11.2019 von:\linebreak
-https://rp-online.de/kultur/film/a113-geheimnis-um-code-in-disney-filmen-gelueftet_aid-20408935
-\linebreak
-
-Petersen, R. (2012, Januar 18). \textit{Cross-Over—Lexikon der Filmbegriffe.} Abgerufen 28. November 2019, von:\linebreak https://filmlexikon.uni-kiel.de/index.php?action=lexikon&tag=det&id=3092
-
-
-## Anhang
-
-Link zu unseren finalen Dateien auf Github
-
-https://github.com/tinomarst/pixar-226305
-
-Edgelist:      https://raw.githubusercontent.com/tinomarst/pixar-226305/master/daten/el_fig.csv
-Nodelist:      https://raw.githubusercontent.com/tinomarst/pixar-226305/master/daten/nl_fig.csv
-Code:          https://raw.githubusercontent.com/tinomarst/pixar-226305/master/code/Pixar-Universum-2.2a.Rmd
-Codebuch:      https://github.com/tinomarst/pixar-226305/blob/master/Codebuch%202.0%20PB%202.10..pdf
-
-Poster:        https://raw.githubusercontent.com/tinomarst/pixar-226305/master/final/Plakat.jpg
-Präsentation:  https://github.com/tinomarst/pixar-226305/raw/master/final/Pr%C3%A4sentation%20Netzwerkanalyse%20112619.pdf
-
-
-\newpage
-
-## Aufstellung der Aufgaben pro Team-Mitglied
-
-Nachfolgend werden zur Übersichtlichkeit die Rufnamen der Teammitglieder verwendet. 
-
-Milena: Milena Sager, Pauline: Pauline Bort, Tino: Justin Marquez, Felix: Felix Arnold, Conny: Constanze Kuba
-
-Aufgabe | Teammitglied | Zeitaufwand p.P.
-----------------------------| ----------------------| ----------------
-Idee    | Milena       | 2h
-Forschungsfrage und Design | Team | 4h
-Präsentation im 3. Semester | Felix, Tino | 1h
-Datenerhebung | Team | 20h
-ID-Vergabe | Tino, Felix, Milena, Pauline | 2h
-Erstellung Edge- und Nodelist | Team | 5 h
-Datenkorrektur/ -bereinigung: Datensatz zu Beginn, sowie Edge- und Nodelist | Tino,Felix, Milena, Pauline | 10h
-erste Netzwerkerstellung (Blocktermin) | Tino, Pauline, Felix, Milena | 10h
-Netzwerkerstellung/Skript | Tino | 54+ h
-Netzwerkmaße, Überarbeitung Skript | Tino, Milena | 6h
-weitere Edge- und Nodelist für Pixar mit Recherche | Milena | 6h
-Konzept Abschlusspräsentation | Conny, Milena, Pauline | 2h
-Finale Datenkorrekturen | Felix, Tino | 2h
-Abschlusspräsentation: Erstellung und Präsentation | Conny, Milena | 10h
-Plakat | Pauline | ?????
-Forschungsbericht | Milena | 8h
-Forschungsbericht | Pauline | 6h
-Forschungsbericht | Tino | 5h
-Forschungsbericht | Conny | 10h
-Forschungsbericht | Felix | 4h
-
-
-
-Workload gesamt | Stunden
---------------- | --------
-Conny | 
-Felix |
-Tino | viel 
-Milena | 85 h
-Most-valuable Team-Member | Tino da höchster Zeitaufwand und sehr engagiert und geduldig mit uns und R
